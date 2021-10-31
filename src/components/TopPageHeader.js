@@ -66,7 +66,13 @@ const Header = ({onMenuOpen}) => {
               <ProjectsLink />
               <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{width: '240px'}}><div className="sp-dropdown-inner"><ul className="sp-dropdown-items">
                 <NavigationLink to="/veterans">Veterans</NavigationLink>
-                <li className="sp-menu-item"><a href="https://anomalyua.github.io/Kids.html">Kids</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Animals.html">Animals</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li></ul></div></div></li></ul></nav></div></div><div id="sp-logo" className="col-10 col-sm-10 col-md-10 col-lg-2 "><div className="sp-column "><div className="logo">
+                <NavigationLink to='/kids'>Kids</NavigationLink>
+                <li className="sp-menu-item"><a href="https://anomalyua.github.io/Animals.html">Animals</a></li>
+                <li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li>
+                <li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li>
+                <li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li>
+                <li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li>
+              </ul></div></div></li></ul></nav></div></div><div id="sp-logo" className="col-10 col-sm-10 col-md-10 col-lg-2 "><div className="sp-column "><div className="logo">
           <Link to='/'>
           <img className="logo-image" src={anomalyLogo} alt="anomaly" />
         </Link></div></div></div><div id="sp-menu2" className="col-lg-5 d-none d-sm-none d-md-none d-lg-block" style={{position: 'static'}}><div className="sp-column "><nav className="sp-megamenu-wrapper" role="navigation"><ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item"><a href="https://anomalyua.github.io/Contact.html">Contact</a></li></ul></nav></div></div></div></div></div>

@@ -73,11 +73,11 @@ const IndexPage = () => {
           <p>We support faster problem solving with local governance by providing
             reporting tools for the 100,000 residents of the most underserved areas
             of Kyiv, directly connecting them with local utility service providers.</p></div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1633616058147"><div id="column-id-1633616058147" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326165" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326165" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="700ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '700ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item3"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
-                                                  <a href="Kids.html">
+                                                  <Link to='/kids'>
                                                     <img className="sppb-img-responsive" src="images/kids.svg" alt="Kids" />
-                                                  </a>
+                                                  </Link>
                                                 </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
-          <a href="Kids.html">Kids</a>
+          <Link to='/kids'>Kids</Link>
         </h3><div className="sppb-addon-text">We
           help children of veterans, returned Russian-held political prisoners,
           Crimean Tatar exiles, and IDPs to attend our free English lessons and

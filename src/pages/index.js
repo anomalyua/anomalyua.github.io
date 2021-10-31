@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import * as React from "react"
 import {useEffect, useState} from 'react'
+import styled from "styled-components"
 
 import anomalyLogo from '../images/anomaly-logo-01.svg'
 
@@ -14,9 +15,11 @@ import '../styles/css_004.css'
 import '../styles/css_002.css'
 import '../styles/css.css'
 import '../styles/bootstrap.css'
+import '../fa5/css/all.css'
 import '../styles/font-awesome.css'
 import '../styles/template_002.css'
 import '../styles/preset1.css'
+
 import '../styles/template.css'
 
 import '../styles/global.css'
@@ -35,7 +38,11 @@ const OffCanvasMenu = ({onClose}) => {
     </a>
     <div className="offcanvas-inner">
       <div className="sp-module "><div className="sp-module-content"><ul className="menu">
-        <li className="item-294"><a href="https://anomalyua.github.io/?Itemid=">Home</a></li><li className="item-297"><a href="https://anomalyua.github.io/About.html">About</a></li><li className="item-298 menu-divider menu-deeper menu-parent"><span className="menu-separator ">Services<span className="menu-toggler" /></span>
+        <li className="item-294"><a href="https://anomalyua.github.io/?Itemid=">Home</a></li><li className="item-297"><a href="https://anomalyua.github.io/About.html">About</a></li>
+        <li className="item-298 menu-divider menu-deeper menu-parent">
+          <span className="menu-separator ">
+            Project <span className="menu-toggler" />
+          </span>
         <ul className="menu-child"><li className="item-325"><a href="https://anomalyua.github.io/Veterans.html">Veterans</a></li><li className="item-326"><a href="https://anomalyua.github.io/Kids.html">Kids</a></li></ul></li><li className="item-299 menu-deeper menu-parent"><a href="https://anomalyua.github.io/?Itemid=177">Case Study<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-300"><a href="https://anomalyua.github.io/case-study-offcanvas/case-study-details">Case Study Details</a></li></ul></li><li className="item-301 menu-deeper menu-parent"><a href="https://anomalyua.github.io/?Itemid=166">Career<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-302"><a href="https://anomalyua.github.io/career-offcanvas/career-details">Career Details</a></li></ul></li><li className="item-303"><a href="https://anomalyua.github.io/?Itemid=115">Blog</a></li><li className="item-304 menu-deeper menu-parent"><a href="#">Pages<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-305"><a href="https://anomalyua.github.io/pages-offcanvas/team">Team</a></li><li className="item-306"><a href="https://anomalyua.github.io/pages-offcanvas/portfolio">Portfolio</a></li><li className="item-307"><a href="https://anomalyua.github.io/pages-offcanvas/gallery">Gallery</a></li><li className="item-308"><a href="https://anomalyua.github.io/pages-offcanvas/pricing">Pricing</a></li><li className="item-309"><a href="http://anomaly.planet-it.com.ua/?tmpl=comingsoon">Coming Soon</a></li><li className="item-310"><a href="https://anomalyua.github.io/?Itemid=404">404</a></li><li className="item-311"><a href="https://anomalyua.github.io/pages-offcanvas/login">Login</a></li><li className="item-312"><a href="https://anomalyua.github.io/pages-offcanvas/registration">Registration</a></li></ul></li><li className="item-313"><a href="https://anomalyua.github.io/contact-us">Contact</a></li></ul>
       </div></div>
     </div>
@@ -43,6 +50,19 @@ const OffCanvasMenu = ({onClose}) => {
     </>
 )
 }
+
+const ProjectsLink = styled.a.attrs(props => ({
+  children: 'Projects',
+  href: '#'
+}))`
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\\f107";
+    float: right;
+    margin-left: 7px;
+  }
+`
 
 const Header = ({onMenuOpen}) => {
   const [isSticky, setSticky] = useState(false)
@@ -65,8 +85,10 @@ const Header = ({onMenuOpen}) => {
           <a id="offcanvas-toggler" aria-label="Navigation" className="offcanvas-toggler-left d-block d-lg-none" href="#" onClick={onMenuOpen}>
             <div className="icon-bar"><span /><span /><span /></div>
           </a>
-          <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item"><a href="https://anomalyua.github.io/index.html">Home</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/About.html">About</a></li><li className="sp-menu-item sp-has-child">
-            <a href="https://anomalyua.github.io/index.html">Projects</a>
+          <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item">
+            <a href="https://anomalyua.github.io/index.html">Home</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/About.html">About</a></li>
+            <li className="sp-menu-item sp-has-child">
+            <ProjectsLink />
             <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{width: '240px'}}><div className="sp-dropdown-inner"><ul className="sp-dropdown-items"><li className="sp-menu-item"><a href="https://anomalyua.github.io/Veterans.html">Veterans</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Kids.html">Kids</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Animals.html">Animals</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li></ul></div></div></li></ul></nav></div></div><div id="sp-logo" className="col-10 col-sm-10 col-md-10 col-lg-2 "><div className="sp-column "><div className="logo"><a href="https://anomalyua.github.io/index.html">
           <img className="logo-image" src={anomalyLogo} alt="anomaly" />
         </a></div></div></div><div id="sp-menu2" className="col-lg-5 d-none d-sm-none d-md-none d-lg-block" style={{position: 'static'}}><div className="sp-column "><nav className="sp-megamenu-wrapper" role="navigation"><ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item"><a href="https://anomalyua.github.io/Contact.html">Contact</a></li></ul></nav></div></div></div></div></div>

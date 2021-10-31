@@ -37,13 +37,37 @@ const OffCanvasMenu = ({onClose}) => {
         </a>
         <div className="offcanvas-inner">
           <div className="sp-module "><div className="sp-module-content"><ul className="menu">
-            <li className="item-294"><a href="https://anomalyua.github.io/?Itemid=">Home</a></li><li className="item-297">
-            <a href="https://anomalyua.github.io/About.html">About</a></li>
+            <li className="item-294"><Link to='/'>Home</Link></li>
+            <li className="item-297">
+              <Link to='/about'>
+                About
+              </Link>
+            </li>
             <li className="item-298 menu-divider menu-deeper menu-parent">
-          <span className="menu-separator ">
-            Project <span className="menu-toggler" />
-          </span>
-              <ul className="menu-child"><li className="item-325"><a href="https://anomalyua.github.io/Veterans.html">Veterans</a></li><li className="item-326"><a href="https://anomalyua.github.io/Kids.html">Kids</a></li></ul></li><li className="item-299 menu-deeper menu-parent"><a href="https://anomalyua.github.io/?Itemid=177">Case Study<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-300"><a href="https://anomalyua.github.io/case-study-offcanvas/case-study-details">Case Study Details</a></li></ul></li><li className="item-301 menu-deeper menu-parent"><a href="https://anomalyua.github.io/?Itemid=166">Career<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-302"><a href="https://anomalyua.github.io/career-offcanvas/career-details">Career Details</a></li></ul></li><li className="item-303"><a href="https://anomalyua.github.io/?Itemid=115">Blog</a></li><li className="item-304 menu-deeper menu-parent"><a href="#">Pages<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-305"><a href="https://anomalyua.github.io/pages-offcanvas/team">Team</a></li><li className="item-306"><a href="https://anomalyua.github.io/pages-offcanvas/portfolio">Portfolio</a></li><li className="item-307"><a href="https://anomalyua.github.io/pages-offcanvas/gallery">Gallery</a></li><li className="item-308"><a href="https://anomalyua.github.io/pages-offcanvas/pricing">Pricing</a></li><li className="item-309"><a href="http://anomaly.planet-it.com.ua/?tmpl=comingsoon">Coming Soon</a></li><li className="item-310"><a href="https://anomalyua.github.io/?Itemid=404">404</a></li><li className="item-311"><a href="https://anomalyua.github.io/pages-offcanvas/login">Login</a></li><li className="item-312"><a href="https://anomalyua.github.io/pages-offcanvas/registration">Registration</a></li></ul></li><li className="item-313"><a href="https://anomalyua.github.io/contact-us">Contact</a></li></ul>
+              <Link to='/veterans'>Veterans</Link>
+            </li>
+            <li>
+              <Link to='/kids'>Kids</Link>
+            </li>
+            <li>
+              <Link to='/animals'>Animals</Link>
+            </li>
+            <li>
+              <Link to='/eco'>Eco</Link>
+            </li>
+            <li>
+              <Link to='/diaspora'>Diaspora</Link>
+            </li>
+            <li>
+              <Link to='/community'>Community</Link>
+            </li>
+            <li>
+              <Link to='/education'>Education</Link>
+            </li>
+
+            <li className="item-313">
+              <Link to='/contact'>Contact</Link>
+            </li></ul>
           </div></div>
         </div>
       </div>

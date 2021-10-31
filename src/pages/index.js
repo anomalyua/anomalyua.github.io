@@ -1,182 +1,224 @@
+import classnames from 'classnames'
 import * as React from "react"
+import {useEffect, useState} from 'react'
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+import anomalyLogo from '../images/anomaly-logo-01.svg'
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+import '../styles/animate.css'
+import '../styles/sppagebuilder.css'
+import '../styles/sppagecontainer.css'
+import '../styles/css_003.css'
+import '../styles/css_005.css'
+import '../styles/magnific-popup.css'
+import '../styles/css_004.css'
+import '../styles/css_002.css'
+import '../styles/css.css'
+import '../styles/bootstrap.css'
+import '../styles/font-awesome.css'
+import '../styles/template_002.css'
+import '../styles/preset1.css'
+import '../styles/template.css'
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
+import '../styles/global.css'
+
+const OffCanvasMenu = ({onClose}) => {
+  return (
+    <>
+  <div className="offcanvas-overlay" />
+  <div className="offcanvas-menu">
+    <a
+      href="#"
+      className="close-offcanvas"
+      onClick={onClose}
+    >
+      <span className="fa fa-remove" />
+    </a>
+    <div className="offcanvas-inner">
+      <div className="sp-module "><div className="sp-module-content"><ul className="menu">
+        <li className="item-294"><a href="https://anomalyua.github.io/?Itemid=">Home</a></li><li className="item-297"><a href="https://anomalyua.github.io/About.html">About</a></li><li className="item-298 menu-divider menu-deeper menu-parent"><span className="menu-separator ">Services<span className="menu-toggler" /></span>
+        <ul className="menu-child"><li className="item-325"><a href="https://anomalyua.github.io/Veterans.html">Veterans</a></li><li className="item-326"><a href="https://anomalyua.github.io/Kids.html">Kids</a></li></ul></li><li className="item-299 menu-deeper menu-parent"><a href="https://anomalyua.github.io/?Itemid=177">Case Study<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-300"><a href="https://anomalyua.github.io/case-study-offcanvas/case-study-details">Case Study Details</a></li></ul></li><li className="item-301 menu-deeper menu-parent"><a href="https://anomalyua.github.io/?Itemid=166">Career<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-302"><a href="https://anomalyua.github.io/career-offcanvas/career-details">Career Details</a></li></ul></li><li className="item-303"><a href="https://anomalyua.github.io/?Itemid=115">Blog</a></li><li className="item-304 menu-deeper menu-parent"><a href="#">Pages<span className="menu-toggler" /></a><ul className="menu-child"><li className="item-305"><a href="https://anomalyua.github.io/pages-offcanvas/team">Team</a></li><li className="item-306"><a href="https://anomalyua.github.io/pages-offcanvas/portfolio">Portfolio</a></li><li className="item-307"><a href="https://anomalyua.github.io/pages-offcanvas/gallery">Gallery</a></li><li className="item-308"><a href="https://anomalyua.github.io/pages-offcanvas/pricing">Pricing</a></li><li className="item-309"><a href="http://anomaly.planet-it.com.ua/?tmpl=comingsoon">Coming Soon</a></li><li className="item-310"><a href="https://anomalyua.github.io/?Itemid=404">404</a></li><li className="item-311"><a href="https://anomalyua.github.io/pages-offcanvas/login">Login</a></li><li className="item-312"><a href="https://anomalyua.github.io/pages-offcanvas/registration">Registration</a></li></ul></li><li className="item-313"><a href="https://anomalyua.github.io/contact-us">Contact</a></li></ul>
+      </div></div>
+    </div>
+  </div>
+    </>
+)
 }
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+const Header = ({onMenuOpen}) => {
+  const [isSticky, setSticky] = useState(false)
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+  useEffect(() => {
+    const handler = (event) => {
+      setSticky(window.pageYOffset !== 0)
+    }
+    window.addEventListener('scroll', handler)
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+    return () => {
+      window.removeEventListener(handler())
+    }
+  }, [])
 
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+  return (
+    <header id="sp-header" className={classnames(isSticky && "header-sticky")}>
+      <div className="container"><div className="container-inner">
+        <div className="row" style={{position: 'relative'}}><div id="sp-menu1" className="col-2 col-sm-2 col-md-2 col-lg-5 " style={{position: 'static'}}><div className="sp-column "><nav className="sp-megamenu-wrapper" role="navigation">
+          <a id="offcanvas-toggler" aria-label="Navigation" className="offcanvas-toggler-left d-block d-lg-none" href="#" onClick={onMenuOpen}>
+            <div className="icon-bar"><span /><span /><span /></div>
+          </a>
+          <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item"><a href="https://anomalyua.github.io/index.html">Home</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/About.html">About</a></li><li className="sp-menu-item sp-has-child">
+            <a href="https://anomalyua.github.io/index.html">Projects</a>
+            <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{width: '240px'}}><div className="sp-dropdown-inner"><ul className="sp-dropdown-items"><li className="sp-menu-item"><a href="https://anomalyua.github.io/Veterans.html">Veterans</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Kids.html">Kids</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Animals.html">Animals</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li><li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li></ul></div></div></li></ul></nav></div></div><div id="sp-logo" className="col-10 col-sm-10 col-md-10 col-lg-2 "><div className="sp-column "><div className="logo"><a href="https://anomalyua.github.io/index.html">
+          <img className="logo-image" src={anomalyLogo} alt="anomaly" />
+        </a></div></div></div><div id="sp-menu2" className="col-lg-5 d-none d-sm-none d-md-none d-lg-block" style={{position: 'static'}}><div className="sp-column "><nav className="sp-megamenu-wrapper" role="navigation"><ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item"><a href="https://anomalyua.github.io/Contact.html">Contact</a></li></ul></nav></div></div></div></div></div>
+    </header>
+  )
+}
 
 // markup
 const IndexPage = () => {
+  const [offCanvasVisible, showOffCanvas] = useState(false)
+
   return (
-    <main style={pageStyles}>
+    <main className={classnames(offCanvasVisible && ['offcanvas-active', 'offcanvs-position-left'])}>
       <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+
+      <div>
+        <div className="body-wrapper">
+          <div className="body-innerwrapper">
+            <div className="header-wrapper"><div className="header-wrapper"><div className="header-wrapper"><section id="sp-top-bar"><div className="container"><div className="container-inner"><div className="row"><div id="sp-top1" className="col-sm-6 col-md-6 col-lg-6 "><div className="sp-column "><ul className="sp-contact-info"><li className="sp-contact-phone"><a href="tel:+18886003456">+1 (888)-600-3456</a></li><li className="sp-contact-email"><a href="mailto:info@wane.com">info@wane.com</a></li></ul></div></div><div id="sp-top2" className="col-sm-6 col-md-6 col-lg-6 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><div className="mod-languages">
+                                    <ul className="lang-inline">
+                                      <li dir="ltr">
+                                        <a href="http://anomaly.planet-it.com.ua/index.php/fr/">
+                                          FR						</a>
+                                      </li>
+                                      <li dir="rtl">
+                                        <a href="http://anomaly.planet-it.com.ua/index.php/ar/">
+                                          AR						</a>
+                                      </li>
+                                      <li className="lang-active" dir="ltr">
+                                        <a href="https://anomalyua.github.io/index.html">
+                                          EN						</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div></div></div></div></div></div></div></section>
+              <Header
+                onMenuOpen={() => {showOffCanvas(true)}}
+              />
+              </div></div></div><section id="sp-section-3"><div className="row"><div id="sp-title" className="col-lg-12 "><div className="sp-column " /></div></div></section><section id="sp-main-body"><div className="row"><main id="sp-component" className="col-lg-12 " role="main"><div className="sp-column "><div id="system-message-container">
+                    </div>
+                    <div id="sp-page-builder" className="sp-page-builder   home-page page-1">
+                      <div className="page-content">
+                        <section id="section-id-1542709301800" className="sppb-section hero-section sppb-section-content-center"><div className="sppb-row-overlay" /><div className="sppb-row-container"><div className="sppb-row sppb-align-center"><div className="sppb-col-md-12" id="column-wrap-id-1542709301799"><div id="column-id-1542709301799" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542709861050" className="sppb-addon-wrapper"><div id="sppb-addon-1542709861050" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-left"><h1 className="sppb-addon-title">Dare to do the impossible!</h1></div></div></div><div id="sppb-addon-wrapper-1542709917009" className="sppb-addon-wrapper"><div id="sppb-addon-1542709917009" className="clearfix "><div className="sppb-text-left"><a href="#" id="btn-1542709917009" className="sppb-btn  sppb-btn-link sppb-btn-rounded">Join Today <i className="fa fa-long-arrow-right" aria-hidden="true" /></a></div></div></div></div></div></div></div></div></section><section id="section-id-1620541326094" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-row-container"><div className="sppb-row sppb-no-gutter"><div className="sppb-col-md-12" id="column-wrap-id-1620541326154"><div id="column-id-1620541326154" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326156" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326156" className="clearfix "><div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center"><h3 className="sppb-addon-title">Our projects</h3></div></div></div><div id="sppb-addon-wrapper-1620541326157" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326157" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1620541326160"><div id="column-id-1620541326160" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326161" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326161" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="300ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '300ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item1"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
+                                                  <a href="Veterans.html">
+                                                    <img className="sppb-img-responsive" src="images/veterans.svg" alt="Veterans" />
+                                                  </a>
+                                                </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
+                                                    <a href="Veterans.html">Veterans</a>
+                                                  </h3><div className="sppb-addon-text">Support
+                                                    for Ukrainian veterans: Every Sunday we offer free English courses and
+                                                    conversation clubs specifically for veterans, ATO volunteers, and their
+                                                    families in Kyiv.<br />We organize regular volunteer outings (our tolokas)
+                                                    and social events (Drinkin’ Bros Ukraine) to connect members of the
+                                                    veteran community with each other, their fellow citizens, as well as
+                                                    officials and visitors from local government and embassies.<br /> With our
+                                                    ‘Dbayemo Razom’ project, we connected 1,000+ mental health
+                                                    professionals, 10,000+ trained peer counselors and 3 physical
+                                                    rehabilitation centers. The network shares experience, expertise, and
+                                                    resources to better serve people in Ukraine.</div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1620541326162"><div id="column-id-1620541326162" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633616058151" className="sppb-addon-wrapper"><div id="sppb-addon-1633616058151" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="100ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item2"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
+                                                  <a href="Ecology.html">
+                                                    <img className="sppb-img-responsive" src="images/ecology.svg" alt="Ecology" />
+                                                  </a>
+                                                </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
+                                                    <a href="Ecology.html">Ecology</a>
+                                                  </h3><div className="sppb-addon-text">Anomaly
+                                                    helps the Ukrainian environment with neigborhood clean-ups and
+                                                    environmental advocacy projects. Anomaly hosts up to 3 cleans-ups a
+                                                    month to help minimize public litter. By doing so, Anomaly helps its
+                                                    participants learn about the effects of waste on the environment (both
+                                                    local and worldwide) and learn how to create similar projects at home.
+                                                    To add on, Anomaly helps to lobby environmental issues occuring in
+                                                    multiple cities across Ukraine. We will pinpoint any companies that are
+                                                    at the core of enironvmental issues and combat them through advocacy and
+                                                    lobbying.</div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1620541326164"><div id="column-id-1620541326164" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326159" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326159" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="100ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item1"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
+                                                  <a href="Education.html">
+                                                    <img className="sppb-img-responsive" src="images/education.png" alt="Education" />
+                                                  </a>
+                                                </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
+                                                    <a href="Education.html">Education</a>
+                                                  </h3><div className="sppb-addon-text">Anomaly
+                                                    offers free english lessons and workshops on various topics. We offer
+                                                    these lessons to any adult in need to help promote personal
+                                                    sustainability and open their ability to work in future opportunities.
+                                                    If you are not a Veteran or Child, Anomaly can still help you with
+                                                    educational modules and workshops.</div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1633010662535"><div id="column-id-1633010662535" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633616058164" className="sppb-addon-wrapper"><div id="sppb-addon-1633616058164" className="clearfix "><div className="sppb-text-center">
+                                          <a href="https://englishnow.dav.school/"><img src="images/English-Now-CTA.svg" style={{height: '180px', border: '2px #fde041 solid', padding: '5px'}} /></a></div>
+                                      </div></div></div></div></div>
+                              <div className="sppb-col-md-6" id="column-wrap-id-1633010662536"><div id="column-id-1633010662536" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633618711977" className="sppb-addon-wrapper"><div id="sppb-addon-1633618711977" className="clearfix "><div className="sppb-text-center">
+                                          <a href="https://BotsPlatform.anomaly.org.ua">
+                                            <img src="images/iFAV4mg.png" style={{width: '240px', border: '2px #fde041 solid', /*! padding: '5px'*/}} />
+                                          </a></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1633010662537"><div id="column-id-1633010662537" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633616058146" className="sppb-addon-wrapper"><div id="sppb-addon-1633616058146" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="500ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item2"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
+                                                  <a href="Community.html">
+                                                    <img className="sppb-img-responsive" src="images/community.png" alt="Community" />
+                                                  </a>
+                                                </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
+                                                    <a href="Community.html">Community</a>
+                                                  </h3><div className="sppb-addon-text"><p>Anomaly
+                                                      works with Kyiv City Administration and local community leaders to help
+                                                      solve everyday problems of Kyiv residents, such as utility outages,
+                                                      road potholes, and piling rubbish.</p>
+                                                    <p>We support faster problem solving with local governance by providing
+                                                      reporting tools for the 100,000 residents of the most underserved areas
+                                                      of Kyiv, directly connecting them with local utility service providers.</p></div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1633616058147"><div id="column-id-1633616058147" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326165" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326165" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="700ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '700ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item3"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
+                                                  <a href="Kids.html">
+                                                    <img className="sppb-img-responsive" src="images/kids.svg" alt="Kids" />
+                                                  </a>
+                                                </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
+                                                    <a href="Kids.html">Kids</a>
+                                                  </h3><div className="sppb-addon-text">We
+                                                    help children of veterans, returned Russian-held political prisoners,
+                                                    Crimean Tatar exiles, and IDPs to attend our free English lessons and
+                                                    speaking clubs. <br />Anomaly connects foreign donors with an orphanage in Mariupol to help children find a new family and home.<br />We work with the local community policing department to protect the rights of children in Kyiv.</div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1633616058148"><div id="column-id-1633616058148" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326163" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326163" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="500ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item4"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
+                                                  <a href="Animals.html"><img className="sppb-img-responsive" src="images/animals.svg" alt="Animals" /></a>
+                                                </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
+                                                    <a href="Animals.html">Animals</a>
+                                                  </h3><div className="sppb-addon-text">Anomaly
+                                                    supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers
+                                                    to solve the problem of stray animal overpopulation.<br /> <br />We are always looking for volunteers to help us solve this problem. If you think that is you, then join us today!.</div></div></div></div></div></div></div></div></div></div></div></div></div></section><section id="section-id-1620586929505" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-row-container"><div className="sppb-row"><div className="sppb-col-md-12" id="column-wrap-id-1620586929513"><div id="column-id-1620586929513" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620586929515" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929515" className="clearfix "><div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center"><h3 className="sppb-addon-title">Gallery</h3></div></div></div><div id="sppb-addon-wrapper-1620586929512" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929512" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><div style={{textAlign: 'center'}}><span style={{fontWeight: 400}}>Check out our accomplishments</span></div></div></div></div></div><div id="sppb-addon-wrapper-1620586929516" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929516" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div></div></div></div><div className="sppb-col-md-8 sppb-col-sm-8" id="column-wrap-id-1620586929517"><div id="column-id-1620586929517" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620586929518" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929518" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1464.jpeg">+</a><img className="sppb-img-responsive" src="images/img_1464.jpeg" alt="Image" /></div></div></div></div></div></div></div></div><div className="sppb-col-md-4 sppb-col-sm-4" id="column-wrap-id-1620586929519"><div id="column-id-1620586929519" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620586929520" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929520" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1355.jpg">+</a><img className="sppb-img-responsive" src="images/img_1355.jpg" alt="Image" /></div></div></div></div></div><div id="sppb-addon-wrapper-1620586929521" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929521" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_0835.jpeg">+</a><img className="sppb-img-responsive" src="images/img_0835.jpeg" alt="Image" /></div></div></div></div></div></div></div></div><div className="sppb-col-md-4 sppb-col-sm-4" id="column-wrap-id-1620586929522"><div id="column-id-1620586929522" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620586929530" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929530" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_3256.jpeg">+</a><img className="sppb-img-responsive" src="images/img_3256.jpeg" alt="Image" /></div></div></div></div></div><div id="sppb-addon-wrapper-1620586929524" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929524" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1604.jpeg">+</a><img className="sppb-img-responsive" src="images/img_1604.jpeg" alt="Image" /></div></div></div></div></div></div></div></div><div className="sppb-col-md-4 sppb-col-sm-4" id="column-wrap-id-1620586929525"><div id="column-id-1620586929525" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620586929527" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929527" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1038.jpeg">+</a><img className="sppb-img-responsive" src="images/img_1038.jpeg" alt="Image" /></div></div></div></div></div></div></div></div><div className="sppb-col-md-4 sppb-col-sm-4" id="column-wrap-id-1620586929527"><div id="column-id-1620586929527" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620586929546" className="sppb-addon-wrapper"><div id="sppb-addon-1620586929546" className="clearfix "><div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_0703.jpeg">+</a><img className="sppb-img-responsive" src="images/img_0703.jpeg" alt="Image" /></div></div></div></div></div></div></div></div></div></div></section><section id="section-id-1542973816360" className="sppb-section secondary-color sppb-section-content-center"><div className="sppb-row-overlay" /><div className="sppb-row-container"><div className="sppb-row sppb-align-center"><div className="sppb-col-md-7" id="column-wrap-id-1542973816359"><div id="column-id-1542973816359" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542973816366" className="sppb-addon-wrapper"><div id="sppb-addon-1542973816366" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-right"><h3 className="sppb-addon-title">Join Anomaly Today!</h3></div></div></div></div></div></div><div className="sppb-col-md-5" id="column-wrap-id-1542973816391"><div id="column-id-1542973816391" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633802035300" className="sppb-addon-wrapper"><div id="sppb-addon-1633802035300" className="clearfix sppb-positioned-addon" data-rowid={1542973816360} data-colid={1542973816391}><div className="sppb-text-center"><a id="btn-1633802035300" className="sppb-btn  sppb-btn-default sppb-btn-rounded">Go <i className="fas fa-arrow-right" aria-hidden="true" /></a></div></div></div></div></div></div></div></div></section>			</div>
+                    </div>
+                  </div></main></div></section><section id="sp-bottom-top"><div className="container"><div className="container-inner"><div className="row"><div id="sp-bottom-top1" className="col-lg-2 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><div className="mod-sppagebuilder  sp-page-builder" data-module_id={102}>
+                              <div className="page-content">
+                                <div id="section-id-1542891648216" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-container-inner"><div className="sppb-row"><div className="sppb-col-md-12" id="column-wrap-id-1542891648215"><div id="column-id-1542891648215" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542891648219" className="sppb-addon-wrapper"><div id="sppb-addon-1542891648219" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/logo.png" alt="Image" /></div></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-wrapper-1542891648219 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542891648219 {\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542891648219 {}#sppb-addon-wrapper-1542891648219 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542891648219 {}#sppb-addon-wrapper-1542891648219 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}" }} /><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-1542891648219 img{height:40px;}@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542891648219 img{}}@media (max-width: 767px) {#sppb-addon-1542891648219 img{}}" }} /></div></div></div></div></div></div></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: ".sp-page-builder .page-content #section-id-1542957017160{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542957017159{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542891648216{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542891648215{box-shadow:0 0 0 0 #fff;}" }} />	</div>
+                            </div>
+                          </div></div></div></div><div id="sp-bottom-top2" className="col-lg-8 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><ul className="menu">
+                              <li className="item-169"><a href="https://anomalyua.github.io/index.html">Home</a></li><li className="item-170"><a href="https://anomalyua.github.io/?Itemid=114">Service</a></li><li className="item-171"><a href="https://anomalyua.github.io/About.html">About</a></li><li className="item-172"><a href="https://anomalyua.github.io/?Itemid=115">Blog</a></li><li className="item-173"><a href="https://anomalyua.github.io/contact-us">Contact</a></li></ul>
+                          </div></div></div></div><div id="sp-bottom-top3" className="col-lg-2 "><div className="sp-column "><ul className="social-icons"><li className="social-icon-facebook"><a target="_blank" href="#" aria-label="facebook"><span className="fa fa-facebook" aria-hidden="true" /></a></li><li className="social-icon-twitter"><a target="_blank" href="#" aria-label="twitter"><span className="fa fa-twitter" aria-hidden="true" /></a></li><li className="social-icon-instagram"><a target="_blank" href="#" aria-label="Instagram"><span className="fa fa-instagram" aria-hidden="true" /></a></li><li className="social-icon-behance"><a target="_blank" href="#" aria-label="Behance"><span className="fa fa-behance" aria-hidden="true" /></a></li></ul></div></div></div></div></div></section><section id="sp-bottom"><div className="container"><div className="container-inner"><div className="row"><div id="sp-bottom1" className="col-sm-col-sm-6 col-lg-4 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><div className="mod-sppagebuilder  sp-page-builder" data-module_id={104}>
+                              <div className="page-content">
+                                <div id="section-id-1542892443681" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-container-inner"><div className="sppb-row"><div className="sppb-col-md-12" id="column-wrap-id-1542892443680"><div id="column-id-1542892443680" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542892443684" className="sppb-addon-wrapper"><div id="sppb-addon-1542892443684" className="clearfix "><div className="sppb-addon sppb-addon-text-block sppb-text-left "><h2 className="sppb-addon-title">Address</h2><div className="sppb-addon-content">5th Floor, AH Building, 756 New Designst<br />Melbourne, Australia</div></div><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: \"Poppins\"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: \"Poppins\"; }\n" }} /><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-1542892443684{ font-size: 14px;font-weight: 300;line-height: 23px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}" }} /></div></div></div></div></div></div></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: ".sp-page-builder .page-content #section-id-1542957017160{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542957017159{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}" }} />	</div>
+                            </div>
+                          </div></div></div></div><div id="sp-bottom2" className="col-sm-col-sm-6 col-lg-3 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><div className="mod-sppagebuilder  sp-page-builder" data-module_id={105}>
+                              <div className="page-content">
+                                <div id="section-id-1542892443681" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-container-inner"><div className="sppb-row"><div className="sppb-col-md-12" id="column-wrap-id-1542892443680"><div id="column-id-1542892443680" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542892443684" className="sppb-addon-wrapper"><div id="sppb-addon-1542892443684" className="clearfix "><div className="sppb-addon sppb-addon-text-block sppb-text-left "><h2 className="sppb-addon-title">Talk to us</h2><div className="sppb-addon-content">+1-888-600-3456<br />+1-888-600-3476</div></div><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: \"Poppins\"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: \"Poppins\"; }\n" }} /><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-1542892443684{ font-size: 14px;font-weight: 300;line-height: 23px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}" }} /></div></div></div></div></div></div></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: ".sp-page-builder .page-content #section-id-1542957017160{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542957017159{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}" }} />	</div>
+                            </div>
+                          </div></div></div></div><div id="sp-bottom3" className="col-lg-3 "><div className="sp-column "><div className="sp-module "><h3 className="sp-module-title">Legal</h3><div className="sp-module-content"><ul className="menu">
+                              <li className="item-174"><a href="#">Privacy Policy</a></li><li className="item-175"><a href="#">Terms &amp; Conditions</a></li></ul>
+                          </div></div></div></div><div id="sp-bottom4" className="col-lg-2 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><div className="mod-sppagebuilder  sp-page-builder" data-module_id={108}>
+                              <div className="page-content">
+                                <div id="section-id-1542892443681" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-container-inner"><div className="sppb-row"><div className="sppb-col-md-12" id="column-wrap-id-1542892443680"><div id="column-id-1542892443680" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542892443684" className="sppb-addon-wrapper"><div id="sppb-addon-1542892443684" className="clearfix "><div className="sppb-addon sppb-addon-text-block sppb-text-left "><h2 className="sppb-addon-title">Support</h2><div className="sppb-addon-content"><a href="#">Need Any Help</a><br /><a href="#">Contact Us</a></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: \"Poppins\"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: \"Poppins\"; }\n" }} /><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-1542892443684{ font-size: 14px;font-weight: 300;line-height: 23px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}" }} /></div></div></div></div></div></div></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: ".sp-page-builder .page-content #section-id-1542957017160{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542957017159{box-shadow:0 0 0 0 #fff;}.sp-page-builder .page-content #section-id-1542892443681{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542892443680{box-shadow:0 0 0 0 #fff;}" }} />	</div>
+                            </div>
+                          </div></div></div></div></div></div></div></section><footer id="sp-footer"><div className="container"><div className="container-inner"><div className="row"><div id="sp-footer1" className="col-lg-6 "><div className="sp-column "><span className="sp-copyright">© 2021 Planet-IT. All Rights Reserved.</span></div></div><div id="sp-footer2" className="col-lg-6 "><div className="sp-column "><div className="sp-module "><div className="sp-module-content"><div className="mod-sppagebuilder  sp-page-builder" data-module_id={109}>
+                              <div className="page-content">
+                                <div id="section-id-1542957017160" className="sppb-section"><div className="sppb-row-overlay" /><div className="sppb-container-inner"><div className="sppb-row"><div className="sppb-col-md-12" id="column-wrap-id-1542957017159"><div id="column-id-1542957017159" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542957017163" className="sppb-addon-wrapper"><div id="sppb-addon-1542957017163" className="clearfix "><div className="sppb-addon sppb-addon-text-block sppb-text-right "><div className="sppb-addon-content">Design &amp; Developed by Joomshaper</div></div><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-wrapper-1542957017163 {\nmargin:0 0 0px 0;}\n#sppb-addon-1542957017163 {\n\tcolor: rgba(255, 255, 255, 0.3);\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542957017163 {}#sppb-addon-wrapper-1542957017163 {margin-top: 0;margin-right: 0;margin-bottom: 0px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542957017163 {}#sppb-addon-wrapper-1542957017163 {margin-top: 0;margin-right: 0;margin-bottom: 0px;margin-left: 0;}}#sppb-addon-1542957017163 .sppb-addon-content { font-family: \"Poppins\"; }\n" }} /><style type="text/css" dangerouslySetInnerHTML={{__html: "#sppb-addon-1542957017163{ font-size: 12px;font-weight: 300;line-height: 20px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}" }} /></div></div></div></div></div></div></div></div><style type="text/css" dangerouslySetInnerHTML={{__html: ".sp-page-builder .page-content #section-id-1542957017160{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542957017159{box-shadow:0 0 0 0 #fff;}" }} />	</div>
+                            </div>
+                          </div></div></div></div></div></div></div></footer>      </div>
+        </div>
+          <OffCanvasMenu
+            onClose={() => {
+              showOffCanvas(false)
+            }}
+          />
+        {/* Go to top */}
+      </div>
     </main>
   )
 }

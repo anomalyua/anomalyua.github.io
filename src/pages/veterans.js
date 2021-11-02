@@ -6,7 +6,7 @@ export default () => (
   <Layout
     title="Veterans"
   >
-    <section id="sp-section-3"><div className="row"><div id="sp-title" className="col-lg-12 "><div className="sp-column "><div className="sp-page-title" style={{ backgroundImage: 'url(./images/vet_3.jpg)' }}><div className="container"><h2 className="sp-page-title-heading">Veterans</h2></div></div></div></div></div></section>
+    <section id="sp-section-3"><div className="row"><div id="sp-title" className="col-lg-12 "><div className="sp-column "><div className="sp-page-title" style={{ backgroundImage: 'url(/images/vet_3.jpg)' }}><div className="container"><h2 className="sp-page-title-heading">Veterans</h2></div></div></div></div></div></section>
     <section id="sp-main-body">
       <div className="row">
         <main id="sp-component" className="col-lg-12 " role="main">

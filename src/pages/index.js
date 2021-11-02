@@ -394,7 +394,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1464.jpeg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1464.jpeg">+</a>
                           <img className="sppb-img-responsive" src="images/img_1464.jpeg" alt="Image" />
                         </div>
                       </div>
@@ -412,7 +412,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1355.jpg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1355.jpg">+</a>
                           <img className="sppb-img-responsive" src="images/img_1355.jpg" alt="Image" />
                         </div>
                       </div>
@@ -424,7 +424,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_0835.jpeg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_0835.jpeg">+</a>
                           <img className="sppb-img-responsive" src="images/img_0835.jpeg" alt="Image" />
                         </div>
                       </div>
@@ -442,7 +442,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_3256.jpeg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_3256.jpeg">+</a>
                           <img className="sppb-img-responsive" src="images/img_3256.jpeg" alt="Image" />
                         </div>
                       </div>
@@ -454,7 +454,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1604.jpeg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1604.jpeg">+</a>
                           <img className="sppb-img-responsive" src="images/img_1604.jpeg" alt="Image" />
                         </div>
                       </div>
@@ -472,7 +472,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_1038.jpeg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1038.jpeg">+</a>
                           <img className="sppb-img-responsive" src="images/img_1038.jpeg" alt="Image" />
                         </div>
                       </div>
@@ -490,7 +490,7 @@ const IndexPage = () => (
                     <div className="sppb-addon sppb-addon-wayne-corp-image sppb-addon-single-image sppb-text-center ">
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
-                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="http://anomaly.planet-it.com.ua/images/galary/img_0703.jpeg">+</a>
+                          <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_0703.jpeg">+</a>
                           <img className="sppb-img-responsive" src="images/img_0703.jpeg" alt="Image" />
                         </div>
                       </div>

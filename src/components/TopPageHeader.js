@@ -140,19 +140,14 @@ export const TopPageHeader = ({ onMenuOpen }) => (
                         <div className="mod-languages">
                           <ul className="lang-inline">
                             <li dir="ltr">
-                              <a href="http://anomaly.planet-it.com.ua/index.php/fr/">
+                              <a href="#">
                                 FR
                               </a>
                             </li>
-                            <li dir="rtl">
-                              <a href="http://anomaly.planet-it.com.ua/index.php/ar/">
-                                AR
-                              </a>
-                            </li>
                             <li className="lang-active" dir="ltr">
-                              <a href="https://anomalyua.github.io/index.html">
+                              <Link to="/">
                                 EN
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>

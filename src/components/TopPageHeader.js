@@ -78,7 +78,7 @@ const Header = ({ onMenuOpen }) => {
                             <NavigationLink to="/veterans">Veterans</NavigationLink>
                             <NavigationLink to="/kids">Kids</NavigationLink>
                             <NavigationLink to="/animals">Animals</NavigationLink>
-                            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li>
+                            <NavigationLink to="/eco">Eco</NavigationLink>
                             <li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li>
                             <li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li>
                             <li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li>

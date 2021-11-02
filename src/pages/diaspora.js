@@ -1,13 +1,26 @@
 import * as React from 'react';
 
 import { Layout } from '../components/Layout';
+import { TopTitleText } from '../components/TopTitleText';
 
 export default () => (
   <Layout
     title="Diaspora"
   >
     <div>
-      <section id="sp-section-3"><div className="row"><div id="sp-title" className="col-lg-12 "><div className="sp-column "><div className="sp-page-title" style={{ backgroundImage: 'url(/images/elena-mozhvilo-0xAdOCXcHn8-unsplash.jpg)' }}><div className="container"><h2 className="sp-page-title-heading">Diaspora</h2></div></div></div></div></div></section>
+      <section id="sp-section-3">
+        <div className="row">
+          <div id="sp-title" className="col-lg-12 ">
+            <div className="sp-column ">
+              <div className="sp-page-title" style={{ backgroundImage: 'url(/images/elena-mozhvilo-0xAdOCXcHn8-unsplash.jpg)' }}>
+                <div className="container">
+                  <TopTitleText>Diaspora</TopTitleText>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="sp-main-body">
         <div className="row">
           <main id="sp-component" className="col-lg-12 " role="main">

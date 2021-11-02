@@ -13,7 +13,6 @@ export default () => (
             <div className="sp-column ">
               <div className="sp-page-title" style={{ backgroundImage: 'url(/images/contact-subtitle.jpg)' }}>
                 <div className="container">
-                  <h2 className="sp-page-title-heading">Contact</h2>
                   <h3 className="sp-page-title-sub-heading">Contact now our expert business advisors.</h3>
                 </div>
               </div>

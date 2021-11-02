@@ -1,8 +1,9 @@
 import * as React from 'react';
 
 import classnames from 'classnames';
+import { useLocation } from '@reach/router';
 import { Layout } from '../components/Layout';
-import {useLocation} from "@reach/router";
+import { TopTitleText } from '../components/TopTitleText';
 
 const Tabs = () => {
   const locationHash = useLocation().hash;
@@ -148,7 +149,19 @@ const Tabs = () => {
 export default () => (
   <Layout>
     <div>
-      <section id="sp-section-3"><div className="row"><div id="sp-title" className="col-lg-12 "><div className="sp-column "><div className="sp-page-title" style={{ backgroundImage: 'url(/images/IMG_0835.jpg)' }}><div className="container"><h2 className="sp-page-title-heading">Education</h2></div></div></div></div></div></section>
+      <section id="sp-section-3">
+        <div className="row">
+          <div id="sp-title" className="col-lg-12 ">
+            <div className="sp-column ">
+              <div className="sp-page-title" style={{ backgroundImage: 'url(/images/IMG_0835.jpg)' }}>
+                <div className="container">
+                  <TopTitleText>Education</TopTitleText>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="sp-main-body">
         <div className="row">
           <main id="sp-component" className="col-lg-12 " role="main">

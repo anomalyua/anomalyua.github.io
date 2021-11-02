@@ -1,7 +1,23 @@
 import * as React from 'react';
 
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 import { Layout } from '../components/Layout';
+import { TopTitleText } from '../components/TopTitleText';
+
+const HeroSection = styled.section.attrs({
+  id: 'section-id-1542709301800',
+})`
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 680px;
+    background-image: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(18 19 48 / 50%) 99%);
+  }
+`;
 
 // markup
 const IndexPage = () => (
@@ -9,14 +25,20 @@ const IndexPage = () => (
     title="Home Page"
   >
 
-    <section id="section-id-1542709301800" className="sppb-section hero-section sppb-section-content-center">
+    <HeroSection className="sppb-section hero-section sppb-section-content-center">
       <div className="sppb-row-overlay" />
       <div className="sppb-row-container">
         <div className="sppb-row sppb-align-center">
           <div className="sppb-col-md-12" id="column-wrap-id-1542709301799">
             <div id="column-id-1542709301799" className="sppb-column">
               <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1542709861050" className="sppb-addon-wrapper"><div id="sppb-addon-1542709861050" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-left"><h1 className="sppb-addon-title">Dare to do the impossible!</h1></div></div></div>
+                <div id="sppb-addon-wrapper-1542709861050" className="sppb-addon-wrapper">
+                  <div id="sppb-addon-1542709861050" className="clearfix ">
+                    <div className="sppb-addon sppb-addon-header sppb-text-left">
+                      <TopTitleText>Dare to do the impossible!</TopTitleText>
+                    </div>
+                  </div>
+                </div>
                 <div id="sppb-addon-wrapper-1542709917009" className="sppb-addon-wrapper">
                   <div id="sppb-addon-1542709917009" className="clearfix ">
                     <div className="sppb-text-left">
@@ -32,7 +54,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </section>
+    </HeroSection>
     <section id="section-id-1620541326094" className="sppb-section">
       <div className="sppb-row-overlay" />
       <div className="sppb-row-container">

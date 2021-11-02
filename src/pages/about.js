@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { Layout } from '../components/Layout';
+import {TopTitleText} from "../components/TopTitleText";
 
 const About = () => (
   <Layout
@@ -12,8 +13,7 @@ const About = () => (
           <div className="sp-column ">
             <div className="sp-page-title" style={{ backgroundImage: 'url(../images/IMG_1408.jpg)' }}>
               <div className="container">
-                <h2 className="sp-page-title-heading">About Us</h2>
-                <h3 className="sp-page-title-sub-heading"> </h3>
+                <TopTitleText>About Us</TopTitleText>
               </div>
             </div>
           </div>

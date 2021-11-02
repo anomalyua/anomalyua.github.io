@@ -7,7 +7,17 @@ body {
   font-weight: 300;
 }
 
-.sp-page-builder .page-content #section-id-1542709301800 { min-height: 500px; max-height: 500px; height: 100vh; color: #fff; background-image: url(../images/image-2.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: 50% 50%; }
+.sp-page-builder .page-content #section-id-1542709301800 {
+  min-height: 500px;
+  max-height: 500px;
+  height: 100vh;
+  color: #fff;
+  background-image: url(../images/image-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
 #column-id-1542709301799 { box-shadow: 0 0 0 0 #fff; }
 #sppb-addon-1542709861050 { color: rgb(255 255 255 / 60%); box-shadow: 0 0 0 0 #fff; }
 #sppb-addon-1542709861050 .sppb-addon-title { font-size: 32px; line-height: 42px; }
@@ -1707,10 +1717,13 @@ h4 { font-family: "Work Sans", sans-serif; font-size: 16px; font-weight: 600; }
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input:not(.sppb-form-check-input) { color: #121330; font-size: 14px; border-color: rgb(18 19 48 / 30%); border-width: 0 0 1px; border-radius: 0; padding: 8px 0; transition: 0.35s; }
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form div.sppb-form-group textarea { color: #121330; font-size: 14px; border-color: rgb(18 19 48 / 30%); border-width: 0 0 1px; border-radius: 0; padding: 8px 0; transition: 0.35s; }
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form div.sppb-form-group { margin: 0 0 22px; }
+
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input::placeholder,
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group textarea::placeholder { color: rgb(37 42 53 / 30%); opacity: 100%; }
+
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input:hover::placeholder,
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group textarea:hover::placeholder { color: #121330; opacity: 100%; }
+
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input:hover,
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input:active,
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input:focus,

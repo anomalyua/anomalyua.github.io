@@ -6452,12 +6452,10 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
 @keyframes spFadeInUp {
   0% {
     opacity: 0%;
-    transform: translateY(20px);
   }
 
   100% {
     opacity: 100%;
-    transform: translateY(0);
   }
 }
 

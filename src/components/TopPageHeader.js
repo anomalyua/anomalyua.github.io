@@ -74,16 +74,16 @@ const Header = ({ onMenuOpen }) => {
                       <ProjectsLink />
                       <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{ width: '240px' }}>
                         <div className="sp-dropdown-inner">
-                  <ul className="sp-dropdown-items">
-            <NavigationLink to="/veterans">Veterans</NavigationLink>
-            <NavigationLink to="/kids">Kids</NavigationLink>
-            <NavigationLink to="/animals">Animals</NavigationLink>
-            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li>
-            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li>
-            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li>
-            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li>
-          </ul>
-                </div>
+                          <ul className="sp-dropdown-items">
+                            <NavigationLink to="/veterans">Veterans</NavigationLink>
+                            <NavigationLink to="/kids">Kids</NavigationLink>
+                            <NavigationLink to="/animals">Animals</NavigationLink>
+                            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Eco.html">Eco</a></li>
+                            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Diaspora.html">Diaspora</a></li>
+                            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Community.html">Community</a></li>
+                            <li className="sp-menu-item"><a href="https://anomalyua.github.io/Education.html">Education</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                   </ul>
@@ -99,7 +99,17 @@ const Header = ({ onMenuOpen }) => {
                 </div>
               </div>
             </div>
-            <div id="sp-menu2" className="col-lg-5 d-none d-sm-none d-md-none d-lg-block" style={{ position: 'static' }}><div className="sp-column "><nav className="sp-megamenu-wrapper" role="navigation"><ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li className="sp-menu-item"><a href="https://anomalyua.github.io/Contact.html">Contact</a></li></ul></nav></div></div>
+            <div id="sp-menu2" className="col-lg-5 d-none d-sm-none d-md-none d-lg-block" style={{ position: 'static' }}>
+              <div className="sp-column ">
+                <nav className="sp-megamenu-wrapper" role="navigation">
+                  <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
+                    <li className="sp-menu-item">
+                      <Link to="/contact">Contact</Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,30 +126,40 @@ export const TopPageHeader = ({ onMenuOpen }) => (
             <div className="container-inner">
               <div className="row">
                 <div id="sp-top1" className="col-sm-6 col-md-6 col-lg-6 ">
-<div className="sp-column "><ul className="sp-contact-info">
-<li className="sp-contact-phone"><a href="tel:+18886003456">+1 (888)-600-3456</a></li><li className="sp-contact-email"><a href="mailto:info@wane.com">info@wane.com</a></li></ul></div>
-</div>
+                  <div className="sp-column ">
+                    <ul className="sp-contact-info">
+                      <li className="sp-contact-phone"><a href="tel:+18886003456">+1 (888)-600-3456</a></li>
+                      <li className="sp-contact-email"><a href="mailto:info@wane.com">info@wane.com</a></li>
+                    </ul>
+                  </div>
+                </div>
                 <div id="sp-top2" className="col-sm-6 col-md-6 col-lg-6 ">
-  <div className="sp-column ">
-<div className="sp-module "><div className="sp-module-content"><div className="mod-languages">
-      <ul className="lang-inline">
-        <li dir="ltr">
-          <a href="http://anomaly.planet-it.com.ua/index.php/fr/">
-            FR						</a>
-        </li>
-        <li dir="rtl">
-          <a href="http://anomaly.planet-it.com.ua/index.php/ar/">
-            AR						</a>
-        </li>
-        <li className="lang-active" dir="ltr">
-          <a href="https://anomalyua.github.io/index.html">
-            EN						</a>
-        </li>
-      </ul>
-    </div>
-    </div></div>
-</div>
-</div>
+                  <div className="sp-column ">
+                    <div className="sp-module ">
+                      <div className="sp-module-content">
+                        <div className="mod-languages">
+                          <ul className="lang-inline">
+                            <li dir="ltr">
+                              <a href="http://anomaly.planet-it.com.ua/index.php/fr/">
+                                FR
+                              </a>
+                            </li>
+                            <li dir="rtl">
+                              <a href="http://anomaly.planet-it.com.ua/index.php/ar/">
+                                AR
+                              </a>
+                            </li>
+                            <li className="lang-active" dir="ltr">
+                              <a href="https://anomalyua.github.io/index.html">
+                                EN
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

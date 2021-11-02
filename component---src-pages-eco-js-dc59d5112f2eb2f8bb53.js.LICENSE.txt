@@ -1,0 +1,13 @@
+/*! flex: '14%', */
+
+/*! flex: 'auto', */
+
+/*! flexBasis: '50%', */
+
+/*! flexGrow: 3, */
+
+/*! margin: '', */
+
+/*! margin: 'auto', */
+
+/*! paddingLeft: '100px', */

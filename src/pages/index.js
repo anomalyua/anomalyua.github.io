@@ -169,15 +169,15 @@ const IndexPage = () => (
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
-                              <a href="Education.html">
+                              <Link to="/education">
                                 <img className="sppb-img-responsive" src="images/education.png" alt="Education" />
-                              </a>
+                              </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
                               <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <a href="Education.html">Education</a>
+                                <Link to="/education">Education</Link>
                               </h3>
                               <div className="sppb-addon-text">
                                 Anomaly
@@ -243,15 +243,15 @@ const IndexPage = () => (
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
-                              <a href="Community.html">
+                              <Link to="/community">
                                 <img className="sppb-img-responsive" src="images/community.png" alt="Community" />
-                              </a>
+                              </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
                               <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <a href="Community.html">Community</a>
+                                <Link to="/community">Community</Link>
                               </h3>
                               <div className="sppb-addon-text">
                                 <p>

@@ -82,9 +82,9 @@ const IndexPage = () => {
           help children of veterans, returned Russian-held political prisoners,
           Crimean Tatar exiles, and IDPs to attend our free English lessons and
           speaking clubs. <br />Anomaly connects foreign donors with an orphanage in Mariupol to help children find a new family and home.<br />We work with the local community policing department to protect the rights of children in Kyiv.</div></div></div></div></div></div></div></div></div></div></div><div className="sppb-col-md-6" id="column-wrap-id-1633616058148"><div id="column-id-1633616058148" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1620541326163" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326163" className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="800ms" data-sppb-wow-delay="500ms" style={{visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn'}}><div className="sppb-addon sppb-addon-feature  service-item item4"><div className="sppb-addon-content sppb-text-left"><div className="sppb-media"><div className="pull-sppb-text-left"><span className="sppb-img-container">
-                                                  <a href="Animals.html"><img className="sppb-img-responsive" src="images/animals.svg" alt="Animals" /></a>
+                                                  <Link to='/animals'><img className="sppb-img-responsive" src="images/animals.svg" alt="Animals" /></Link>
                                                 </span></div><div className="sppb-media-body"><div className="sppb-media-content"><h3 className="sppb-addon-title sppb-feature-box-title">
-          <a href="Animals.html">Animals</a>
+          <Link to='/animals'>Animals</Link>
         </h3><div className="sppb-addon-text">Anomaly
           supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers
           to solve the problem of stray animal overpopulation.<br /> <br />We are always looking for volunteers to help us solve this problem. If you think that is you, then join us today!.</div></div></div></div></div></div></div></div></div></div></div></div></div></section>

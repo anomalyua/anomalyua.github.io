@@ -867,13 +867,11 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   #sppb-addon-1542777715739 .sppb-nav-custom { width: 30%; padding-right: 15px; }
   #sppb-addon-1542777715739 .sppb-tab-custom-content { width: 70%; padding-left: 15px; }
-  #sppb-addon-1542777715739 .sppb-tab-custom-content > div { padding: ; }
 }
 
 @media (max-width: 767px) {
   #sppb-addon-1542777715739 .sppb-nav-custom { width: 30%; padding-right: 15px; }
   #sppb-addon-1542777715739 .sppb-tab-custom-content { width: 70%; padding-left: 15px; }
-  #sppb-addon-1542777715739 .sppb-tab-custom-content > div { padding: ; }
 }
 .sp-page-builder .page-content #section-id-1542777483330 { padding-top: 120px; padding-right: 4.2%; padding-bottom: 120px; padding-left: 8%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; background-color: #121330; background-image: url(/images/2018/11/30/instagram-bg.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: 50% 50%; }
 

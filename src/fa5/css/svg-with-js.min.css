@@ -34,6 +34,7 @@ svg:not(:root).svg-inline--fa { overflow: visible; }
 .fa-layers svg.svg-inline--fa { bottom: 0; left: 0; margin: auto; position: absolute; right: 0; top: 0; }
 .fa-layers { display: inline-block; height: 1em; position: relative; text-align: center; vertical-align: -0.125em; width: 1em; }
 .fa-layers svg.svg-inline--fa { transform-origin: center center; transform-origin: center center; }
+
 .fa-layers-counter,
 .fa-layers-text { display: inline-block; position: absolute; text-align: center; }
 .fa-layers-text { left: 50%; top: 50%; transform: translate(-50%, -50%); transform: translate(-50%, -50%); transform-origin: center center; transform-origin: center center; }
@@ -62,11 +63,13 @@ svg:not(:root).svg-inline--fa { overflow: visible; }
 .fa-border { border: 0.08em solid #eee; border-radius: 0.1em; padding: 0.2em 0.25em 0.15em; }
 .fa-pull-left { float: left; }
 .fa-pull-right { float: right; }
+
 .fa.fa-pull-left,
 .fab.fa-pull-left,
 .fal.fa-pull-left,
 .far.fa-pull-left,
 .fas.fa-pull-left { margin-right: 0.3em; }
+
 .fa.fa-pull-right,
 .fab.fa-pull-right,
 .fal.fa-pull-right,
@@ -89,11 +92,14 @@ svg:not(:root).svg-inline--fa { overflow: visible; }
 .fa-rotate-270 { filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; transform: rotate(270deg); transform: rotate(270deg); }
 .fa-flip-horizontal { filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)"; transform: scaleX(-1); transform: scaleX(-1); }
 .fa-flip-vertical { transform: scaleY(-1); transform: scaleY(-1); }
+
 .fa-flip-both,
 .fa-flip-horizontal.fa-flip-vertical,
 .fa-flip-vertical { filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)"; }
+
 .fa-flip-both,
 .fa-flip-horizontal.fa-flip-vertical { transform: scale(-1); transform: scale(-1); }
+
 :root .fa-flip-both,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical,
@@ -101,19 +107,23 @@ svg:not(:root).svg-inline--fa { overflow: visible; }
 :root .fa-rotate-180,
 :root .fa-rotate-270 { filter: none; filter: none; }
 .fa-stack { display: inline-block; height: 2em; position: relative; width: 2.5em; }
+
 .fa-stack-1x,
 .fa-stack-2x { bottom: 0; left: 0; margin: auto; position: absolute; right: 0; top: 0; }
 .svg-inline--fa.fa-stack-1x { height: 1em; width: 1.25em; }
 .svg-inline--fa.fa-stack-2x { height: 2em; width: 2.5em; }
 .fa-inverse { color: #fff; }
 .sr-only { border: 0; clip: rect(0, 0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
 .sr-only-focusable:active,
 .sr-only-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 .svg-inline--fa .fa-primary { fill: var(--fa-primary-color, currentColor); opacity: 100%; opacity: var(--fa-primary-opacity, 100%); }
 .svg-inline--fa .fa-secondary { fill: var(--fa-secondary-color, currentColor); }
+
 .svg-inline--fa .fa-secondary,
 .svg-inline--fa.fa-swap-opacity .fa-primary { opacity: 40%; opacity: var(--fa-secondary-opacity, 40%); }
 .svg-inline--fa.fa-swap-opacity .fa-secondary { opacity: 100%; opacity: var(--fa-primary-opacity, 100%); }
+
 .svg-inline--fa mask .fa-primary,
 .svg-inline--fa mask .fa-secondary { fill: #000; }
 .fad.fa-inverse { color: #fff; }

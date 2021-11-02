@@ -30,7 +30,7 @@ export default () => (
                 <section id="section-id-1626723958894" className="sppb-section">
                   <div className="sppb-row-container">
                     <div className="sppb-row">
-                      <div className="sppb-col-md-5" id="column-wrap-id-1626723958892"><div id="column-id-1626723958892" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626723958897" className="sppb-addon-wrapper"><div id="sppb-addon-1626723958897" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="./images/photo_2021-10-19_00-35-14.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
+                      <div className="sppb-col-md-5" id="column-wrap-id-1626723958892"><div id="column-id-1626723958892" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626723958897" className="sppb-addon-wrapper"><div id="sppb-addon-1626723958897" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/photo_2021-10-19_00-35-14.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
                       <div className="sppb-col-md-7" id="column-wrap-id-1626723958893">
                         <div id="column-id-1626723958893" className="sppb-column">
                           <div className="sppb-column-addons">
@@ -39,7 +39,7 @@ export default () => (
                                 <div className="sppb-addon sppb-addon-text-block  ">
                                   <div className="sppb-addon-content">
                                     <p>
-                                      <img src="./images/03.png" width={55} height={55} />
+                                      <img src="/images/03.png" width={55} height={55} />
 &nbsp; &nbsp;
                                       <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title"> 3500+ veterans in our community</span></strong></span>
                                     </p>
@@ -47,7 +47,7 @@ export default () => (
                                     {' '}
                                     <br />
                                     <p>
-                                      <img src="./images/02.png" width={55} height={55} />
+                                      <img src="/images/02.png" width={55} height={55} />
 &nbsp; &nbsp;
                                       <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title"> 1000+ veteran care specialists (psychological, medical, social services)</span></strong></span>
                                     </p>
@@ -55,7 +55,7 @@ export default () => (
                                     {' '}
                                     <br />
                                     <p>
-                                      <img src="./images/06.png" width={55} height={55} />
+                                      <img src="/images/06.png" width={55} height={55} />
 &nbsp; &nbsp;
                                       <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title"> Supported by multiple nations</span></strong></span>
                                     </p>
@@ -93,9 +93,9 @@ export default () => (
                           </div>
                         </div>
                       </div>
-                      <div className="sppb-col-md-5" id="column-wrap-id-1626723958915"><div id="column-id-1626723958915" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626723958922" className="sppb-addon-wrapper"><div id="sppb-addon-1626723958922" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="./images/img_8743.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
+                      <div className="sppb-col-md-5" id="column-wrap-id-1626723958915"><div id="column-id-1626723958915" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626723958922" className="sppb-addon-wrapper"><div id="sppb-addon-1626723958922" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_8743.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
                       <div style={{ /*! flex: 'auto', *//*! flexGrow: 3, *//*! flex: '14%', *//*! paddingLeft: '100px', *//*! margin: '', *//*! flexBasis: '50%', */flexGrow: 1 }}>
-                        <div style={{ /*! margin: 'auto', */display: 'flex', alignContent: 'center', justifyContent: 'center' }}><a href="https://www.facebook.com/groups/149496945605480/"><img src="./images/Drinkin-bros.png" style={{ width: '300px' /*! margin: 'auto' */ }} /></a></div>
+                        <div style={{ /*! margin: 'auto', */display: 'flex', alignContent: 'center', justifyContent: 'center' }}><a href="https://www.facebook.com/groups/149496945605480/"><img src="/images/Drinkin-bros.png" style={{ width: '300px' /*! margin: 'auto' */ }} /></a></div>
                       </div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default () => (
                 <section id="section-id-1626726032080" className="sppb-section">
                   <div className="sppb-row-container">
                     <div className="sppb-row">
-                      <div className="sppb-col-md-5" id="column-wrap-id-1626726032081"><div id="column-id-1626726032081" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626726032082" className="sppb-addon-wrapper"><div id="sppb-addon-1626726032082" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="./images/img_8297.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
+                      <div className="sppb-col-md-5" id="column-wrap-id-1626726032081"><div id="column-id-1626726032081" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626726032082" className="sppb-addon-wrapper"><div id="sppb-addon-1626726032082" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_8297.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
                       <div className="sppb-col-md-7" id="column-wrap-id-1626726032083">
                         <div id="column-id-1626726032083" className="sppb-column">
                           <div className="sppb-column-addons">
@@ -129,7 +129,7 @@ export default () => (
                         <div />
                       </div>
                       <div style={{ /*! flex: 'auto', *//*! flexGrow: 3, *//*! flex: '14%', *//*! paddingLeft: '100px', *//*! margin: '', *//*! flexBasis: '50%', */flexGrow: 1 }}>
-                        <div style={{ /*! margin: 'auto', */display: 'flex', alignContent: 'center', justifyContent: 'center' }}><a href="https://www.facebook.com/caretogetherukraine"><img src="./images/CareTogetherUkraine-01.svg" style={{ /*! width: '241px', *//*! margin: 'auto', */height: '170px' }} /></a></div>
+                        <div style={{ /*! margin: 'auto', */display: 'flex', alignContent: 'center', justifyContent: 'center' }}><a href="https://www.facebook.com/caretogetherukraine"><img src="/images/CareTogetherUkraine-01.svg" style={{ /*! width: '241px', *//*! margin: 'auto', */height: '170px' }} /></a></div>
                       </div>
                     </div>
                   </div>

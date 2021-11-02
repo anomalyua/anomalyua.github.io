@@ -36,6 +36,35 @@ const ProjectsLink = styled.a.attrs((props) => ({
   }
 `;
 
+const ProjectsNavigationDropdown = () => {
+  const active = useMatch('/veterans')
+    || useMatch('/kids')
+    || useMatch('/animals')
+    || useMatch('/eco')
+    || useMatch('/diaspora')
+    || useMatch('/community')
+    || useMatch('/education');
+
+  return (
+    <li className={classnames('sp-menu-item', 'sp-has-child', active && 'active')}>
+      <ProjectsLink />
+      <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{ width: '240px' }}>
+        <div className="sp-dropdown-inner">
+          <ul className="sp-dropdown-items">
+            <NavigationLink to="/veterans">Veterans</NavigationLink>
+            <NavigationLink to="/kids">Kids</NavigationLink>
+            <NavigationLink to="/animals">Animals</NavigationLink>
+            <NavigationLink to="/eco">Eco</NavigationLink>
+            <NavigationLink to="/diaspora">Diaspora</NavigationLink>
+            <NavigationLink to="/community">Community</NavigationLink>
+            <NavigationLink to="/education">Education</NavigationLink>
+          </ul>
+        </div>
+      </div>
+    </li>
+  );
+};
+
 const Header = ({ onMenuOpen }) => {
   const [isSticky, setSticky] = useState(false);
 
@@ -70,22 +99,7 @@ const Header = ({ onMenuOpen }) => {
                       <Link to="/">Home</Link>
                     </li>
                     <NavigationLink to="/about">About</NavigationLink>
-                    <li className="sp-menu-item sp-has-child">
-                      <ProjectsLink />
-                      <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{ width: '240px' }}>
-                        <div className="sp-dropdown-inner">
-                          <ul className="sp-dropdown-items">
-                            <NavigationLink to="/veterans">Veterans</NavigationLink>
-                            <NavigationLink to="/kids">Kids</NavigationLink>
-                            <NavigationLink to="/animals">Animals</NavigationLink>
-                            <NavigationLink to="/eco">Eco</NavigationLink>
-                            <NavigationLink to="/diaspora">Diaspora</NavigationLink>
-                            <NavigationLink to="/community">Community</NavigationLink>
-                            <NavigationLink to="/education">Education</NavigationLink>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
+                    <ProjectsNavigationDropdown />
                   </ul>
                 </nav>
               </div>

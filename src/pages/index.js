@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
+import { EnglishNowCTA } from '../components/EnglishNowCTA';
 
 const HeroSection = styled.section.attrs({
   id: 'section-id-1542709301800',
@@ -19,7 +20,81 @@ const HeroSection = styled.section.attrs({
   }
 `;
 
-// markup
+const EducationTileContainer = styled('div')`
+  border: 0;
+`;
+
+const Education = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1620541326164">
+    <div id="column-id-1620541326164" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1620541326159" className="sppb-addon-wrapper">
+          <div
+            id="sppb-addon-1620541326159"
+            className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated"
+            data-sppb-wow-duration="800ms"
+            data-sppb-wow-delay="100ms"
+            style={{
+              visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn',
+            }}
+          >
+            <EducationTileContainer className="sppb-addon sppb-addon-feature  service-item item1">
+              <div className="sppb-addon-content sppb-text-left">
+                <div className="sppb-media">
+                  <div className="pull-sppb-text-left">
+                    <span className="sppb-img-container">
+                      <Link to="/education">
+                        <img className="sppb-img-responsive" src="images/education.png" alt="Education" />
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="sppb-media-body">
+                    <div className="sppb-media-content">
+                      <h3 className="sppb-addon-title sppb-feature-box-title">
+                        <Link to="/education">Education</Link>
+                      </h3>
+                      <div className="sppb-addon-text">
+                        Anomaly
+                        offers free english lessons and workshops on various topics. We offer
+                        these lessons to any adult in need to help promote personal
+                        sustainability and open their ability to work in future opportunities.
+                        If you are not a Veteran or Child, Anomaly can still help you with
+                        educational modules and workshops.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </EducationTileContainer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const EnglishNowTileContainer = styled.div`
+  min-height: 440px;
+`;
+
+const EnglishNowTileContainer2 = styled.div`
+  min-height: 320px;
+`
+
+const EnglishNowTile = () => (
+  <EnglishNowTileContainer className="sppb-col-md-6" id="column-wrap-id-1633010662535">
+    <div id="column-id-1633010662535" className="sppb-column">
+      <EnglishNowTileContainer2 className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1633616058164" className="sppb-addon-wrapper">
+          <div id="sppb-addon-1633616058164" className="clearfix ">
+            <EnglishNowCTA />
+          </div>
+        </div>
+      </EnglishNowTileContainer2>
+    </div>
+  </EnglishNowTileContainer>
+);
+
 const IndexPage = () => (
   <Layout
     title="Home Page"
@@ -173,65 +248,8 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="sppb-col-md-6" id="column-wrap-id-1620541326164">
-            <div id="column-id-1620541326164" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1620541326159" className="sppb-addon-wrapper">
-                  <div
-                    id="sppb-addon-1620541326159"
-                    className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated"
-                    data-sppb-wow-duration="800ms"
-                    data-sppb-wow-delay="100ms"
-                    style={{
-                      visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn',
-                    }}
-                  >
-                    <div className="sppb-addon sppb-addon-feature  service-item item1">
-                      <div className="sppb-addon-content sppb-text-left">
-                        <div className="sppb-media">
-                          <div className="pull-sppb-text-left">
-                            <span className="sppb-img-container">
-                              <Link to="/education">
-                                <img className="sppb-img-responsive" src="images/education.png" alt="Education" />
-                              </Link>
-                            </span>
-                          </div>
-                          <div className="sppb-media-body">
-                            <div className="sppb-media-content">
-                              <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <Link to="/education">Education</Link>
-                              </h3>
-                              <div className="sppb-addon-text">
-                                Anomaly
-                                offers free english lessons and workshops on various topics. We offer
-                                these lessons to any adult in need to help promote personal
-                                sustainability and open their ability to work in future opportunities.
-                                If you are not a Veteran or Child, Anomaly can still help you with
-                                educational modules and workshops.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="sppb-col-md-6" id="column-wrap-id-1633010662535">
-            <div id="column-id-1633010662535" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1633616058164" className="sppb-addon-wrapper">
-                  <div id="sppb-addon-1633616058164" className="clearfix ">
-                    <div className="sppb-text-center">
-                      <a href="https://englishnow.dav.school/"><img src="images/English-Now-CTA.svg" style={{ height: '180px', border: '2px #fde041 solid', padding: '5px' }} /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Education />
+          <EnglishNowTile />
           <div className="sppb-col-md-6" id="column-wrap-id-1633010662536">
             <div id="column-id-1633010662536" className="sppb-column">
               <div className="sppb-column-addons">

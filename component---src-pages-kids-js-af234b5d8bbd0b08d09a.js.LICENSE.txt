@@ -1,0 +1,9 @@
+/*! flexShrink: '0.5', */
+
+/*! height: '50%', */
+
+/*! marginLeft: 'auto', */
+
+/*! position: 'absolute', */
+
+/*! top: 0, */

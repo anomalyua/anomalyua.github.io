@@ -1,0 +1,5 @@
+/*! display: 'flex', */
+
+/*! verticalAlign: 'middle', */
+
+/*! width: '40px', */

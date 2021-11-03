@@ -9,19 +9,36 @@ const Image = styled.img.attrs({
 
   -webkit-filter: drop-shadow(5px 5px 5px #666666);
   filter: drop-shadow(5px 5px 5px #666666);
+`;
 
+export const LinkEnglishNow = styled.a`
   &:hover {
-    height: 185px;
-    transition: .17s;
-    -webkit-filter: drop-shadow(5px 5px 5px #666666);
-    filter: drop-shadow(10px 10px 10px #666666);
+    ${Image} {
+      height: 185px;
+      transition: .17s;
+      -webkit-filter: drop-shadow(5px 5px 5px #666666);
+      filter: drop-shadow(10px 10px 10px #666666);
+    }
   }
 `;
 
-export const EnglishNowCTA = () => (
+const EnglishNowCTA = () => (
   <div className="sppb-text-center">
-    <a href="https://englishnow.dav.school/">
-      <Image />
-    </a>
+    <Image />
   </div>
+);
+
+export const EnglishNowImageTile = () => (
+  <div>
+    <div id="column-id-1633010662535" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1633616058164" className="sppb-addon-wrapper">
+          <div id="sppb-addon-1633616058164" className="clearfix ">
+            <EnglishNowCTA />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 );

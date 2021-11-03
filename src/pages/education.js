@@ -4,7 +4,12 @@ import classnames from 'classnames';
 import { useLocation } from '@reach/router';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
-import { EnglishNowCTA } from '../components/EnglishNowCTA';
+import { EnglishNowImageTile, LinkEnglishNow } from '../components/EnglishNowCTA';
+import styled from 'styled-components';
+
+const EnglishNowContainer = styled('div')`
+  min-height: 210px;
+`
 
 const Tabs = () => {
   const locationHash = useLocation().hash;
@@ -282,17 +287,11 @@ export default () => (
                             </div>
                           </div>
                         </div>
-                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411935">
-                          <div id="column-id-1633000411935" className="sppb-column">
-                            <div className="sppb-column-addons">
-                              <div id="sppb-addon-wrapper-1633849194938" className="sppb-addon-wrapper">
-                                <div id="sppb-addon-1633849194938" className="clearfix sppb-positioned-addon" data-rowid={1633000411947} data-colid={1633000411935}>
-                                  <EnglishNowCTA />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <EnglishNowContainer className="sppb-col-md-5">
+                          <LinkEnglishNow href="https://englishnow.dav.school/">
+                            <EnglishNowImageTile />
+                          </LinkEnglishNow>
+                        </EnglishNowContainer>
                       </div>
                     </div>
                   </section>

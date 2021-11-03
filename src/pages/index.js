@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
-import { EnglishNowCTA } from '../components/EnglishNowCTA';
+import { EnglishNowImageTile, LinkEnglishNow } from '../components/EnglishNowCTA';
 
 const HeroSection = styled.section.attrs({
   id: 'section-id-1542709301800',
@@ -20,12 +20,27 @@ const HeroSection = styled.section.attrs({
   }
 `;
 
-const EducationTileContainer = styled('div')`
+const EducationContainer = styled.div`
+  border-right: 1px solid rgb(166 124 0/30%);
+`;
+
+const ServiceItem = styled.div`
+  &:hover {
+    border-radius: 3px;
+    box-shadow: 0 -1px 9px 0 rgb(0 0 0 / 10%);
+
+    .sppb-feature-box-title a {
+      color: #a67c00;
+    }
+  }
+`;
+
+const EducationTileContainer = styled(ServiceItem)`
   border: 0;
 `;
 
 const Education = () => (
-  <div className="sppb-col-md-6" id="column-wrap-id-1620541326164">
+  <EducationContainer className="sppb-col-md-6">
     <div id="column-id-1620541326164" className="sppb-column">
       <div className="sppb-column-addons">
         <div id="sppb-addon-wrapper-1620541326159" className="sppb-addon-wrapper">
@@ -70,29 +85,21 @@ const Education = () => (
         </div>
       </div>
     </div>
-  </div>
+  </EducationContainer>
 );
 
-const EnglishNowTileContainer = styled.div`
-  min-height: 440px;
+const LinkEnglishNowCTA = styled(LinkEnglishNow)`
+  flex: 0 0 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-const EnglishNowTileContainer2 = styled.div`
-  min-height: 320px;
-`
-
 const EnglishNowTile = () => (
-  <EnglishNowTileContainer className="sppb-col-md-6" id="column-wrap-id-1633010662535">
-    <div id="column-id-1633010662535" className="sppb-column">
-      <EnglishNowTileContainer2 className="sppb-column-addons">
-        <div id="sppb-addon-wrapper-1633616058164" className="sppb-addon-wrapper">
-          <div id="sppb-addon-1633616058164" className="clearfix ">
-            <EnglishNowCTA />
-          </div>
-        </div>
-      </EnglishNowTileContainer2>
-    </div>
-  </EnglishNowTileContainer>
+  <LinkEnglishNowCTA href="https://englishnow.dav.school/">
+    <EnglishNowImageTile />
+  </LinkEnglishNowCTA>
 );
 
 const IndexPage = () => (
@@ -155,7 +162,7 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '300ms', animationName: 'fadeIn',
                     }}
                   >
-                    <div className="sppb-addon sppb-addon-feature  service-item item1">
+                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item1">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
@@ -192,7 +199,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </ServiceItem>
                   </div>
                 </div>
               </div>
@@ -211,7 +218,7 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn',
                     }}
                   >
-                    <div className="sppb-addon sppb-addon-feature  service-item item2">
+                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item2">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
@@ -242,7 +249,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </ServiceItem>
                   </div>
                 </div>
               </div>
@@ -278,7 +285,7 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn',
                     }}
                   >
-                    <div className="sppb-addon sppb-addon-feature  service-item2">
+                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item2">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
@@ -310,7 +317,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </ServiceItem>
                   </div>
                 </div>
               </div>
@@ -329,7 +336,7 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '700ms', animationName: 'fadeIn',
                     }}
                   >
-                    <div className="sppb-addon sppb-addon-feature  service-item item3">
+                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item3">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
@@ -358,7 +365,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </ServiceItem>
                   </div>
                 </div>
               </div>
@@ -377,7 +384,7 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn',
                     }}
                   >
-                    <div className="sppb-addon sppb-addon-feature  service-item item4">
+                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item4">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
@@ -403,7 +410,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </ServiceItem>
                   </div>
                 </div>
               </div>

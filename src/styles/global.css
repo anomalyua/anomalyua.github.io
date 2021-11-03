@@ -109,7 +109,6 @@ body {
 @media (max-width: 767px) { #sppb-addon-1620541326159 .sppb-media .sppb-media-body { width: auto; } }
 #sppb-addon-1620541326159 { transition: 0.3s; }
 #sppb-addon-1620541326159:hover { box-shadow: 0 0 0 0 #fff; }
-#sppb-addon-wrapper-1633616058164 { margin: 100px 0 30px; }
 #sppb-addon-1633616058164 { box-shadow: 0 0 0 0 #fff; }
 
 @media (min-width: 768px) and (max-width: 991px) { #sppb-addon-wrapper-1633616058164 { margin-top: 0; margin-right: 0; margin-bottom: 20px; margin-left: 0; } }

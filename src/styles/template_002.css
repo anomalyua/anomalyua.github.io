@@ -2861,15 +2861,6 @@ body.has-page-title.view-article #sp-right {
   color: rgb(19 19 19 / 60%);
 }
 
-.service-item:hover {
-  border-radius: 3px;
-  box-shadow: 0 -1px 9px 0 rgb(0 0 0 / 10%);
-}
-
-.service-item:hover .sppb-feature-box-title a {
-  color: #a67c00;
-}
-
 /* service-item2 */
 .service-item2 {
   border-left: 1px solid rgb(166 124 0 / 30%);
@@ -2896,15 +2887,6 @@ body.has-page-title.view-article #sp-right {
 
 .service-item2 .sppb-addon-text {
   color: rgb(19 19 19 / 60%);
-}
-
-.service-item2:hover {
-  border-radius: 3px;
-  box-shadow: 0 -1px 9px 0 rgb(0 0 0 / 10%);
-}
-
-.service-item2:hover .sppb-feature-box-title a {
-  color: #a67c00;
 }
 
 /* **************************************************** */

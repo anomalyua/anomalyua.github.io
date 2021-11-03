@@ -2,18 +2,7 @@ import * as React from 'react';
 
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
-
-const AchievementsColumn = styled.div`
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  @media (min-width: 992px) {
-    flex: 0 0 20%; max-width: 25%;
-  }
-`;
+import { AchievementsColumn } from '../components/AchievementsColumn';
 
 const GalleryContainer = styled.ul`
   padding: 50px 0;

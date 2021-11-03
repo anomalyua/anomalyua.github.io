@@ -1,7 +1,31 @@
 import * as React from 'react';
 
+import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
+import { AchievementsColumn } from '../components/AchievementsColumn';
+
+const AchievementsBlock = styled('section')`
+  display: flex;
+  justify-content: center;
+  padding: 50px 120px;
+
+  @media (min-width: 768px) {
+    min-width: 750px;
+  }
+
+  @media (min-width: 992px) {
+    min-width: 970px;
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 1170px;
+  }
+`;
+
+const GraySection = styled('section')`
+  background-color: #e3e6ec;
+`
 
 const About = () => (
   <Layout
@@ -20,7 +44,24 @@ const About = () => (
         </div>
       </div>
     </section>
-    <section id="section-id-1542711300771" className="sppb-section sppb-section-content-center">
+    <AchievementsBlock>
+      <AchievementsColumn>
+        Competency
+      </AchievementsColumn>
+      <AchievementsColumn>
+        Integrity
+      </AchievementsColumn>
+      <AchievementsColumn>
+        Sustainability
+      </AchievementsColumn>
+      <AchievementsColumn>
+        Growth
+      </AchievementsColumn>
+      <AchievementsColumn>
+        Creativity
+      </AchievementsColumn>
+    </AchievementsBlock>
+    <GraySection id="section-id-1542711300771" className="sppb-section sppb-section-content-center">
       <div className="sppb-row-overlay" />
       <div className="sppb-row-container">
         <div className="sppb-row sppb-align-center">
@@ -81,7 +122,7 @@ const About = () => (
           </div>
         </div>
       </div>
-    </section>
+    </GraySection>
 
   </Layout>
 );

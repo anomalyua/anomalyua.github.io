@@ -477,9 +477,26 @@ body {
 @media (max-width: 767px) { #sppb-addon-wrapper-1633809247522 { left: px; top: px; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; } }
 #sppb-addon-1633809247522 #btn-1633809247522.sppb-btn-default { letter-spacing: 4px; }
 #sppb-addon-1633809247522 .sppb-btn i { margin: 0; }
-.sp-page-builder .page-content #section-id-1542711300771 { padding-top: 120px; padding-right: 0; padding-bottom: 120px; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; }
 
-@media (max-width: 767px) { .sp-page-builder .page-content #section-id-1542711300771 { padding-top: 40px; padding-right: 0; padding-bottom: 30px; padding-left: 0; } }
+.sp-page-builder .page-content #section-id-1542711300771 {
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 120px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .sp-page-builder .page-content #section-id-1542711300771 {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+}
 #column-id-1542711300769 { box-shadow: 0 0 0 0 #fff; }
 #sppb-addon-wrapper-1542712445474 { margin: 0; }
 #sppb-addon-1542712445474 { background-color: #252a35; box-shadow: 0 0 0 0 #fff; border-radius: 3px; }

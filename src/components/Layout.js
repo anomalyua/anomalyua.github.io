@@ -22,6 +22,7 @@ import '../styles/template.css';
 import '../styles/global.css';
 import { Link } from 'gatsby';
 import { TopPageHeader } from './TopPageHeader';
+import { PhoneNumber } from './PhoneNumber';
 
 const OffCanvasMenu = ({ onClose }) => (
   <>
@@ -240,9 +241,7 @@ export const Layout = ({ title, children }) => {
                                                 <div className="sppb-addon sppb-addon-text-block sppb-text-left ">
                                                   <h2 className="sppb-addon-title">Talk to us</h2>
                                                   <div className="sppb-addon-content">
-                                                    +1-888-600-3456
-                                                    <br />
-                                                    +1-888-600-3476
+                                                    <PhoneNumber />
                                                   </div>
                                                 </div>
                                                 <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: "Poppins"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: "Poppins"; }\n' }} />

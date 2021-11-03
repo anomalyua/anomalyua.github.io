@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 import { useMatch } from '@gatsbyjs/reach-router';
 import anomalyLogo from '../images/anomaly-logo-01.svg';
+import { PhoneNumber } from './PhoneNumber';
 
 const NavigationLink = (props) => {
   const active = useMatch(props.to) !== null;
@@ -142,8 +143,12 @@ export const TopPageHeader = ({ onMenuOpen }) => (
                 <div id="sp-top1" className="col-sm-6 col-md-6 col-lg-6 ">
                   <div className="sp-column ">
                     <ul className="sp-contact-info">
-                      <li className="sp-contact-phone"><a href="tel:+18886003456">+1 (888)-600-3456</a></li>
-                      <li className="sp-contact-email"><a href="mailto:info@wane.com">info@wane.com</a></li>
+                      <li className="sp-contact-phone">
+                        <PhoneNumber />
+                      </li>
+                      <li className="sp-contact-email">
+                        <a href="mailto:info@anomaly.org.ua">info@anomaly.org.ua</a>
+                      </li>
                     </ul>
                   </div>
                 </div>

@@ -166,7 +166,11 @@ export const Layout = ({ title, children }) => {
                     <div id="sp-bottom-top3" className="col-lg-2 ">
                       <div className="sp-column ">
                         <ul className="social-icons">
-                          <li className="social-icon-facebook"><a target="_blank" href="#" aria-label="facebook"><span className="fa fa-facebook" aria-hidden="true" /></a></li>
+                          <li className="social-icon-facebook">
+                            <a target="_blank" href="https://www.facebook.com/anomaly.ua" aria-label="facebook">
+                              <span className="fa fa-facebook" aria-hidden="true" />
+                            </a>
+                          </li>
                           <li className="social-icon-twitter"><a target="_blank" href="#" aria-label="twitter"><span className="fa fa-twitter" aria-hidden="true" /></a></li>
                           <li className="social-icon-instagram"><a target="_blank" href="#" aria-label="Instagram"><span className="fa fa-instagram" aria-hidden="true" /></a></li>
                           <li className="social-icon-behance"><a target="_blank" href="#" aria-label="Behance"><span className="fa fa-behance" aria-hidden="true" /></a></li>

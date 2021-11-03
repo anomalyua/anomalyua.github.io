@@ -264,19 +264,6 @@ export const Layout = ({ title, children }) => {
                         </div>
                       </div>
                     </div>
-                    <div id="sp-bottom3" className="col-lg-3 ">
-                      <div className="sp-column ">
-                        <div className="sp-module ">
-                          <h3 className="sp-module-title">Legal</h3>
-                          <div className="sp-module-content">
-                            <ul className="menu">
-                              <li className="item-174"><a href="#">Privacy Policy</a></li>
-                              <li className="item-175"><a href="#">Terms &amp; Conditions</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div id="sp-bottom4" className="col-lg-2 ">
                       <div className="sp-column ">
                         <div className="sp-module ">

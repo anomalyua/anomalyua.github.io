@@ -32,7 +32,7 @@ const About = () => (
                     <div className="sppb-addon sppb-addon-person sppb-text-center  non-box-shadow person-content-position-bottom-left">
                       <div className="sppb-addon-content">
                         <div className="sppb-person-image ">
-                          <img className="sppb-img-responsive" src="/images/2018/11/21/person.jpg" alt="Christian Barnes" />
+                          <img className="sppb-img-responsive" src="/images/2018/11/21/person.jpg" alt="David Plaster" />
                           <div className="person-content-show-on-hover"><div className="person-content-hover-content-wrap" /></div>
                         </div>
                         <div className="sppb-person-information">
@@ -54,17 +54,28 @@ const About = () => (
                   <div id="sppb-addon-1542715936446" className="clearfix ">
                     <div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-left">
                       <h3 className="sppb-addon-title">
-                        Massage from Our
-                        <br />
-                        Chairman
+                        Our founder
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div id="sppb-addon-wrapper-1542711301041" className="sppb-addon-wrapper"><div id="sppb-addon-1542711301041" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
-                <div id="sppb-addon-wrapper-1542712190422" className="sppb-addon-wrapper"><div id="sppb-addon-1542712190422" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content">Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord.</div></div></div></div>
-                <div id="sppb-addon-wrapper-1542715936472" className="sppb-addon-wrapper"><div id="sppb-addon-1542715936472" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
-                <div id="sppb-addon-wrapper-1542776267207" className="sppb-addon-wrapper"><div id="sppb-addon-1542776267207" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-left "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/2018/11/21/sign.png" alt="Image" title /></div></div></div></div></div>
+                <div id="sppb-addon-wrapper-1542712190422" className="sppb-addon-wrapper">
+                  <div id="sppb-addon-1542712190422" className="clearfix ">
+                    <div className="sppb-addon sppb-addon-text-block  ">
+                      <div className="sppb-addon-content">
+                        David's favorite way to describe himself is as a "mere pensioner." After retiring from his career as a US Army medic, David came to Ukraine in 2011 and shortly thereafter decided to build a life here. He served with other volunteers as a combat medic both on the Maidan and at the front in Donbas, and he has been working to make Ukraine a better place in every way he can ever since. He founded Anomaly as an organizational vehicle for that vision on Maidan December 1st, 2013 and officially in 2016 as a Ukrainian NGO.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="sppb-addon-wrapper-1542715936472" className="sppb-addon-wrapper">
+                  <div id="sppb-addon-1542715936472" className="clearfix ">
+                    <div className="sppb-addon-divider-wrap divider-position">
+                      <div className="sppb-divider sppb-divider-border link-color-opt3" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

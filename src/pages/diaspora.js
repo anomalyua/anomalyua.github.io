@@ -35,7 +35,13 @@ export default () => (
                         <div className="sppb-col-md-4" id="column-wrap-id-1632999046167">
                           <div id="column-id-1632999046167" className="sppb-column">
                             <div className="sppb-column-addons">
-                              <div id="sppb-addon-wrapper-1632999046169" className="sppb-addon-wrapper"><div id="sppb-addon-1632999046169" className="clearfix "><div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-left"><h3 className="sppb-addon-title">What is the Ukrainian Diaspora?</h3></div></div></div>
+                              <div id="sppb-addon-wrapper-1632999046169" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1632999046169" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-left">
+                                    <h3 className="sppb-addon-title">What is the Ukrainian Diaspora?</h3>
+                                  </div>
+                                </div>
+                              </div>
                               <div id="sppb-addon-wrapper-1632999046170" className="sppb-addon-wrapper"><div id="sppb-addon-1632999046170" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
                             </div>
                           </div>

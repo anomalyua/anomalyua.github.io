@@ -2513,10 +2513,6 @@ form.sppb-optin-form.submit-button-inside .email-wrap .sp-input-wrap.active span
   border-bottom: 1px solid rgb(166 124 0 / 30%);
 }
 
-#sp-header #sp-menu2 .sp-megamenu-parent {
-  float: left;
-}
-
 #sp-header #sp-logo {
   text-align: center;
 }
@@ -6083,11 +6079,6 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
 
 .offcanvs-position-left.offcanvas-active .body-wrapper {
   /* left: $offcanvas-width; */
-}
-
-.offcanvs-position-right #sp-menu2 .sp-megamenu-wrapper {
-  flex-direction: row-reverse;
-  justify-content: flex-end;
 }
 
 .offcanvs-position-right .body-wrapper {

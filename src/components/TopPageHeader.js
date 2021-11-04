@@ -87,7 +87,7 @@ const Header = ({ onMenuOpen }) => {
           <div className="row" style={{ position: 'relative' }}>
             <div id="sp-menu1" className="col-2 col-sm-2 col-md-2 col-lg-5 " style={{ position: 'static' }}>
               <div className="sp-column ">
-                <nav className="sp-megamenu-wrapper" role="navigation">
+                <nav role="navigation">
                   <a id="offcanvas-toggler" aria-label="Navigation" className="offcanvas-toggler-left d-block d-lg-none" href="#" onClick={onMenuOpen}>
                     <div className="icon-bar">
                       <span />
@@ -112,17 +112,6 @@ const Header = ({ onMenuOpen }) => {
                     <img className="logo-image" src={anomalyLogo} alt="anomaly" />
                   </Link>
                 </div>
-              </div>
-            </div>
-            <div id="sp-menu2" className="col-lg-5 d-none d-sm-none d-md-none d-lg-block" style={{ position: 'static' }}>
-              <div className="sp-column ">
-                <nav className="sp-megamenu-wrapper" role="navigation">
-                  <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
-                    <li className="sp-menu-item">
-                      <Link to="/contact">Contact</Link>
-                    </li>
-                  </ul>
-                </nav>
               </div>
             </div>
           </div>

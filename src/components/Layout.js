@@ -66,10 +66,6 @@ const OffCanvasMenu = ({ onClose }) => (
               <li>
                 <Link to="/education">Education</Link>
               </li>
-
-              <li className="item-313">
-                <Link to="/contact">Contact</Link>
-              </li>
             </ul>
           </div>
         </div>
@@ -154,9 +150,6 @@ export const Layout = ({ title, children }) => {
                               </li>
                               <li className="item-171">
                                 <Link to="/about">About</Link>
-                              </li>
-                              <li className="item-173">
-                                <Link to="/contact">Contact</Link>
                               </li>
                             </ul>
                           </div>

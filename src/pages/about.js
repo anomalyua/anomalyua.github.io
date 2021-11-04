@@ -5,6 +5,8 @@ import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
 import { AchievementsColumn } from '../components/AchievementsColumn';
 
+import davidPhoto from '../images/photo_2021-11-04_22-41-53.jpg'
+
 const AchievementsBlock = styled('section')`
   display: flex;
   justify-content: center;
@@ -73,7 +75,7 @@ const About = () => (
                     <div className="sppb-addon sppb-addon-person sppb-text-center  non-box-shadow person-content-position-bottom-left">
                       <div className="sppb-addon-content">
                         <div className="sppb-person-image ">
-                          <img className="sppb-img-responsive" src="/images/2018/11/21/person.jpg" alt="David Plaster" />
+                          <img className="sppb-img-responsive" src={davidPhoto} alt="David Plaster" />
                           <div className="person-content-show-on-hover"><div className="person-content-hover-content-wrap" /></div>
                         </div>
                         <div className="sppb-person-information">

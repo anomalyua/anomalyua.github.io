@@ -311,50 +311,6 @@ export const Layout = ({ title, children }) => {
                 </div>
               </div>
             </section>
-            <footer id="sp-footer">
-              <div className="container">
-                <div className="container-inner">
-                  <div className="row">
-                    <div id="sp-footer1" className="col-lg-6 "><div className="sp-column "><span className="sp-copyright">© 2021 Planet-IT. All Rights Reserved.</span></div></div>
-                    <div id="sp-footer2" className="col-lg-6 ">
-                      <div className="sp-column ">
-                        <div className="sp-module ">
-                          <div className="sp-module-content">
-                            <div className="mod-sppagebuilder  sp-page-builder" data-module_id={109}>
-                              <div className="page-content">
-                                <div id="section-id-1542957017160" className="sppb-section">
-                                  <div className="sppb-row-overlay" />
-                                  <div className="sppb-container-inner">
-                                    <div className="sppb-row">
-                                      <div className="sppb-col-md-12" id="column-wrap-id-1542957017159">
-                                        <div id="column-id-1542957017159" className="sppb-column">
-                                          <div className="sppb-column-addons">
-                                            <div id="sppb-addon-wrapper-1542957017163" className="sppb-addon-wrapper">
-                                              <div id="sppb-addon-1542957017163" className="clearfix ">
-                                                <div className="sppb-addon sppb-addon-text-block sppb-text-right "><div className="sppb-addon-content">Design &amp; Developed by Joomshaper</div></div>
-                                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542957017163 {\nmargin:0 0 0px 0;}\n#sppb-addon-1542957017163 {\n\tcolor: rgba(255, 255, 255, 0.3);\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542957017163 {}#sppb-addon-wrapper-1542957017163 {margin-top: 0;margin-right: 0;margin-bottom: 0px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542957017163 {}#sppb-addon-wrapper-1542957017163 {margin-top: 0;margin-right: 0;margin-bottom: 0px;margin-left: 0;}}#sppb-addon-1542957017163 .sppb-addon-content { font-family: "Poppins"; }\n' }} />
-                                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-1542957017163{ font-size: 12px;font-weight: 300;line-height: 20px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}' }} />
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '.sp-page-builder .page-content #section-id-1542957017160{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1542957017159{box-shadow:0 0 0 0 #fff;}' }} />
-                                {' '}
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
           </div>
         </div>
         <OffCanvasMenu

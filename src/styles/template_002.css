@@ -641,40 +641,6 @@ body.no-page-title .header-wrapper {
   display: block;
 }
 
-#sp-footer {
-  font-size: 14px;
-  padding: 0;
-}
-
-#sp-footer .container-inner {
-  padding: 30px 0;
-  border-top: 1px solid rgb(255 255 255 / 10%);
-}
-
-#sp-footer ul.menu {
-  display: inline-block;
-  list-style: none;
-  padding: 0;
-  margin: 0 -10px;
-}
-
-#sp-footer ul.menu li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-#sp-footer ul.menu li a {
-  display: block;
-}
-
-#sp-footer ul.menu li a:hover {
-  background: none;
-}
-
-#sp-footer #sp-footer2 {
-  text-align: right;
-}
-
 html.offline body {
   background: #f3f3f3;
 }
@@ -4399,15 +4365,6 @@ html.coming-soon .social-icons li a:hover {
   text-decoration: underline;
 }
 
-#sp-footer {
-  border-top: 1px solid rgb(166 124 0 / 30%);
-}
-
-#sp-footer .container-inner {
-  padding: 20px 0;
-  border-top: none;
-}
-
 .sp-copyright {
   font-size: 12px;
   font-weight: 300;
@@ -4492,15 +4449,6 @@ html.coming-soon .social-icons li a:hover {
 
   #sp-bottom-top #sp-bottom-top2,
   #sp-bottom-top #sp-bottom-top3 {
-    text-align: center;
-  }
-
-  #sp-footer #sp-footer1,
-  #sp-footer #sp-footer2 {
-    text-align: center;
-  }
-
-  #sp-footer .sppb-text-right {
     text-align: center;
   }
 }

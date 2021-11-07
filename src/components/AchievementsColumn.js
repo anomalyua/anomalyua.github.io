@@ -6,6 +6,7 @@ export const AchievementsColumn = styled.div`
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  text-align: center;
 
   @media (min-width: 992px) {
     flex: 0 0 20%; max-width: 25%;

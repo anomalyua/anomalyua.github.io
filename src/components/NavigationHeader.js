@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import { useMatch } from '@gatsbyjs/reach-router';
 import anomalyLogo from '../images/anomaly-logo-01.svg';
 
+import { BecomeAVolunteerButton as Button } from './BecomeAVolunteer';
+
 const NavigationLink = (props) => {
   const active = useMatch(props.to) !== null;
 
@@ -67,25 +69,7 @@ const ProjectsNavigationDropdown = () => {
 const ButtonContainer = styled('div')`
   display: flex;
   align-items: center;
-`
-
-const Button = ({className, ...props}) => (
-  <a
-    className={
-      classnames(
-        "sppb-btn","sppb-btn-default","sppb-btn-rounded",
-        className
-      )
-    }
-    {...props}
-  >
-    Become a Volunteer
-  </a>
-);
-
-const StyledButton = styled(Button)`
-  padding: 10px 14px !important;
-`
+`;
 
 export const NavigationHeader = ({ onMenuOpen }) => {
   const [isSticky, setSticky] = useState(false);
@@ -136,9 +120,7 @@ export const NavigationHeader = ({ onMenuOpen }) => {
               </div>
             </div>
             <ButtonContainer>
-              <StyledButton
-                href='https://docs.google.com/forms/d/1ej1Xvk976p8y73Ns_IOBsAfH-jS5w_sBvDXjexYIYTA'
-              />
+              <Button />
             </ButtonContainer>
           </div>
         </div>

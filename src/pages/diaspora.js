@@ -32,8 +32,8 @@ export default () => (
                     <div className="sppb-row-overlay" />
                     <div className="sppb-row-container">
                       <div className="sppb-row">
-                        <div className="sppb-col-md-4" id="column-wrap-id-1632999046167">
-                          <div id="column-id-1632999046167" className="sppb-column">
+                        <div className="sppb-col-md-4">
+                          <div className="sppb-column">
                             <div className="sppb-column-addons">
                               <div id="sppb-addon-wrapper-1632999046169" className="sppb-addon-wrapper">
                                 <div id="sppb-addon-1632999046169" className="clearfix ">
@@ -46,8 +46,8 @@ export default () => (
                             </div>
                           </div>
                         </div>
-                        <div className="sppb-col-md-8" id="column-wrap-id-1632999046172">
-                          <div id="column-id-1632999046172" className="sppb-column">
+                        <div className="sppb-col-md-8">
+                          <div className="sppb-column">
                             <div className="sppb-column-addons">
                               <div id="sppb-addon-wrapper-1626723958919" className="sppb-addon-wrapper">
                                 <div id="sppb-addon-1626723958919" className="clearfix ">

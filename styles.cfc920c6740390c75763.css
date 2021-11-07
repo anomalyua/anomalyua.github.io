@@ -12458,13 +12458,13 @@ h4 { font-size: 16px; font-weight: 600; }
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form div.sppb-form-group { margin: 0 0 22px; }
 
 #sppb1542888893462 .sppbcontact-form .sppbgroup input:input-placeholder,
-#sppb1542888893462 .sppbcontact-form .sppb-form-group textarea:-ms-input-placeholder { color: rgb(37 42 53/30%); opacity: 100%; }
+#sppb1542888893462 .sppbcontact-form .sppbgroup textarea:input-placeholder { color: rgb(37 42 53/30%); opacity: 100%; }
 
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input::placeholder,
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group textarea::placeholder { color: rgb(37 42 53/30%); opacity: 100%; }
 
 #sppb1542888893462 .sppbcontact-form .sppbgroup input:hover:input-placeholder,
-#sppb1542888893462 .sppbcontact-form .sppb-form-group textarea:hover:-ms-input-placeholder { color: #121330; opacity: 100%; }
+#sppb1542888893462 .sppbcontact-form .sppbgroup textarea:hover:input-placeholder { color: #121330; opacity: 100%; }
 
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group input:hover::placeholder,
 #sppb-addon-1542888893462 .sppb-ajaxt-contact-form .sppb-form-group textarea:hover::placeholder { color: #121330; opacity: 100%; }

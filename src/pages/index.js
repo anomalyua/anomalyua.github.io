@@ -121,16 +121,6 @@ const IndexPage = () => (
                     </div>
                   </div>
                 </div>
-                <div id="sppb-addon-wrapper-1542709917009" className="sppb-addon-wrapper">
-                  <div id="sppb-addon-1542709917009" className="clearfix ">
-                    <div className="sppb-text-left">
-                      <a href="#" id="btn-1542709917009" className="sppb-btn  sppb-btn-link sppb-btn-rounded">
-                        Join Today
-                        <i className="fa fa-long-arrow-right" aria-hidden="true" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

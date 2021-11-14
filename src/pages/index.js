@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
 import { EnglishNowImageTile, LinkEnglishNow } from '../components/EnglishNowCTA';
+import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer';
 
 const HeroSection = styled.section.attrs({
   id: 'section-id-1542709301800',
@@ -544,17 +545,26 @@ const IndexPage = () => (
       <div className="sppb-row-overlay" />
       <div className="sppb-row-container">
         <div className="sppb-row sppb-align-center">
-          <div className="sppb-col-md-7" id="column-wrap-id-1542973816359"><div id="column-id-1542973816359" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1542973816366" className="sppb-addon-wrapper"><div id="sppb-addon-1542973816366" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-right"><h3 className="sppb-addon-title">Join Anomaly Today!</h3></div></div></div></div></div></div>
+          <div className="sppb-col-md-7" id="column-wrap-id-1542973816359">
+            <div id="column-id-1542973816359" className="sppb-column">
+              <div className="sppb-column-addons">
+                <div id="sppb-addon-wrapper-1542973816366" className="sppb-addon-wrapper">
+                  <div id="sppb-addon-1542973816366" className="clearfix ">
+                    <div className="sppb-addon sppb-addon-header sppb-text-right">
+                      <h3 className="sppb-addon-title">Join Anomaly Today!</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="sppb-col-md-5" id="column-wrap-id-1542973816391">
             <div id="column-id-1542973816391" className="sppb-column">
               <div className="sppb-column-addons">
                 <div id="sppb-addon-wrapper-1633802035300" className="sppb-addon-wrapper">
                   <div id="sppb-addon-1633802035300" className="clearfix sppb-positioned-addon" data-rowid={1542973816360} data-colid={1542973816391}>
                     <div className="sppb-text-center">
-                      <a id="btn-1633802035300" className="sppb-btn  sppb-btn-default sppb-btn-rounded">
-                        Go
-                        <i className="fas fa-arrow-right" aria-hidden="true" />
-                      </a>
+                      <BecomeAVolunteerButton />
                     </div>
                   </div>
                 </div>

@@ -25,20 +25,40 @@ const EducationContainer = styled.div`
   border-right: 1px solid rgb(166 124 0/30%);
 `;
 
-const ServiceItem = styled.div`
-  &:hover {
-    border-radius: 3px;
-    box-shadow: 0 -1px 9px 0 rgb(0 0 0 / 10%);
+const EducationTileContainer = styled('div')`
+  border: 0;
+`;
 
-    .sppb-feature-box-title a {
-      color: #a67c00;
+const TileTitleContainer = styled('div')`
+  display: flex;
+
+  padding-bottom: 16px;
+
+  transition: all 0.3s ease-in-out;
+  color: rgb(19 19 19 / 95%);
+
+  &:hover {
+    color: #a67c00;
+
+    img {
+      transition: all 0.3s ease-in-out;
+      filter: drop-shadow(1px 1px 1px #ccc);
     }
   }
 `;
 
-const EducationTileContainer = styled(ServiceItem)`
-  border: 0;
+const TileTitleText = styled('h3')`
+  padding-left: 30px;
 `;
+
+const TileTitleWithImage = ({ imgSrc, title }) => (
+  <TileTitleContainer>
+    <img className="sppb-img-responsive" src={imgSrc} alt="" />
+    <TileTitleText className="sppb-addon-title sppb-feature-box-title">
+      {title}
+    </TileTitleText>
+  </TileTitleContainer>
+);
 
 const Education = () => (
   <EducationContainer className="sppb-col-md-6">
@@ -60,15 +80,15 @@ const Education = () => (
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
                       <Link to="/education">
-                        <img className="sppb-img-responsive" src="images/education.png" alt="Education" />
+                        <TileTitleWithImage
+                          imgSrc="images/education.png"
+                          title="Education"
+                        />
                       </Link>
                     </span>
                   </div>
                   <div className="sppb-media-body">
                     <div className="sppb-media-content">
-                      <h3 className="sppb-addon-title sppb-feature-box-title">
-                        <Link to="/education">Education</Link>
-                      </h3>
                       <div className="sppb-addon-text">
                         Anomaly
                         offers free english lessons and workshops on various topics. We offer
@@ -153,21 +173,21 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '300ms', animationName: 'fadeIn',
                     }}
                   >
-                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item1">
+                    <div className="sppb-addon sppb-addon-feature  service-item item1">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
                               <Link to="/veterans">
-                                <img className="sppb-img-responsive" src="images/veterans.svg" alt="Veterans" />
+                                <TileTitleWithImage
+                                  imgSrc="images/veterans.svg"
+                                  title="Veterans"
+                                />
                               </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
-                              <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <Link to="/veterans">Veterans</Link>
-                              </h3>
                               <div className="sppb-addon-text">
                                 Support
                                 for Ukrainian veterans: Every Sunday we offer free English courses and
@@ -190,7 +210,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </ServiceItem>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -209,21 +229,21 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn',
                     }}
                   >
-                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item2">
+                    <div className="sppb-addon sppb-addon-feature  service-item item2">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
                               <Link to="/eco">
-                                <img className="sppb-img-responsive" src="images/ecology.svg" alt="Ecology" />
+                                <TileTitleWithImage
+                                  imgSrc="images/ecology.svg"
+                                  title="Ecology"
+                                />
                               </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
-                              <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <Link to="/eco">Ecology</Link>
-                              </h3>
                               <div className="sppb-addon-text">
                                 Anomaly
                                 helps the Ukrainian environment with neigborhood clean-ups and
@@ -240,7 +260,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </ServiceItem>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -276,21 +296,21 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn',
                     }}
                   >
-                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item2">
+                    <div className="sppb-addon sppb-addon-feature  service-item2">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
                               <Link to="/community">
-                                <img className="sppb-img-responsive" src="images/community.png" alt="Community" />
+                                <TileTitleWithImage
+                                  imgSrc="images/community.png"
+                                  title="Community"
+                                />
                               </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
-                              <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <Link to="/community">Community</Link>
-                              </h3>
                               <div className="sppb-addon-text">
                                 <p>
                                   Anomaly
@@ -308,7 +328,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </ServiceItem>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -327,21 +347,21 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '700ms', animationName: 'fadeIn',
                     }}
                   >
-                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item3">
+                    <div className="sppb-addon sppb-addon-feature  service-item item3">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
                               <Link to="/kids">
-                                <img className="sppb-img-responsive" src="images/kids.svg" alt="Kids" />
+                                <TileTitleWithImage
+                                  imgSrc="images/kids.svg"
+                                  title="Kids"
+                                />
                               </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
-                              <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <Link to="/kids">Kids</Link>
-                              </h3>
                               <div className="sppb-addon-text">
                                 We
                                 help children of veterans, returned Russian-held political prisoners,
@@ -356,7 +376,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </ServiceItem>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -375,19 +395,21 @@ const IndexPage = () => (
                       visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn',
                     }}
                   >
-                    <ServiceItem className="sppb-addon sppb-addon-feature  service-item item4">
+                    <div className="sppb-addon sppb-addon-feature  service-item item4">
                       <div className="sppb-addon-content sppb-text-left">
                         <div className="sppb-media">
                           <div className="pull-sppb-text-left">
                             <span className="sppb-img-container">
-                              <Link to="/animals"><img className="sppb-img-responsive" src="images/animals.svg" alt="Animals" /></Link>
+                              <Link to="/animals">
+                                <TileTitleWithImage
+                                  imgSrc="images/animals.svg"
+                                  title="Animals"
+                                />
+                              </Link>
                             </span>
                           </div>
                           <div className="sppb-media-body">
                             <div className="sppb-media-content">
-                              <h3 className="sppb-addon-title sppb-feature-box-title">
-                                <Link to="/animals">Animals</Link>
-                              </h3>
                               <div className="sppb-addon-text">
                                 Anomaly
                                 supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers
@@ -401,7 +423,7 @@ const IndexPage = () => (
                           </div>
                         </div>
                       </div>
-                    </ServiceItem>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -7,6 +7,7 @@ import { AchievementsColumn } from '../components/AchievementsColumn';
 
 import davidPhoto from '../images/photo_2021-11-04_22-41-53.jpg';
 import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer';
+import { PhoneNumber } from '../components/PhoneNumber';
 
 const AchievementsBlock = styled('section')`
   display: flex;
@@ -188,6 +189,15 @@ const OurTeamColumn = styled('div')`
   margin-top: 30px;
 `;
 
+const ContactsColumn = styled('div')`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+
+  justify-content: center;
+`;
+
 const DescriptionText = ({ children }) => (
   <div className="sppb-column">
     <div className="sppb-column-addons">
@@ -254,7 +264,7 @@ const ButtonContainer = styled('div')`
   display: flex;
   justify-content: center;
   padding-top: 32px;
-`
+`;
 
 const VolunteeringOpportunities = () => (
   <GraySection id="section-id-1542711300771" className="sppb-section sppb-section-content-center">
@@ -289,6 +299,141 @@ const VolunteeringOpportunities = () => (
       </div>
     </div>
   </GraySection>
+);
+
+const ContactsContainer = styled('div')`
+  padding: 120px 0;
+`;
+
+const Contacts = () => (
+  <ContactsContainer className="sppb-row-container">
+    <div className="row">
+      <PageColumn8>
+        <div id="column-id-1542888546597" className="sppb-column">
+          <div className="sppb-column-addons">
+            <div id="sppb-addon-wrapper-1542950205330" className="sppb-addon-wrapper">
+              <div id="sppb-addon-1542950205330" className="clearfix ">
+                <div className="sppb-addon sppb-addon-feature sppb-text-left address-info">
+                  <div className="sppb-addon-content sppb-text-left">
+                    <div className="sppb-media">
+                      <div className="pull-left"><div className="sppb-icon"><span className="sppb-icon-container" aria-label="Phone"><i className="fa fa-phone" aria-hidden="true" /></span></div></div>
+                      <div className="sppb-media-body">
+                        <div className="sppb-media-content">
+                          <h2 className="sppb-addon-title sppb-feature-box-title sppb-media-heading">Phone</h2>
+                          <div className="sppb-addon-text">
+                            <ul>
+                              <li><PhoneNumber /></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sppb-addon-wrapper-1542951075011" className="sppb-addon-wrapper"><div id="sppb-addon-1542951075011" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
+            <div id="sppb-addon-wrapper-1542888956811" className="sppb-addon-wrapper">
+              <div id="sppb-addon-1542888956811" className="clearfix ">
+                <div className="sppb-addon sppb-addon-feature sppb-text-left address-info">
+                  <div className="sppb-addon-content sppb-text-left">
+                    <div className="sppb-media">
+                      <div className="pull-left"><div className="sppb-icon"><span className="sppb-icon-container" aria-label="Address"><i className="fa fa-map-o" aria-hidden="true" /></span></div></div>
+                      <div className="sppb-media-body">
+                        <div className="sppb-media-content">
+                          <h2 className="sppb-addon-title sppb-feature-box-title sppb-media-heading">Address</h2>
+                          <div className="sppb-addon-text">
+                            Velyka Vasylkivska st, 72, office 20,
+                            Ukraine, 03150, Kyiv
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sppb-addon-wrapper-1542888978160" className="sppb-addon-wrapper"><div id="sppb-addon-1542888978160" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
+            <div id="sppb-addon-wrapper-1542951075020" className="sppb-addon-wrapper">
+              <div id="sppb-addon-1542951075020" className="clearfix ">
+                <div className="sppb-addon sppb-addon-feature sppb-text-left address-info">
+                  <div className="sppb-addon-content sppb-text-left">
+                    <div className="sppb-media">
+                      <div className="pull-left"><div className="sppb-icon"><span className="sppb-icon-container" aria-label="Email"><i className="fa fa-envelope-o" aria-hidden="true" /></span></div></div>
+                      <div className="sppb-media-body">
+                        <div className="sppb-media-content">
+                          <h2 className="sppb-addon-title sppb-feature-box-title sppb-media-heading">Email</h2>
+                          <div className="sppb-addon-text">
+                            <ul>
+                              <li><a href="mailto:info@anomaly.org.ua">info@anomaly.org.ua</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sppb-addon-wrapper-1542951075017" className="sppb-addon-wrapper"><div id="sppb-addon-1542951075017" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
+            <div id="sppb-addon-wrapper-1542951075014" className="sppb-addon-wrapper">
+              <div id="sppb-addon-1542951075014" className="clearfix ">
+                <div className="sppb-addon sppb-addon-feature sppb-text-left address-info">
+                  <div className="sppb-addon-content sppb-text-left">
+                    <div className="sppb-media">
+                      <div className="pull-left">
+                        <div className="sppb-icon">
+                          <span className="sppb-icon-container" aria-label="Social">
+                            <i className="fa fa-comment" aria-hidden="true" />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="sppb-media-body">
+                        <div className="sppb-media-content">
+                          <h2 className="sppb-addon-title sppb-feature-box-title sppb-media-heading">Social</h2>
+                          <div className="sppb-addon-text">
+                            <ul>
+                              <li>
+                                <a
+                                  target="_blank"
+                                  href="https://www.facebook.com/anomaly.ua"
+                                  aria-label="facebook"
+                                  rel="noreferrer"
+                                >
+                                  Facebook
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  target="_blank"
+                                  href="https://www.instagram.com/anomaly.ua"
+                                  aria-label="Instagram"
+                                  rel="noreferrer"
+                                >
+                                  Instagram
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </PageColumn8>
+      <PageColumn4>
+        <ContactsColumn>
+          <TitleLevel3>
+            Contacts
+          </TitleLevel3>
+        </ContactsColumn>
+      </PageColumn4>
+    </div>
+  </ContactsContainer>
 );
 
 const About = () => (
@@ -328,6 +473,7 @@ const About = () => (
     <OurFounder />
     <OurTeam />
     <VolunteeringOpportunities />
+    <Contacts />
   </Layout>
 );
 

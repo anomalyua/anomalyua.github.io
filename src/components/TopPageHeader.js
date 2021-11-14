@@ -15,10 +15,10 @@ export const TopPageHeader = ({ onMenuOpen }) => (
                 <div id="sp-top1" className="col-sm-6 col-md-6 col-lg-6 ">
                   <div className="sp-column ">
                     <ul className="sp-contact-info">
-                      <li className="sp-contact-phone">
+                      <li>
                         <PhoneNumber />
                       </li>
-                      <li className="sp-contact-email">
+                      <li>
                         <a href="mailto:info@anomaly.org.ua">info@anomaly.org.ua</a>
                       </li>
                     </ul>

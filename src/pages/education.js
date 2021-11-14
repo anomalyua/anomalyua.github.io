@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import { useLocation } from '@reach/router';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
-import { EnglishNowImageTile, LinkEnglishNow } from '../components/EnglishNowCTA';
+import { EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCTA';
 import styled from 'styled-components';
 
 const EnglishNowContainer = styled('div')`
@@ -288,9 +288,9 @@ export default () => (
                           </div>
                         </div>
                         <EnglishNowContainer className="sppb-col-md-5">
-                          <LinkEnglishNow href="https://englishnow.dav.school/">
+                          <LinkShadedImage href="https://englishnow.dav.school/">
                             <EnglishNowImageTile />
-                          </LinkEnglishNow>
+                          </LinkShadedImage>
                         </EnglishNowContainer>
                       </div>
                     </div>

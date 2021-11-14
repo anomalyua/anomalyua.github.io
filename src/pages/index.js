@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 import { TopTitleText } from '../components/TopTitleText';
-import { EnglishNowImageTile, LinkEnglishNow } from '../components/EnglishNowCTA';
+import { BotsPlatformImageTile, EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCTA';
 import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer';
 
 const HeroSection = styled.section.attrs({
@@ -109,7 +109,7 @@ const Education = () => (
   </EducationContainer>
 );
 
-const LinkEnglishNowCTA = styled(LinkEnglishNow)`
+const LinkEnglishNowCTA = styled(LinkShadedImage)`
   flex: 0 0 50%;
 
   display: flex;
@@ -121,6 +121,24 @@ const EnglishNowTile = () => (
   <LinkEnglishNowCTA href="https://englishnow.dav.school/">
     <EnglishNowImageTile />
   </LinkEnglishNowCTA>
+);
+
+const BotsPlatformContainer = styled('div')`
+  margin-top: 30px;
+`;
+
+const BotsPlatformTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1633010662536">
+    <div id="column-id-1633010662536" className="sppb-column">
+      <div className="sppb-column-addons">
+        <BotsPlatformContainer>
+          <LinkShadedImage href="https://BotsPlatform.anomaly.org.ua">
+            <BotsPlatformImageTile />
+          </LinkShadedImage>
+        </BotsPlatformContainer>
+      </div>
+    </div>
+  </div>
 );
 
 const IndexPage = () => (
@@ -268,21 +286,7 @@ const IndexPage = () => (
           </div>
           <Education />
           <EnglishNowTile />
-          <div className="sppb-col-md-6" id="column-wrap-id-1633010662536">
-            <div id="column-id-1633010662536" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1633618711977" className="sppb-addon-wrapper">
-                  <div id="sppb-addon-1633618711977" className="clearfix ">
-                    <div className="sppb-text-center">
-                      <a href="https://BotsPlatform.anomaly.org.ua">
-                        <img src="images/iFAV4mg.png" style={{ width: '240px', border: '2px #fde041 solid' /*! padding: '5px' */ }} />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <BotsPlatformTile />
           <div className="sppb-col-md-6" id="column-wrap-id-1633010662537">
             <div id="column-id-1633010662537" className="sppb-column">
               <div className="sppb-column-addons">

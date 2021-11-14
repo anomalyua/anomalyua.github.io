@@ -3,6 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 import { AchievementsColumn } from '../components/AchievementsColumn';
+import {BotsPlatformImageTile, LinkShadedImage} from "../components/EnglishNowCTA";
 
 const GalleryContainer = styled.ul`
   padding: 50px 0;
@@ -193,9 +194,9 @@ export default () => (
                                   <div className="sppb-addon sppb-addon-single-image sppb-text-center ">
                                     <div className="sppb-addon-content">
                                       <div className="sppb-addon-single-image-container">
-                                        <a href="https://BotsPlatform.anomaly.org.ua">
-                                          <img src="images/iFAV4mg.png" style={{ width: '220px', border: '2px #fde041 solid', padding: '5px' }} />
-                                        </a>
+                                        <LinkShadedImage href="https://BotsPlatform.anomaly.org.ua">
+                                          <BotsPlatformImageTile />
+                                        </LinkShadedImage>
                                       </div>
                                     </div>
                                   </div>

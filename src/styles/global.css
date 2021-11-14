@@ -112,14 +112,6 @@ body {
 @media (max-width: 767px) { #sppb-addon-wrapper-1633616058164 { margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; } }
 #sppb-addon-1633616058164 #btn-1633616058164.sppb-btn-primary { letter-spacing: 4px; }
 #sppb-addon-1633616058164 .sppb-btn i { margin: 00; }
-#sppb-addon-wrapper-1633618711977 { margin: 100px 0 30px; }
-#sppb-addon-1633618711977 { box-shadow: 0 0 0 0 #fff; }
-
-@media (min-width: 768px) and (max-width: 991px) { #sppb-addon-wrapper-1633618711977 { margin-top: 0; margin-right: 0; margin-bottom: 20px; margin-left: 0; } }
-
-@media (max-width: 767px) { #sppb-addon-wrapper-1633618711977 { margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; } }
-#sppb-addon-1633618711977 #btn-1633618711977.sppb-btn-primary { letter-spacing: 4px; }
-#sppb-addon-1633618711977 .sppb-btn i { margin: 00; }
 #sppb-addon-wrapper-1633616058146 { margin: 0; }
 #sppb-addon-1633616058146 { background-color: #fff; box-shadow: 0 0 0 0 #fff; }
 #sppb-addon-1633616058146 .sppb-addon-title { margin-top: 15px; margin-bottom: 3px; font-size: 16px; line-height: 26px; font-weight: 600; }

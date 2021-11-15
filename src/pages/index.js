@@ -135,6 +135,244 @@ const BotsPlatformTile = () => (
   </div>
 );
 
+const VeteransTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1620541326160">
+    <div id="column-id-1620541326160" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1620541326161" className="sppb-addon-wrapper">
+          <div
+            id="sppb-addon-1620541326161"
+            className=" sppb-wow clearfix  sppb-animated sppb-animated sppb-animated"
+          >
+            <div className="sppb-addon sppb-addon-feature  service-item item1">
+              <div className="sppb-addon-content sppb-text-left">
+                <div className="sppb-media">
+                  <div className="pull-sppb-text-left">
+                    <span className="sppb-img-container">
+                      <Link to="/veterans">
+                        <TileTitleWithImage
+                          imgSrc="images/veterans.svg"
+                          title="Veterans"
+                        />
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="sppb-media-body">
+                    <div className="sppb-media-content">
+                      <div className="sppb-addon-text">
+                        Support
+                        for Ukrainian veterans: Every Sunday we offer free English courses and
+                        conversation clubs specifically for veterans, ATO volunteers, and their
+                        families in Kyiv.
+                        <br />
+                        We organize regular volunteer outings (our tolokas)
+                        and social events (Drinkin’ Bros Ukraine) to connect members of the
+                        veteran community with each other, their fellow citizens, as well as
+                        officials and visitors from local government and embassies.
+                        <br />
+                        {' '}
+                        With our
+                        ‘Dbayemo Razom’ project, we connected 1,000+ mental health
+                        professionals, 10,000+ trained peer counselors and 3 physical
+                        rehabilitation centers. The network shares experience, expertise, and
+                        resources to better serve people in Ukraine.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const EcologyTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1620541326162">
+    <div id="column-id-1620541326162" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1633616058151" className="sppb-addon-wrapper">
+          <div
+            id="sppb-addon-1633616058151"
+          >
+            <div className="sppb-addon sppb-addon-feature  service-item item2">
+              <div className="sppb-addon-content sppb-text-left">
+                <div className="sppb-media">
+                  <div className="pull-sppb-text-left">
+                    <span className="sppb-img-container">
+                      <Link to="/eco">
+                        <TileTitleWithImage
+                          imgSrc="images/ecology.svg"
+                          title="Ecology"
+                        />
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="sppb-media-body">
+                    <div className="sppb-media-content">
+                      <div className="sppb-addon-text">
+                        Anomaly
+                        helps the Ukrainian environment with neigborhood clean-ups and
+                        environmental advocacy projects. Anomaly hosts up to 3 cleans-ups a
+                        month to help minimize public litter. By doing so, Anomaly helps its
+                        participants learn about the effects of waste on the environment (both
+                        local and worldwide) and learn how to create similar projects at home.
+                        To add on, Anomaly helps to lobby environmental issues occuring in
+                        multiple cities across Ukraine. We will pinpoint any companies that are
+                        at the core of enironvmental issues and combat them through advocacy and
+                        lobbying.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const CommunityTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1633010662537">
+    <div id="column-id-1633010662537" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1633616058146" className="sppb-addon-wrapper">
+          <div
+            id="sppb-addon-1633616058146"
+          >
+            <div className="sppb-addon sppb-addon-feature  service-item2">
+              <div className="sppb-addon-content sppb-text-left">
+                <div className="sppb-media">
+                  <div className="pull-sppb-text-left">
+                    <span className="sppb-img-container">
+                      <Link to="/community">
+                        <TileTitleWithImage
+                          imgSrc="images/community.png"
+                          title="Community"
+                        />
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="sppb-media-body">
+                    <div className="sppb-media-content">
+                      <div className="sppb-addon-text">
+                        <p>
+                          Anomaly
+                          works with Kyiv City Administration and local community leaders to help
+                          solve everyday problems of Kyiv residents, such as utility outages,
+                          road potholes, and piling rubbish.
+                        </p>
+                        <p>
+                          We support faster problem solving with local governance by providing
+                          reporting tools for the 100,000 residents of the most underserved areas
+                          of Kyiv, directly connecting them with local utility service providers.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const KidsTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1633616058147">
+    <div id="column-id-1633616058147" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1620541326165" className="sppb-addon-wrapper">
+          <div
+            id="sppb-addon-1620541326165"
+          >
+            <div className="sppb-addon sppb-addon-feature  service-item item3">
+              <div className="sppb-addon-content sppb-text-left">
+                <div className="sppb-media">
+                  <div className="pull-sppb-text-left">
+                    <span className="sppb-img-container">
+                      <Link to="/kids">
+                        <TileTitleWithImage
+                          imgSrc="images/kids.svg"
+                          title="Kids"
+                        />
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="sppb-media-body">
+                    <div className="sppb-media-content">
+                      <div className="sppb-addon-text">
+                        We
+                        help children of veterans, returned Russian-held political prisoners,
+                        Crimean Tatar exiles, and IDPs to attend our free English lessons and
+                        speaking clubs.
+                        <br />
+                        Anomaly connects foreign donors with an orphanage in Mariupol to help children find a new family and home.
+                        <br />
+                        We work with the local community policing department to protect the rights of children in Kyiv.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const AnimalsTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1633616058148">
+    <div id="column-id-1633616058148" className="sppb-column">
+      <div className="sppb-column-addons">
+        <div id="sppb-addon-wrapper-1620541326163" className="sppb-addon-wrapper">
+          <div
+            id="sppb-addon-1620541326163"
+          >
+            <div className="sppb-addon sppb-addon-feature  service-item item4">
+              <div className="sppb-addon-content sppb-text-left">
+                <div className="sppb-media">
+                  <div className="pull-sppb-text-left">
+                    <span className="sppb-img-container">
+                      <Link to="/animals">
+                        <TileTitleWithImage
+                          imgSrc="images/animals.svg"
+                          title="Animals"
+                        />
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="sppb-media-body">
+                    <div className="sppb-media-content">
+                      <div className="sppb-addon-text">
+                        Anomaly
+                        supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers
+                        to solve the problem of stray animal overpopulation.
+                        <br />
+                        {' '}
+                        <br />
+                        We are always looking for volunteers to help us solve this problem. If you think that is you, then join us today!.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const IndexPage = () => (
   <Layout
     title="Home Page"
@@ -186,232 +424,14 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="sppb-col-md-6" id="column-wrap-id-1620541326160">
-            <div id="column-id-1620541326160" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1620541326161" className="sppb-addon-wrapper">
-                  <div
-                    id="sppb-addon-1620541326161"
-                    className=" sppb-wow clearfix  sppb-animated sppb-animated sppb-animated"
-                  >
-                    <div className="sppb-addon sppb-addon-feature  service-item item1">
-                      <div className="sppb-addon-content sppb-text-left">
-                        <div className="sppb-media">
-                          <div className="pull-sppb-text-left">
-                            <span className="sppb-img-container">
-                              <Link to="/veterans">
-                                <TileTitleWithImage
-                                  imgSrc="images/veterans.svg"
-                                  title="Veterans"
-                                />
-                              </Link>
-                            </span>
-                          </div>
-                          <div className="sppb-media-body">
-                            <div className="sppb-media-content">
-                              <div className="sppb-addon-text">
-                                Support
-                                for Ukrainian veterans: Every Sunday we offer free English courses and
-                                conversation clubs specifically for veterans, ATO volunteers, and their
-                                families in Kyiv.
-                                <br />
-                                We organize regular volunteer outings (our tolokas)
-                                and social events (Drinkin’ Bros Ukraine) to connect members of the
-                                veteran community with each other, their fellow citizens, as well as
-                                officials and visitors from local government and embassies.
-                                <br />
-                                {' '}
-                                With our
-                                ‘Dbayemo Razom’ project, we connected 1,000+ mental health
-                                professionals, 10,000+ trained peer counselors and 3 physical
-                                rehabilitation centers. The network shares experience, expertise, and
-                                resources to better serve people in Ukraine.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="sppb-col-md-6" id="column-wrap-id-1620541326162">
-            <div id="column-id-1620541326162" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1633616058151" className="sppb-addon-wrapper">
-                  <div
-                    id="sppb-addon-1633616058151"
-                  >
-                    <div className="sppb-addon sppb-addon-feature  service-item item2">
-                      <div className="sppb-addon-content sppb-text-left">
-                        <div className="sppb-media">
-                          <div className="pull-sppb-text-left">
-                            <span className="sppb-img-container">
-                              <Link to="/eco">
-                                <TileTitleWithImage
-                                  imgSrc="images/ecology.svg"
-                                  title="Ecology"
-                                />
-                              </Link>
-                            </span>
-                          </div>
-                          <div className="sppb-media-body">
-                            <div className="sppb-media-content">
-                              <div className="sppb-addon-text">
-                                Anomaly
-                                helps the Ukrainian environment with neigborhood clean-ups and
-                                environmental advocacy projects. Anomaly hosts up to 3 cleans-ups a
-                                month to help minimize public litter. By doing so, Anomaly helps its
-                                participants learn about the effects of waste on the environment (both
-                                local and worldwide) and learn how to create similar projects at home.
-                                To add on, Anomaly helps to lobby environmental issues occuring in
-                                multiple cities across Ukraine. We will pinpoint any companies that are
-                                at the core of enironvmental issues and combat them through advocacy and
-                                lobbying.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <VeteransTile />
+          <EcologyTile />
           <Education />
           <EnglishNowTile />
           <BotsPlatformTile />
-          <div className="sppb-col-md-6" id="column-wrap-id-1633010662537">
-            <div id="column-id-1633010662537" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1633616058146" className="sppb-addon-wrapper">
-                  <div
-                    id="sppb-addon-1633616058146"
-                  >
-                    <div className="sppb-addon sppb-addon-feature  service-item2">
-                      <div className="sppb-addon-content sppb-text-left">
-                        <div className="sppb-media">
-                          <div className="pull-sppb-text-left">
-                            <span className="sppb-img-container">
-                              <Link to="/community">
-                                <TileTitleWithImage
-                                  imgSrc="images/community.png"
-                                  title="Community"
-                                />
-                              </Link>
-                            </span>
-                          </div>
-                          <div className="sppb-media-body">
-                            <div className="sppb-media-content">
-                              <div className="sppb-addon-text">
-                                <p>
-                                  Anomaly
-                                  works with Kyiv City Administration and local community leaders to help
-                                  solve everyday problems of Kyiv residents, such as utility outages,
-                                  road potholes, and piling rubbish.
-                                </p>
-                                <p>
-                                  We support faster problem solving with local governance by providing
-                                  reporting tools for the 100,000 residents of the most underserved areas
-                                  of Kyiv, directly connecting them with local utility service providers.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="sppb-col-md-6" id="column-wrap-id-1633616058147">
-            <div id="column-id-1633616058147" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1620541326165" className="sppb-addon-wrapper">
-                  <div
-                    id="sppb-addon-1620541326165"
-                  >
-                    <div className="sppb-addon sppb-addon-feature  service-item item3">
-                      <div className="sppb-addon-content sppb-text-left">
-                        <div className="sppb-media">
-                          <div className="pull-sppb-text-left">
-                            <span className="sppb-img-container">
-                              <Link to="/kids">
-                                <TileTitleWithImage
-                                  imgSrc="images/kids.svg"
-                                  title="Kids"
-                                />
-                              </Link>
-                            </span>
-                          </div>
-                          <div className="sppb-media-body">
-                            <div className="sppb-media-content">
-                              <div className="sppb-addon-text">
-                                We
-                                help children of veterans, returned Russian-held political prisoners,
-                                Crimean Tatar exiles, and IDPs to attend our free English lessons and
-                                speaking clubs.
-                                <br />
-                                Anomaly connects foreign donors with an orphanage in Mariupol to help children find a new family and home.
-                                <br />
-                                We work with the local community policing department to protect the rights of children in Kyiv.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="sppb-col-md-6" id="column-wrap-id-1633616058148">
-            <div id="column-id-1633616058148" className="sppb-column">
-              <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1620541326163" className="sppb-addon-wrapper">
-                  <div
-                    id="sppb-addon-1620541326163"
-                  >
-                    <div className="sppb-addon sppb-addon-feature  service-item item4">
-                      <div className="sppb-addon-content sppb-text-left">
-                        <div className="sppb-media">
-                          <div className="pull-sppb-text-left">
-                            <span className="sppb-img-container">
-                              <Link to="/animals">
-                                <TileTitleWithImage
-                                  imgSrc="images/animals.svg"
-                                  title="Animals"
-                                />
-                              </Link>
-                            </span>
-                          </div>
-                          <div className="sppb-media-body">
-                            <div className="sppb-media-content">
-                              <div className="sppb-addon-text">
-                                Anomaly
-                                supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers
-                                to solve the problem of stray animal overpopulation.
-                                <br />
-                                {' '}
-                                <br />
-                                We are always looking for volunteers to help us solve this problem. If you think that is you, then join us today!.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <CommunityTile />
+          <KidsTile />
+          <AnimalsTile />
         </div>
       </div>
     </section>

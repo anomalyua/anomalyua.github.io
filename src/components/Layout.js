@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import * as React from 'react';
 import { useState } from 'react';
 
-import '../styles/animate.css';
 import '../styles/sppagebuilder.css';
 import '../styles/sppagecontainer.css';
 import '../styles/css_003.css';

@@ -67,12 +67,6 @@ const Education = () => (
         <div id="sppb-addon-wrapper-1620541326159" className="sppb-addon-wrapper">
           <div
             id="sppb-addon-1620541326159"
-            className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated"
-            data-sppb-wow-duration="800ms"
-            data-sppb-wow-delay="100ms"
-            style={{
-              visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn',
-            }}
           >
             <EducationTileContainer className="sppb-addon sppb-addon-feature  service-item item1">
               <div className="sppb-addon-content sppb-text-left">
@@ -173,8 +167,22 @@ const IndexPage = () => (
           <div className="sppb-col-md-12" id="column-wrap-id-1620541326154">
             <div id="column-id-1620541326154" className="sppb-column">
               <div className="sppb-column-addons">
-                <div id="sppb-addon-wrapper-1620541326156" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326156" className="clearfix "><div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center"><h3 className="sppb-addon-title">Our projects</h3></div></div></div>
-                <div id="sppb-addon-wrapper-1620541326157" className="sppb-addon-wrapper"><div id="sppb-addon-1620541326157" className="clearfix "><div className="sppb-addon-divider-wrap divider-position"><div className="sppb-divider sppb-divider-border link-color-opt3" /></div></div></div>
+                <div id="sppb-addon-wrapper-1620541326156" className="sppb-addon-wrapper">
+                  <div id="sppb-addon-1620541326156" className="clearfix ">
+                    <div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center">
+                      <h3 className="sppb-addon-title">
+                        Our projects
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div id="sppb-addon-wrapper-1620541326157" className="sppb-addon-wrapper">
+                  <div id="sppb-addon-1620541326157" className="clearfix ">
+                    <div className="sppb-addon-divider-wrap divider-position">
+                      <div className="sppb-divider sppb-divider-border link-color-opt3" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -184,12 +192,7 @@ const IndexPage = () => (
                 <div id="sppb-addon-wrapper-1620541326161" className="sppb-addon-wrapper">
                   <div
                     id="sppb-addon-1620541326161"
-                    className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated sppb-animated"
-                    data-sppb-wow-duration="800ms"
-                    data-sppb-wow-delay="300ms"
-                    style={{
-                      visibility: 'visible', animationDuration: '800ms', animationDelay: '300ms', animationName: 'fadeIn',
-                    }}
+                    className=" sppb-wow clearfix  sppb-animated sppb-animated sppb-animated"
                   >
                     <div className="sppb-addon sppb-addon-feature  service-item item1">
                       <div className="sppb-addon-content sppb-text-left">
@@ -240,12 +243,6 @@ const IndexPage = () => (
                 <div id="sppb-addon-wrapper-1633616058151" className="sppb-addon-wrapper">
                   <div
                     id="sppb-addon-1633616058151"
-                    className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated sppb-animated"
-                    data-sppb-wow-duration="800ms"
-                    data-sppb-wow-delay="100ms"
-                    style={{
-                      visibility: 'visible', animationDuration: '800ms', animationDelay: '100ms', animationName: 'fadeIn',
-                    }}
                   >
                     <div className="sppb-addon sppb-addon-feature  service-item item2">
                       <div className="sppb-addon-content sppb-text-left">
@@ -293,12 +290,6 @@ const IndexPage = () => (
                 <div id="sppb-addon-wrapper-1633616058146" className="sppb-addon-wrapper">
                   <div
                     id="sppb-addon-1633616058146"
-                    className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated sppb-animated"
-                    data-sppb-wow-duration="800ms"
-                    data-sppb-wow-delay="500ms"
-                    style={{
-                      visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn',
-                    }}
                   >
                     <div className="sppb-addon sppb-addon-feature  service-item2">
                       <div className="sppb-addon-content sppb-text-left">
@@ -344,12 +335,6 @@ const IndexPage = () => (
                 <div id="sppb-addon-wrapper-1620541326165" className="sppb-addon-wrapper">
                   <div
                     id="sppb-addon-1620541326165"
-                    className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated"
-                    data-sppb-wow-duration="800ms"
-                    data-sppb-wow-delay="700ms"
-                    style={{
-                      visibility: 'visible', animationDuration: '800ms', animationDelay: '700ms', animationName: 'fadeIn',
-                    }}
                   >
                     <div className="sppb-addon sppb-addon-feature  service-item item3">
                       <div className="sppb-addon-content sppb-text-left">
@@ -392,12 +377,6 @@ const IndexPage = () => (
                 <div id="sppb-addon-wrapper-1620541326163" className="sppb-addon-wrapper">
                   <div
                     id="sppb-addon-1620541326163"
-                    className=" sppb-wow fadeIn clearfix  sppb-animated sppb-animated"
-                    data-sppb-wow-duration="800ms"
-                    data-sppb-wow-delay="500ms"
-                    style={{
-                      visibility: 'visible', animationDuration: '800ms', animationDelay: '500ms', animationName: 'fadeIn',
-                    }}
                   >
                     <div className="sppb-addon sppb-addon-feature  service-item item4">
                       <div className="sppb-addon-content sppb-text-left">

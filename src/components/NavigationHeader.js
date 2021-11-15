@@ -53,12 +53,12 @@ const ProjectsNavigationDropdown = () => {
         <div className="sp-dropdown-inner">
           <ul className="sp-dropdown-items">
             <NavigationLink to="/veterans">Veterans</NavigationLink>
+            <NavigationLink to="/eco">Eco</NavigationLink>
+            <NavigationLink to="/education">Education</NavigationLink>
+            <NavigationLink to="/community">Community</NavigationLink>
             <NavigationLink to="/kids">Kids</NavigationLink>
             <NavigationLink to="/animals">Animals</NavigationLink>
-            <NavigationLink to="/eco">Eco</NavigationLink>
             <NavigationLink to="/diaspora">Diaspora</NavigationLink>
-            <NavigationLink to="/community">Community</NavigationLink>
-            <NavigationLink to="/education">Education</NavigationLink>
           </ul>
         </div>
       </div>

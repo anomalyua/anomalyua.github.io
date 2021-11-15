@@ -52,22 +52,22 @@ const OffCanvasMenu = ({ onClose }) => (
                 <Link to="/veterans">Veterans</Link>
               </li>
               <li>
+                <Link to="/eco">Eco</Link>
+              </li>
+              <li>
+                <Link to="/education">Education</Link>
+              </li>
+              <li>
+                <Link to="/community">Community</Link>
+              </li>
+              <li>
                 <Link to="/kids">Kids</Link>
               </li>
               <li>
                 <Link to="/animals">Animals</Link>
               </li>
               <li>
-                <Link to="/eco">Eco</Link>
-              </li>
-              <li>
                 <Link to="/diaspora">Diaspora</Link>
-              </li>
-              <li>
-                <Link to="/community">Community</Link>
-              </li>
-              <li>
-                <Link to="/education">Education</Link>
               </li>
             </ul>
           </div>

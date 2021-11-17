@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import botsLogo from '../images/iFAV4mg.png'
+
 const Image = styled.img`
   padding: 5px;
   height: 180px;
@@ -41,7 +43,7 @@ const ShadedImage = (props) => (
 );
 
 export const BotsPlatformImageTile = styled(ShadedImage).attrs({
-  src: 'images/iFAV4mg.png',
+  src: botsLogo,
 })`
   height: 240px;
 `;

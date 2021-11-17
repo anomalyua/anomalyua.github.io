@@ -22,10 +22,12 @@ import '../styles/template.css';
 
 import '../styles/global.css';
 import { Link } from 'gatsby';
+import { useLocation } from '@reach/router';
 import { TopPageHeader } from './TopPageHeader';
 import { PhoneNumber } from './PhoneNumber';
 
 import logoImage from '../images/logo.png';
+import { BotUnderConstruction } from './BotUnderConstruction';
 
 const OffCanvasMenu = ({ onClose }) => (
   <>
@@ -90,6 +92,12 @@ const LogoContainer = styled('div')`
 // markup
 export const Layout = ({ title, children }) => {
   const [offCanvasVisible, showOffCanvas] = useState(false);
+
+  const { hostname } = useLocation();
+
+  if (hostname === 'bots.anomaly.org.ua') {
+    return <BotUnderConstruction />;
+  }
 
   return (
     <main className={classnames(offCanvasVisible && ['offcanvas-active', 'offcanvs-position-left'])}>

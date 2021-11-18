@@ -126,7 +126,7 @@ const BotsPlatformTile = () => (
     <div id="column-id-1633010662536" className="sppb-column">
       <div className="sppb-column-addons">
         <BotsPlatformContainer>
-          <LinkShadedImage href="https://BotsPlatform.anomaly.org.ua">
+          <LinkShadedImage href="https://bots.anomaly.org.ua">
             <BotsPlatformImageTile />
           </LinkShadedImage>
         </BotsPlatformContainer>

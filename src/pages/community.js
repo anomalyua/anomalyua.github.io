@@ -194,7 +194,7 @@ export default () => (
                                   <div className="sppb-addon sppb-addon-single-image sppb-text-center ">
                                     <div className="sppb-addon-content">
                                       <div className="sppb-addon-single-image-container">
-                                        <LinkShadedImage href="https://BotsPlatform.anomaly.org.ua">
+                                        <LinkShadedImage href="https://bots.anomaly.org.ua">
                                           <BotsPlatformImageTile />
                                         </LinkShadedImage>
                                       </div>

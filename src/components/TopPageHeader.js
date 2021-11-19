@@ -1,8 +1,30 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
+import * as React from 'react'
+import { Link } from 'gatsby'
 
-import { PhoneNumber } from './PhoneNumber';
-import { NavigationHeader } from './NavigationHeader';
+import { PhoneNumber } from './PhoneNumber'
+import { NavigationHeader } from './NavigationHeader'
+import { useLocation } from '@reach/router'
+
+const LanguageSwitcher = () => {
+  const { pathname } = useLocation()
+  const barePath = pathname.match(/(?:\/en)?(.*)/)[1]
+  console.log('pathname', barePath)
+
+  return <div className="mod-languages">
+    <ul className="lang-inline">
+      <li dir="ltr">
+        <Link to={barePath}>
+          UA
+        </Link>
+      </li>
+      <li className="lang-active">
+        <Link to={`/en${barePath}`}>
+          EN
+        </Link>
+      </li>
+    </ul>
+  </div>
+}
 
 export const TopPageHeader = ({ onMenuOpen }) => (
   <div className="header-wrapper">
@@ -28,20 +50,7 @@ export const TopPageHeader = ({ onMenuOpen }) => (
                   <div className="sp-column ">
                     <div className="sp-module ">
                       <div className="sp-module-content">
-                        <div className="mod-languages">
-                          <ul className="lang-inline">
-                            <li dir="ltr">
-                              <a href="#">
-                                FR
-                              </a>
-                            </li>
-                            <li className="lang-active" dir="ltr">
-                              <Link to="/">
-                                EN
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
+                        <LanguageSwitcher />
                       </div>
                     </div>
                   </div>
@@ -56,4 +65,4 @@ export const TopPageHeader = ({ onMenuOpen }) => (
       </div>
     </div>
   </div>
-);
+)

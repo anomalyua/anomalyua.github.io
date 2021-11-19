@@ -1,9 +1,9 @@
-import classnames from 'classnames';
-import { useLocation } from '@reach/router';
-import styled from 'styled-components';
-import * as React from 'react';
+import classnames from 'classnames'
+import { useLocation } from '@reach/router'
+import styled from 'styled-components'
+import * as React from 'react'
 
-import { Layout } from '../components/Layout';
+import { Layout } from '../components/Layout'
 
 const PageTitle = styled.div`
   &::after {
@@ -28,16 +28,16 @@ const PageTitle = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 121px;
-`;
+`
 
 const Tabs = () => {
-  const locationHash = useLocation().hash;
+  const locationHash = useLocation().hash
 
-  const firstActive = (locationHash === '#sppb-tab1-1') || (locationHash === '');
-  const secondActive = (locationHash === '#sppb-tab1-2');
-  const thirdActive = (locationHash === '#sppb-tab1-3');
-  const fourthActive = (locationHash === '#sppb-tab1-4');
-  const fifthActive = (locationHash === '#sppb-tab1-5');
+  const firstActive = (locationHash === '#sppb-tab1-1') || (locationHash === '')
+  const secondActive = (locationHash === '#sppb-tab1-2')
+  const thirdActive = (locationHash === '#sppb-tab1-3')
+  const fourthActive = (locationHash === '#sppb-tab1-4')
+  const fifthActive = (locationHash === '#sppb-tab1-5')
 
   return (
     <>
@@ -76,11 +76,19 @@ const Tabs = () => {
                       <div id="column-id-1626727883298" className="sppb-column">
                         <div className="sppb-column-addons">
                           <div id="sppb-addon-wrapper-1626727883303" className="sppb-addon-wrapper">
-<div id="sppb-addon-1626727883303" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{fontSize: '16pt'}} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Every heard of the saying \&quot;it takes a village to raise a child\&quot;? It's true! Help kids who have family members in the military by joining our mentorship program.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">Every
-                                                                      heard of the saying "it takes a village to raise a child"? It's true!
-                                                                      Help kids who have family members in the military by joining our
-                                                                      mentorship program.</span></div></div></div>
-</div>
+                            <div id="sppb-addon-1626727883303" className="clearfix ">
+                              <div className="sppb-addon sppb-addon-text-block  ">
+                                <div className="sppb-addon-content">
+                                  <span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Every heard of the saying \&quot;it takes a village to raise a child\&quot;? It's true! Help kids who have family members in the military by joining our mentorship program.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
+                                    Every
+                                    heard of the saying "it takes a village to raise a child"? It's true!
+                                    Help kids who have family members in the military by joining our
+                                    mentorship program.
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -107,13 +115,21 @@ const Tabs = () => {
                     <div className="sppb-col-md-9" id="column-wrap-id-1626727883310">
                       <div id="column-id-1626727883310" className="sppb-column">
                         <div className="sppb-column-addons">
-      <div id="sppb-addon-wrapper-1626727883311" className="sppb-addon-wrapper">
-<div id="sppb-addon-1626727883311" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{fontSize: '16pt'}} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Everyday Crimean Tartar families are being separated by Russian forces. Imagine losing your father at such a young age. It's all very confusing but mentoring can help!&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">Everyday
-                                                                      Crimean Tartar families are being separated by Russian forces. Imagine
-                                                                      losing your father at such a young age. It's all very confusing but
-                                                                      mentoring can help!</span></div></div></div>
-</div>
-    </div>
+                          <div id="sppb-addon-wrapper-1626727883311" className="sppb-addon-wrapper">
+                            <div id="sppb-addon-1626727883311" className="clearfix ">
+                              <div className="sppb-addon sppb-addon-text-block  ">
+                                <div className="sppb-addon-content">
+                                  <span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Everyday Crimean Tartar families are being separated by Russian forces. Imagine losing your father at such a young age. It's all very confusing but mentoring can help!&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
+                                    Everyday
+                                    Crimean Tartar families are being separated by Russian forces. Imagine
+                                    losing your father at such a young age. It's all very confusing but
+                                    mentoring can help!
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -137,11 +153,19 @@ const Tabs = () => {
                     <div className="sppb-col-md-9" id="column-wrap-id-1626727883319">
                       <div id="column-id-1626727883319" className="sppb-column">
                         <div className="sppb-column-addons">
-<div id="sppb-addon-wrapper-1626727883320" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883320" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes. &quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
-<span style={{fontSize: '16pt'}}>With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes.</span>
-{' '}
- </span></div></div></div></div>
-</div>
+                          <div id="sppb-addon-wrapper-1626727883320" className="sppb-addon-wrapper">
+                            <div id="sppb-addon-1626727883320" className="clearfix ">
+                              <div className="sppb-addon sppb-addon-text-block  ">
+                                <div className="sppb-addon-content">
+                                  <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes. &quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
+                                    <span style={{ fontSize: '16pt' }}>With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes.</span>
+                                    {' '}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="sppb-col-md-3" id="column-wrap-id-1626727883321"><div id="column-id-1626727883321" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883322" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883322" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly92.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
@@ -167,11 +191,19 @@ const Tabs = () => {
                     <div className="sppb-col-md-9" id="column-wrap-id-1626727883330">
                       <div id="column-id-1626727883330" className="sppb-column">
                         <div className="sppb-column-addons">
-<div id="sppb-addon-wrapper-1626727883331" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883331" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Help advocate for better living situtations in orphanges. &quot;}" data-sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}">
-<span style={{fontSize: '16pt'}}>Help advocate for better living situtations in orphanges.</span>
-{' '}
- </span></div></div></div></div>
-</div>
+                          <div id="sppb-addon-wrapper-1626727883331" className="sppb-addon-wrapper">
+                            <div id="sppb-addon-1626727883331" className="clearfix ">
+                              <div className="sppb-addon sppb-addon-text-block  ">
+                                <div className="sppb-addon-content">
+                                  <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Help advocate for better living situtations in orphanges. &quot;}" data-sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}">
+                                    <span style={{ fontSize: '16pt' }}>Help advocate for better living situtations in orphanges.</span>
+                                    {' '}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -203,10 +235,10 @@ const Tabs = () => {
       </div>
 
     </>
-  );
-};
+  )
+}
 
-export default () => (
+const Kids = () => (
   <Layout
     title="Kids"
   >
@@ -217,8 +249,8 @@ export default () => (
             <PageTitle>
               <div>
                 <img
-                  src="images/shooterscreenshot-1-30-09-21.png" style={{ /*! position: 'absolute', *//*! top: 0, */opacity: '0.6', /*! marginLeft: 'auto', */flex: 'auto', /*! height: '50%', *//*! flexShrink: '0.5', */objectFit: 'cover', width: '434px', height: '290px', objectPosition: '0 -25px',
-                    }}
+                  src="images/shooterscreenshot-1-30-09-21.png"
+                  style={{ /*! position: 'absolute', *//*! top: 0, */opacity: '0.6', /*! marginLeft: 'auto', */flex: 'auto', /*! height: '50%', *//*! flexShrink: '0.5', */objectFit: 'cover', width: '434px', height: '290px', objectPosition: '0 -25px' }}
                 />
                 <div />
               </div>
@@ -236,34 +268,57 @@ export default () => (
               <div className="page-content">
                 <section id="section-id-1626727883291" className="sppb-section">
                   <div className="sppb-row-container">
-          <div className="sppb-row">
-                  <div className="sppb-col-md-3" id="column-wrap-id-1626727883289"><div id="column-id-1626727883289" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883294" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883294" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly3.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
-                  <div className="sppb-col-md-9" id="column-wrap-id-1626727883290"><div id="column-id-1626727883290" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883297" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883297" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.</span></div></div></div></div></div></div></div>
-                </div>
-        </div>
+                    <div className="sppb-row">
+                      <div className="sppb-col-md-3" id="column-wrap-id-1626727883289"><div id="column-id-1626727883289" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883294" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883294" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly3.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
+                      <div className="sppb-col-md-9" id="column-wrap-id-1626727883290"><div id="column-id-1626727883290" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883297" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883297" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.</span></div></div></div></div></div></div></div>
+                    </div>
+                  </div>
                 </section>
                 <section id="section-id-1633859758724" className="sppb-section" style={{ backgroundColor: '#E3E6EC', paddingTop: '50px', paddingBottom: '50px' }}>
                   <div className="sppb-row-container">
-          <div className="sppb-row">
-                  <div className="sppb-col-md-12" id="column-wrap-id-1633859758744">
-<div id="column-id-1633859758744" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633859758731" className="sppb-addon-wrapper"><div id="sppb-addon-1633859758731" className="clearfix "><div className="sppb-addon sppb-addon-tab "><div className="sppb-addon-content sppb-tab sppb-tabs-tab sppb-tab-nav-left">
-            <Tabs />
+                    <div className="sppb-row">
+                      <div className="sppb-col-md-12" id="column-wrap-id-1633859758744">
+                        <div id="column-id-1633859758744" className="sppb-column">
+                          <div className="sppb-column-addons">
+                            <div id="sppb-addon-wrapper-1633859758731" className="sppb-addon-wrapper">
+                              <div id="sppb-addon-1633859758731" className="clearfix ">
+                                <div className="sppb-addon sppb-addon-tab ">
+                                  <div className="sppb-addon-content sppb-tab sppb-tabs-tab sppb-tab-nav-left">
+                                    <Tabs />
 
-            </div></div></div></div></div>
-            </div>
-</div>
-                </div>
-        </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
                 <section id="section-id-1633809247498" className="sppb-section secondary-color sppb-section-content-center">
                   <div className="sppb-row-overlay" />
                   <div className="sppb-row-container">
-          <div className="sppb-row sppb-align-center">
-  <div className="sppb-col-md-7" id="column-wrap-id-1633809247519"><div id="column-id-1633809247519" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633809247520" className="sppb-addon-wrapper"><div id="sppb-addon-1633809247520" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-center"><h2 className="sppb-addon-title">Have experience working with kids? Come show us!</h2></div></div></div></div></div></div>
-<div className="sppb-col-md-5" id="column-wrap-id-1633809247521"><div id="column-id-1633809247521" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633809247522" className="sppb-addon-wrapper"><div id="sppb-addon-1633809247522" className="clearfix sppb-positioned-addon" data-rowid={1633809247498} data-colid={1633809247521}><div className="sppb-text-center"><a id="btn-1633809247522" className="sppb-btn  sppb-btn-default sppb-btn-rounded">
-Join<i className="fas fa-arrow-right" aria-hidden="true" /></a></div></div></div></div></div></div>
-</div>
-        </div>
+                    <div className="sppb-row sppb-align-center">
+                      <div className="sppb-col-md-7" id="column-wrap-id-1633809247519"><div id="column-id-1633809247519" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633809247520" className="sppb-addon-wrapper"><div id="sppb-addon-1633809247520" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-center"><h2 className="sppb-addon-title">Have experience working with kids? Come show us!</h2></div></div></div></div></div></div>
+                      <div className="sppb-col-md-5" id="column-wrap-id-1633809247521">
+                        <div id="column-id-1633809247521" className="sppb-column">
+                          <div className="sppb-column-addons">
+                            <div id="sppb-addon-wrapper-1633809247522" className="sppb-addon-wrapper">
+                              <div id="sppb-addon-1633809247522" className="clearfix sppb-positioned-addon" data-rowid={1633809247498} data-colid={1633809247521}>
+                                <div className="sppb-text-center">
+                                  <a id="btn-1633809247522" className="sppb-btn  sppb-btn-default sppb-btn-rounded">
+                                    Join
+<i className="fas fa-arrow-right" aria-hidden="true" />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
               </div>
             </div>
@@ -272,4 +327,6 @@ Join<i className="fas fa-arrow-right" aria-hidden="true" /></a></div></div></div
       </div>
     </section>
   </Layout>
-);
+)
+
+export default Kids

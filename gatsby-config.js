@@ -1,9 +1,16 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.yourdomain.tld',
-    title: 'Anomaly New',
+    title: 'Anomaly New'
   },
   plugins: [
     'gatsby-plugin-styled-components',
-  ],
-};
+    {
+      resolve: 'gatsby-plugin-internationalization',
+      options: {
+        locales: ['en', 'ua'],
+        defaultLocale: 'ua'
+      }
+    }
+  ]
+}

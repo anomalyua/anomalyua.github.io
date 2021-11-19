@@ -1,3 +1,4 @@
+import { LocalizedProvider } from 'react-localized';
 import styled from 'styled-components';
 
 import classnames from 'classnames';
@@ -28,6 +29,7 @@ import { PhoneNumber } from './PhoneNumber';
 
 import logoImage from '../images/logo.png';
 import { BotUnderConstruction } from './BotUnderConstruction';
+import {useLocaleContext} from "./LocaleContext";
 
 const OffCanvasMenu = ({ onClose }) => (
   <>
@@ -90,10 +92,12 @@ const LogoContainer = styled('div')`
 `;
 
 // markup
-export const Layout = ({ title, children }) => {
+const LayoutInternal = ({ title, children }) => {
   const [offCanvasVisible, showOffCanvas] = useState(false);
 
   const { hostname } = useLocation();
+
+  console.log('h', hostname)
 
   if (hostname === 'bots.anomaly.org.ua') {
     return <BotUnderConstruction />;
@@ -245,5 +249,31 @@ export const Layout = ({ title, children }) => {
         {/* Go to top */}
       </div>
     </main>
+  );
+};
+
+const en = () => import('../locales/en.js').then(data => data.default)
+const ua = () => import('../locales/uk.js').then(data => data.default)
+
+const locales = { en, ua }
+
+export const Layout = (props) => {
+  const { locale } = useLocaleContext()
+
+  console.log(locale, 'locale')
+
+  return (
+    <LocalizedProvider
+      locales={locales}
+      selected={locale}
+    >
+      {
+        ({localeReady}) => (
+          localeReady ?
+            (<LayoutInternal {...props} />)
+            : null
+        )
+      }
+    </LocalizedProvider>
   );
 };

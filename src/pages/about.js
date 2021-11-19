@@ -1,13 +1,13 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import styled from 'styled-components';
-import { Layout } from '../components/Layout';
-import { TopTitleText } from '../components/TopTitleText';
-import { AchievementsColumn } from '../components/AchievementsColumn';
+import styled from 'styled-components'
+import { Layout } from '../components/Layout'
+import { TopTitleText } from '../components/TopTitleText'
+import { AchievementsColumn } from '../components/AchievementsColumn'
 
-import davidPhoto from '../images/photo_2021-11-04_22-41-53.jpg';
-import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer';
-import { PhoneNumber } from '../components/PhoneNumber';
+import davidPhoto from '../images/photo_2021-11-04_22-41-53.jpg'
+import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer'
+import { PhoneNumber } from '../components/PhoneNumber'
 
 const AchievementsBlock = styled('section')`
   display: flex;
@@ -25,7 +25,7 @@ const AchievementsBlock = styled('section')`
   @media (min-width: 1200px) {
     min-width: 1170px;
   }
-`;
+`
 
 const PageColumn = styled('div')`
   position: relative;
@@ -33,27 +33,27 @@ const PageColumn = styled('div')`
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-`;
+`
 
 const PageColumn4 = styled(PageColumn)`
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-`;
+`
 
 const PageColumn8 = styled(PageColumn)`
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
-`;
+`
 
 const GraySection = styled('section')`
   background-color: #e3e6ec;
-`;
+`
 
 const TitleLevel3 = styled('div')`
   text-align: center;
   font-size: 32px;
   font-family: "Work Sans";
-`;
+`
 
 const DescriptionBlock = styled('div')`
   font-size: 16px;
@@ -65,7 +65,7 @@ const DescriptionBlock = styled('div')`
     font-size: 14px;
     line-height: 24px;
   }
-`;
+`
 
 const OurFounder = () => (
   <GraySection id="section-id-1542711300771" className="sppb-section sppb-section-content-center">
@@ -137,7 +137,7 @@ const OurFounder = () => (
       </div>
     </div>
   </GraySection>
-);
+)
 
 const OurTeamDivider = styled('div')`
   display: inline-block;
@@ -156,7 +156,7 @@ const OurTeamDivider = styled('div')`
   @media (max-width: 767px) {
     margin-top: 10px;
   }
-`;
+`
 
 const OurTeamTopDivider = styled('div')`
   display: inline-block;
@@ -177,7 +177,7 @@ const OurTeamTopDivider = styled('div')`
     margin-top: 10px;
     margin-bottom: 18px;
   }
-`;
+`
 
 const OurTeamColumn = styled('div')`
   display: flex;
@@ -187,7 +187,7 @@ const OurTeamColumn = styled('div')`
 
   justify-content: center;
   margin-top: 30px;
-`;
+`
 
 const ContactsColumn = styled('div')`
   display: flex;
@@ -196,7 +196,7 @@ const ContactsColumn = styled('div')`
   flex-wrap: wrap;
 
   justify-content: center;
-`;
+`
 
 const DescriptionText = ({ children }) => (
   <div className="sppb-column">
@@ -218,7 +218,7 @@ const DescriptionText = ({ children }) => (
       </div>
     </div>
   </div>
-);
+)
 
 const OurTeam = () => (
   <section id="sp-main-body">
@@ -258,13 +258,13 @@ const OurTeam = () => (
       </main>
     </div>
   </section>
-);
+)
 
 const ButtonContainer = styled('div')`
   display: flex;
   justify-content: center;
   padding-top: 32px;
-`;
+`
 
 const VolunteeringOpportunities = () => (
   <GraySection id="section-id-1542711300771" className="sppb-section sppb-section-content-center">
@@ -299,11 +299,11 @@ const VolunteeringOpportunities = () => (
       </div>
     </div>
   </GraySection>
-);
+)
 
 const ContactsContainer = styled('div')`
   padding: 120px 0;
-`;
+`
 
 const Contacts = () => (
   <ContactsContainer className="sppb-row-container">
@@ -434,47 +434,49 @@ const Contacts = () => (
       </PageColumn4>
     </div>
   </ContactsContainer>
-);
+)
 
-const About = () => (
-  <Layout
-    title="About"
-  >
-    <section id="sp-section-3">
-      <div className="row">
-        <div id="sp-title" className="col-lg-12 ">
-          <div className="sp-column ">
-            <div className="sp-page-title" style={{ backgroundImage: 'url(../images/IMG_1408.jpg)' }}>
-              <div className="container">
-                <TopTitleText>About Us</TopTitleText>
+const About = () => {
+  return (
+    <Layout
+      title="About"
+    >
+      <section id="sp-section-3">
+        <div className="row">
+          <div id="sp-title" className="col-lg-12 ">
+            <div className="sp-column ">
+              <div className="sp-page-title" style={{ backgroundImage: 'url(../images/IMG_1408.jpg)' }}>
+                <div className="container">
+                  <TopTitleText>About Us</TopTitleText>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <AchievementsBlock>
-      <AchievementsColumn>
-        Competency
-      </AchievementsColumn>
-      <AchievementsColumn>
-        Integrity
-      </AchievementsColumn>
-      <AchievementsColumn>
-        Sustainability
-      </AchievementsColumn>
-      <AchievementsColumn>
-        Growth
-      </AchievementsColumn>
-      <AchievementsColumn>
-        Creativity
-      </AchievementsColumn>
-    </AchievementsBlock>
-    <OurFounder />
-    <OurTeam />
-    <VolunteeringOpportunities />
-    <Contacts />
-  </Layout>
-);
+      </section>
+      <AchievementsBlock>
+        <AchievementsColumn>
+          Competency
+        </AchievementsColumn>
+        <AchievementsColumn>
+          Integrity
+        </AchievementsColumn>
+        <AchievementsColumn>
+          Sustainability
+        </AchievementsColumn>
+        <AchievementsColumn>
+          Growth
+        </AchievementsColumn>
+        <AchievementsColumn>
+          Creativity
+        </AchievementsColumn>
+      </AchievementsBlock>
+      <OurFounder/>
+      <OurTeam/>
+      <VolunteeringOpportunities/>
+      <Contacts/>
+    </Layout>
+  )
+}
 
-export default About;
+export default About

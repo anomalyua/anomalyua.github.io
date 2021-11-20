@@ -2454,17 +2454,6 @@ form.sppb-optin-form.submit-button-inside .email-wrap .sp-input-wrap.active span
   text-align: right;
 }
 
-#sp-top-bar #sp-top2 .mod-languages a {
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0;
-  color: rgb(255 255 255 / 60%);
-}
-
-#sp-top-bar #sp-top2 .mod-languages .lang-active a {
-  color: #fff;
-}
-
 #sp-top-bar #sp-top2 .sp-custom-login .sppb-btn.sppb-btn-link {
   font-size: 14px;
   font-weight: 300;

@@ -263,8 +263,6 @@ const locales = { en, ua }
 export const Layout = (props) => {
   const { locale } = useLocaleContext()
 
-  console.log(locale, 'locale')
-
   return (
     <LocalizedProvider
       locales={locales}

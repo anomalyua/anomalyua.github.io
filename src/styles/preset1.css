@@ -23,10 +23,6 @@ body,
   color: #aaa;
 }
 
-#sp-top-bar a {
-  color: #aaa;
-}
-
 a {
   color: #a67c00;
 }
@@ -151,10 +147,6 @@ ul.social-icons > li a:hover {
 
 .layout-boxed .body-innerwrapper {
   background: #fff;
-}
-
-.sp-module ul > li > a {
-  color: #131313;
 }
 
 .sp-module ul > li > a:hover {

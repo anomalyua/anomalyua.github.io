@@ -1,30 +1,9 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 
 import { PhoneNumber } from './PhoneNumber'
 import { NavigationHeader } from './NavigationHeader'
-import { useLocation } from '@reach/router'
 
-const LanguageSwitcher = () => {
-  const { pathname } = useLocation()
-  const barePath = pathname.match(/(?:\/en)?(.*)/)[1]
-  console.log('pathname', barePath)
-
-  return <div className="mod-languages">
-    <ul className="lang-inline">
-      <li dir="ltr">
-        <Link to={barePath}>
-          UA
-        </Link>
-      </li>
-      <li className="lang-active">
-        <Link to={`/en${barePath}`}>
-          EN
-        </Link>
-      </li>
-    </ul>
-  </div>
-}
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export const TopPageHeader = ({ onMenuOpen }) => (
   <div className="header-wrapper">

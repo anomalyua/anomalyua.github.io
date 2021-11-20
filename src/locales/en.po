@@ -7,3 +7,14 @@ msgstr ""
 #: src/components/BecomeAVolunteer.js:19
 msgid "Become a Volunteer"
 msgstr ""
+
+#: src/pages/index.js:397
+msgid "Dare to do the impossible!"
+msgstr ""
+
+#: src/pages/index.js:167
+msgid ""
+"Support for Ukrainian veterans: Every Sunday we offer free English courses "
+"and conversation clubs specifically for veterans, ATO volunteers, and their "
+"families in Kyiv."
+msgstr ""

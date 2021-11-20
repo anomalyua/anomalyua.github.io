@@ -1,0 +1,2 @@
+(self.webpackChunkanomaly_new=self.webpackChunkanomaly_new||[]).push([[156],{4156:function(n,a,e){"use strict";e.r(a);var s=e(857),l=e(4551),r=e.n(l);a.default=(0,s.$2)(r())},4551:function(n){n.exports={charset:"utf-8",headers:{"Plural-Forms":"nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));"},translations:{"":{"Become a Volunteer":{msgstr:["Стати волонтером"]}}}}}}]);
+//# sourceMappingURL=156-bc8aa0a602428c45a40a.js.map

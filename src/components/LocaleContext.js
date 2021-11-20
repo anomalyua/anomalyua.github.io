@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { createContext, useContext } from 'react'
 
-const LocaleContext = createContext(null)
+const LocaleContext = createContext({})
 
 export const useLocaleContext = () => {
   return useContext(LocaleContext)

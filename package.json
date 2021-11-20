@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "i18n:extract": "react-localized-extractor -l en -o src/locales/",
     "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",

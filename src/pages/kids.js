@@ -92,7 +92,7 @@ const Tabs = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883299"><div id="column-id-1626727883299" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883306" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883306" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/img_2379.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
+                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883299"><div id="column-id-1626727883299" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883306" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883306" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_2379.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const Tabs = () => {
               <div className="sppb-addon sppb-addon-text-block  ">
                 <div className="sppb-row-container">
                   <div className="sppb-row">
-                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883308"><div id="column-id-1626727883308" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883309" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883309" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly95.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
+                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883308"><div id="column-id-1626727883308" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883309" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883309" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/anomaly95.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
                     <div className="sppb-col-md-9" id="column-wrap-id-1626727883310">
                       <div id="column-id-1626727883310" className="sppb-column">
                         <div className="sppb-column-addons">
@@ -168,7 +168,7 @@ const Tabs = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883321"><div id="column-id-1626727883321" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883322" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883322" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly92.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
+                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883321"><div id="column-id-1626727883321" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883322" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883322" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/anomaly92.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ const Tabs = () => {
               <div className="sppb-addon sppb-addon-text-block  ">
                 <div className="sppb-row-container">
                   <div className="sppb-row">
-                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883328"><div id="column-id-1626727883328" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883329" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883329" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly8.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
+                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883328"><div id="column-id-1626727883328" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883329" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883329" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/anomaly8.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
                     <div className="sppb-col-md-9" id="column-wrap-id-1626727883330">
                       <div id="column-id-1626727883330" className="sppb-column">
                         <div className="sppb-column-addons">
@@ -225,7 +225,7 @@ const Tabs = () => {
                 <div className="sppb-row-container">
                   <div className="sppb-row">
                     <div className="sppb-col-md-9" id="column-wrap-id-1626727883337"><div id="column-id-1626727883337" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883338" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883338" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;We collect funds and build playgrounds at schools in low SES areas. Here is a picture of school 205 in Kyiv.&quot;}" data-sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}">We collect funds and build playgrounds at schools in low SES areas. Here is a picture of school 205 in Kyiv.</span></div></div></div></div></div></div></div>
-                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883339"><div id="column-id-1626727883339" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883340" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883340" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/2021-06-13-17.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
+                    <div className="sppb-col-md-3" id="column-wrap-id-1626727883339"><div id="column-id-1626727883339" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883340" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883340" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/2021-06-13-17.jpg" alt="Image" /></div></div></div></div></div></div></div></div>
                   </div>
                 </div>
               </div>
@@ -249,7 +249,7 @@ const Kids = () => (
             <PageTitle>
               <div>
                 <img
-                  src="images/shooterscreenshot-1-30-09-21.png"
+                  src="/images/shooterscreenshot-1-30-09-21.png"
                   style={{ /*! position: 'absolute', *//*! top: 0, */opacity: '0.6', /*! marginLeft: 'auto', */flex: 'auto', /*! height: '50%', *//*! flexShrink: '0.5', */objectFit: 'cover', width: '434px', height: '290px', objectPosition: '0 -25px' }}
                 />
                 <div />
@@ -269,7 +269,7 @@ const Kids = () => (
                 <section id="section-id-1626727883291" className="sppb-section">
                   <div className="sppb-row-container">
                     <div className="sppb-row">
-                      <div className="sppb-col-md-3" id="column-wrap-id-1626727883289"><div id="column-id-1626727883289" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883294" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883294" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/anomaly3.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
+                      <div className="sppb-col-md-3" id="column-wrap-id-1626727883289"><div id="column-id-1626727883289" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883294" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883294" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/anomaly3.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
                       <div className="sppb-col-md-9" id="column-wrap-id-1626727883290"><div id="column-id-1626727883290" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883297" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883297" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.</span></div></div></div></div></div></div></div>
                     </div>
                   </div>

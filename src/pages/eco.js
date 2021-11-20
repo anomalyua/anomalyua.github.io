@@ -39,7 +39,7 @@ export default () => (
                                   <div className="sppb-addon sppb-addon-text-block  ">
                                     <div className="sppb-addon-content">
                                       <p>
-                                        <img src="images/04.png" width={55} height={55} />
+                                        <img src="/images/04.png" width={55} height={55} />
 &nbsp; &nbsp;
                                         <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title">&nbsp;We are the largest group of eco activitists in Ukraine</span></strong></span>
                                       </p>
@@ -47,7 +47,7 @@ export default () => (
                                       {' '}
                                       <br />
                                       <p>
-                                        <img src="images/01.png" width={55} height={55} />
+                                        <img src="/images/01.png" width={55} height={55} />
 &nbsp; &nbsp;
                                         <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title">&nbsp;We conducted more than 55 clean ups in 2019-20</span></strong></span>
                                       </p>
@@ -55,7 +55,7 @@ export default () => (
                                       {' '}
                                       <br />
                                       <p>
-                                        <img src="images/05.png" width={55} height={55} />
+                                        <img src="/images/05.png" width={55} height={55} />
 &nbsp; &nbsp;
                                         <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title"> We won first prize in Ukraine and second prize in the world in the 2018 Enactus Award competition</span></strong></span>
                                       </p>
@@ -96,14 +96,14 @@ export default () => (
                             </div>
                           </div>
                         </div>
-                        <div className="sppb-col-md-5" id="column-wrap-id-1626723958915"><div id="column-id-1626723958915" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626723958922" className="sppb-addon-wrapper"><div id="sppb-addon-1626723958922" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/img_0552.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
+                        <div className="sppb-col-md-5" id="column-wrap-id-1626723958915"><div id="column-id-1626723958915" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626723958922" className="sppb-addon-wrapper"><div id="sppb-addon-1626723958922" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_0552.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
                       </div>
                     </div>
                   </section>
                   <section id="section-id-1626726032080" className="sppb-section">
                     <div className="sppb-row-container">
                       <div className="sppb-row">
-                        <div className="sppb-col-md-5" id="column-wrap-id-1626726032081"><div id="column-id-1626726032081" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626726032082" className="sppb-addon-wrapper"><div id="sppb-addon-1626726032082" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/shooterscreenshot-0-30-09-21.png" alt="Image" title /></div></div></div></div></div></div></div></div>
+                        <div className="sppb-col-md-5" id="column-wrap-id-1626726032081"><div id="column-id-1626726032081" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626726032082" className="sppb-addon-wrapper"><div id="sppb-addon-1626726032082" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/shooterscreenshot-0-30-09-21.png" alt="Image" title /></div></div></div></div></div></div></div></div>
                         <div className="sppb-col-md-7" id="column-wrap-id-1626726032083">
                           <div id="column-id-1626726032083" className="sppb-column">
                             <div className="sppb-column-addons">

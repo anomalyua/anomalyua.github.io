@@ -1,7 +1,8 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from 'react'
+import styled from 'styled-components'
 
 import botsLogo from '../images/iFAV4mg.png'
+import englishNow from '../images/English-Now-CTA.svg'
 
 const Image = styled.img`
   padding: 5px;
@@ -9,7 +10,7 @@ const Image = styled.img`
 
   -webkit-filter: drop-shadow(5px 5px 5px #666666);
   filter: drop-shadow(5px 5px 5px #666666);
-`;
+`
 
 export const LinkShadedImage = styled.a`
   &:hover {
@@ -20,13 +21,13 @@ export const LinkShadedImage = styled.a`
       filter: drop-shadow(10px 10px 10px #666666);
     }
   }
-`;
+`
 
 const EnglishNowCTA = (props) => (
   <div className="sppb-text-center">
     <Image {...props} />
   </div>
-);
+)
 
 const ShadedImage = (props) => (
   <div>
@@ -40,16 +41,16 @@ const ShadedImage = (props) => (
       </div>
     </div>
   </div>
-);
+)
 
 export const BotsPlatformImageTile = styled(ShadedImage).attrs({
-  src: botsLogo,
+  src: botsLogo
 })`
   height: 240px;
-`;
+`
 
 export const EnglishNowImageTile = styled(ShadedImage).attrs({
-  src: 'images/English-Now-CTA.svg',
+  src: englishNow
 })`
   height: 180px;
-`;
+`

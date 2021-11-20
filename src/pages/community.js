@@ -22,27 +22,27 @@ const Gallery = () => (
   <GalleryContainer className="sppb-gallery clearfix gallery-item-">
     <li>
       <a href="images/img_0912.jpg" className="sppb-gallery-btn">
-        <img className="sppb-img-responsive" src="images/img_0912.jpg" alt="Gallery Item 1" />
+        <img className="sppb-img-responsive" src="/images/img_0912.jpg" alt="Gallery Item 1" />
       </a>
     </li>
     <li>
       <a href="images/shooterscreenshot-0-30-09-21.png" className="sppb-gallery-btn">
-        <img className="sppb-img-responsive" src="images/shooterscreenshot-0-30-09-21.png" alt="Gallery Item 1" />
+        <img className="sppb-img-responsive" src="/images/shooterscreenshot-0-30-09-21.png" alt="Gallery Item 1" />
       </a>
     </li>
     <li>
       <a href="images/shooterscreenshot-1-30-09-21.png" className="sppb-gallery-btn">
-        <img className="sppb-img-responsive" src="images/shooterscreenshot-1-30-09-21.png" alt="Gallery Item 1" />
+        <img className="sppb-img-responsive" src="/images/shooterscreenshot-1-30-09-21.png" alt="Gallery Item 1" />
       </a>
     </li>
     <li>
       <a href="images/img_1604.jpg" className="sppb-gallery-btn">
-        <img className="sppb-img-responsive" src="images/img_1604.jpg" alt="Gallery Item 1" />
+        <img className="sppb-img-responsive" src="/images/img_1604.jpg" alt="Gallery Item 1" />
       </a>
     </li>
     <li>
       <a href="images/img_3249.jpg" className="sppb-gallery-btn">
-        <img className="sppb-img-responsive" src="images/img_3249.jpg" alt="Gallery Item 1" />
+        <img className="sppb-img-responsive" src="/images/img_3249.jpg" alt="Gallery Item 1" />
       </a>
     </li>
   </GalleryContainer>
@@ -134,7 +134,7 @@ export default () => (
                                 <div id="sppb-addon-1633000411941" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <img src="images/xXs0zBb.png" style={{ /*! width: '40px', */height: '36px' }} />
+                                      <img src="/images/xXs0zBb.png" style={{ /*! width: '40px', */height: '36px' }} />
                                       <div className="sppb-media-content"><div className="sppb-addon-text">Anti-Narc</div></div>
                                     </div>
                                   </div>
@@ -149,7 +149,7 @@ export default () => (
                   <section id="section-id-1633000411947" className="sppb-section">
                     <div className="sppb-row-container">
                       <div className="sppb-row">
-                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411933"><div id="column-id-1633000411933" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633000411936" className="sppb-addon-wrapper"><div id="sppb-addon-1633000411936" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/img_0912.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
+                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411933"><div id="column-id-1633000411933" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633000411936" className="sppb-addon-wrapper"><div id="sppb-addon-1633000411936" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_0912.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
                         <div className="sppb-col-md-7" id="column-wrap-id-1633000411935">
                           <div id="column-id-1633000411935" className="sppb-column">
                             <div className="sppb-column-addons">

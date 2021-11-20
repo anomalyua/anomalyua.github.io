@@ -298,7 +298,7 @@ export default () => (
                   <section id="section-id-1633849194953" className="sppb-section">
                     <div className="sppb-row-container">
                       <div className="sppb-row">
-                        <div className="sppb-col-md-5" id="column-wrap-id-1633849194939"><div id="column-id-1633849194939" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633849194940" className="sppb-addon-wrapper"><div id="sppb-addon-1633849194940" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="images/img_3318-1.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
+                        <div className="sppb-col-md-5" id="column-wrap-id-1633849194939"><div id="column-id-1633849194939" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633849194940" className="sppb-addon-wrapper"><div id="sppb-addon-1633849194940" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_3318-1.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
                         <div className="sppb-col-md-7" id="column-wrap-id-1633849194941">
                           <div id="column-id-1633849194941" className="sppb-column">
                             <div className="sppb-column-addons">

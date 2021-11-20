@@ -75,7 +75,7 @@ const Education = () => (
                     <span className="sppb-img-container">
                       <Link to="/education">
                         <TileTitleWithImage
-                          imgSrc="images/education.png"
+                          imgSrc="/images/education.png"
                           title="Education"
                         />
                       </Link>
@@ -151,7 +151,7 @@ const VeteransTile = () => (
                     <span className="sppb-img-container">
                       <Link to="/veterans">
                         <TileTitleWithImage
-                          imgSrc="images/veterans.svg"
+                          imgSrc="/images/veterans.svg"
                           title="Veterans"
                         />
                       </Link>
@@ -204,7 +204,7 @@ const EcologyTile = () => (
                     <span className="sppb-img-container">
                       <Link to="/eco">
                         <TileTitleWithImage
-                          imgSrc="images/ecology.svg"
+                          imgSrc="/images/ecology.svg"
                           title="Ecology"
                         />
                       </Link>
@@ -251,7 +251,7 @@ const CommunityTile = () => (
                     <span className="sppb-img-container">
                       <Link to="/community">
                         <TileTitleWithImage
-                          imgSrc="images/community.png"
+                          imgSrc="/images/community.png"
                           title="Community"
                         />
                       </Link>
@@ -299,7 +299,7 @@ const KidsTile = () => (
                     <span className="sppb-img-container">
                       <Link to="/kids">
                         <TileTitleWithImage
-                          imgSrc="images/kids.svg"
+                          imgSrc="/images/kids.svg"
                           title="Kids"
                         />
                       </Link>
@@ -344,7 +344,7 @@ const AnimalsTile = () => (
                     <span className="sppb-img-container">
                       <Link to="/animals">
                         <TileTitleWithImage
-                          imgSrc="images/animals.svg"
+                          imgSrc="/images/animals.svg"
                           title="Animals"
                         />
                       </Link>
@@ -458,7 +458,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1464.jpeg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_1464.jpeg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_1464.jpeg" alt="Image" />
                         </div>
                       </div>
                     </div>
@@ -476,7 +476,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1355.jpg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_1355.jpg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_1355.jpg" alt="Image" />
                         </div>
                       </div>
                     </div>
@@ -488,7 +488,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_0835.jpeg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_0835.jpeg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_0835.jpeg" alt="Image" />
                         </div>
                       </div>
                     </div>
@@ -506,7 +506,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_3256.jpeg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_3256.jpeg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_3256.jpeg" alt="Image" />
                         </div>
                       </div>
                     </div>
@@ -518,7 +518,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1604.jpeg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_1604.jpeg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_1604.jpeg" alt="Image" />
                         </div>
                       </div>
                     </div>
@@ -536,7 +536,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_1038.jpeg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_1038.jpeg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_1038.jpeg" alt="Image" />
                         </div>
                       </div>
                     </div>
@@ -554,7 +554,7 @@ const IndexPage = () => (
                       <div className="sppb-addon-content">
                         <div className="sppb-addon-single-image-container">
                           <a className="sppb-magnific-popup sppb-addon-image-overlay-icon" data-popup_type="image" data-mainclass="mfp-no-margins mfp-with-zoom" href="images/img_0703.jpeg">+</a>
-                          <img className="sppb-img-responsive" src="images/img_0703.jpeg" alt="Image" />
+                          <img className="sppb-img-responsive" src="/images/img_0703.jpeg" alt="Image" />
                         </div>
                       </div>
                     </div>

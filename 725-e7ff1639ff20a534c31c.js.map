@@ -1,0 +1,1 @@
+{"version":3,"file":"725-e7ff1639ff20a534c31c.js","mappings":"mIAGA,WAAeA,EAAAA,EAAAA,IAAa","sources":["webpack://anomaly-new/./src/locales/en.js"],"sourcesContent":["// import formatDate from 'date-fns/format'\nimport { createLocale } from 'react-localized'\n\nexport default createLocale(null)\n"],"names":["createLocale"],"sourceRoot":""}

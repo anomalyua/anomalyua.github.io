@@ -1,14 +1,15 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { Layout } from '../components/Layout';
-import { TopTitleText } from '../components/TopTitleText';
-import { BotsPlatformImageTile, EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCTA';
-import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer';
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Layout } from '../components/Layout'
+import { TopTitleText } from '../components/TopTitleText'
+import { BotsPlatformImageTile, EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCTA'
+import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer'
+import {LocalizedLink} from "../components/LocalizedLink";
 
 const HeroSection = styled.section.attrs({
-  id: 'section-id-1542709301800',
+  id: 'section-id-1542709301800'
 })`
   &::after {
     content: "";
@@ -19,15 +20,15 @@ const HeroSection = styled.section.attrs({
     height: 680px;
     background-image: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(18 19 48 / 50%) 99%);
   }
-`;
+`
 
 const EducationContainer = styled.div`
   border-right: 1px solid rgb(166 124 0/30%);
-`;
+`
 
 const EducationTileContainer = styled('div')`
   border: 0;
-`;
+`
 
 const TileTitleContainer = styled('div')`
   display: flex;
@@ -45,11 +46,11 @@ const TileTitleContainer = styled('div')`
       filter: drop-shadow(1px 1px 1px #ccc);
     }
   }
-`;
+`
 
 const TileTitleText = styled('h3')`
   padding-left: 30px;
-`;
+`
 
 const TileTitleWithImage = ({ imgSrc, title }) => (
   <TileTitleContainer>
@@ -58,7 +59,7 @@ const TileTitleWithImage = ({ imgSrc, title }) => (
       {title}
     </TileTitleText>
   </TileTitleContainer>
-);
+)
 
 const Education = () => (
   <EducationContainer className="sppb-col-md-6">
@@ -73,12 +74,12 @@ const Education = () => (
                 <div className="sppb-media">
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
-                      <Link to="/education">
+                      <LocalizedLink to="/education">
                         <TileTitleWithImage
                           imgSrc="/images/education.png"
                           title="Education"
                         />
-                      </Link>
+                      </LocalizedLink>
                     </span>
                   </div>
                   <div className="sppb-media-body">
@@ -101,7 +102,7 @@ const Education = () => (
       </div>
     </div>
   </EducationContainer>
-);
+)
 
 const LinkEnglishNowCTA = styled(LinkShadedImage)`
   flex: 0 0 50%;
@@ -109,17 +110,17 @@ const LinkEnglishNowCTA = styled(LinkShadedImage)`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 const EnglishNowTile = () => (
   <LinkEnglishNowCTA href="https://englishnow.dav.school/">
     <EnglishNowImageTile />
   </LinkEnglishNowCTA>
-);
+)
 
 const BotsPlatformContainer = styled('div')`
   margin-top: 30px;
-`;
+`
 
 const BotsPlatformTile = () => (
   <div className="sppb-col-md-6" id="column-wrap-id-1633010662536">
@@ -133,7 +134,7 @@ const BotsPlatformTile = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const VeteransTile = () => (
   <div className="sppb-col-md-6" id="column-wrap-id-1620541326160">
@@ -149,12 +150,12 @@ const VeteransTile = () => (
                 <div className="sppb-media">
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
-                      <Link to="/veterans">
+                      <LocalizedLink to="/veterans">
                         <TileTitleWithImage
                           imgSrc="/images/veterans.svg"
                           title="Veterans"
                         />
-                      </Link>
+                      </LocalizedLink>
                     </span>
                   </div>
                   <div className="sppb-media-body">
@@ -187,7 +188,7 @@ const VeteransTile = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const EcologyTile = () => (
   <div className="sppb-col-md-6" id="column-wrap-id-1620541326162">
@@ -202,12 +203,12 @@ const EcologyTile = () => (
                 <div className="sppb-media">
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
-                      <Link to="/eco">
+                      <LocalizedLink to="/eco">
                         <TileTitleWithImage
                           imgSrc="/images/ecology.svg"
                           title="Ecology"
                         />
-                      </Link>
+                      </LocalizedLink>
                     </span>
                   </div>
                   <div className="sppb-media-body">
@@ -234,7 +235,7 @@ const EcologyTile = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const CommunityTile = () => (
   <div className="sppb-col-md-6" id="column-wrap-id-1633010662537">
@@ -249,12 +250,12 @@ const CommunityTile = () => (
                 <div className="sppb-media">
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
-                      <Link to="/community">
+                      <LocalizedLink to="/community">
                         <TileTitleWithImage
                           imgSrc="/images/community.png"
                           title="Community"
                         />
-                      </Link>
+                      </LocalizedLink>
                     </span>
                   </div>
                   <div className="sppb-media-body">
@@ -282,7 +283,7 @@ const CommunityTile = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const KidsTile = () => (
   <div className="sppb-col-md-6" id="column-wrap-id-1633616058147">
@@ -297,12 +298,12 @@ const KidsTile = () => (
                 <div className="sppb-media">
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
-                      <Link to="/kids">
+                      <LocalizedLink to="/kids">
                         <TileTitleWithImage
                           imgSrc="/images/kids.svg"
                           title="Kids"
                         />
-                      </Link>
+                      </LocalizedLink>
                     </span>
                   </div>
                   <div className="sppb-media-body">
@@ -327,7 +328,7 @@ const KidsTile = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const AnimalsTile = () => (
   <div className="sppb-col-md-6" id="column-wrap-id-1633616058148">
@@ -342,12 +343,12 @@ const AnimalsTile = () => (
                 <div className="sppb-media">
                   <div className="pull-sppb-text-left">
                     <span className="sppb-img-container">
-                      <Link to="/animals">
+                      <LocalizedLink to="/animals">
                         <TileTitleWithImage
                           imgSrc="/images/animals.svg"
                           title="Animals"
                         />
-                      </Link>
+                      </LocalizedLink>
                     </span>
                   </div>
                   <div className="sppb-media-body">
@@ -371,7 +372,7 @@ const AnimalsTile = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const IndexPage = () => (
   <Layout
@@ -600,6 +601,6 @@ const IndexPage = () => (
       </div>
     </section>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

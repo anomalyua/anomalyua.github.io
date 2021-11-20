@@ -1,15 +1,19 @@
-import { useEffect, useState } from 'react';
-import classnames from 'classnames';
-import { Link } from 'gatsby';
-import * as React from 'react';
-import styled from 'styled-components';
-import { useMatch } from '@gatsbyjs/reach-router';
-import anomalyLogo from '../images/anomaly-logo-01.svg';
+import { useEffect, useState } from 'react'
+import classnames from 'classnames'
+import { LocalizedLink as Link } from './LocalizedLink'
+import * as React from 'react'
+import styled from 'styled-components'
+import anomalyLogo from '../images/anomaly-logo-01.svg'
 
-import { BecomeAVolunteerButton as Button } from './BecomeAVolunteer';
+import { BecomeAVolunteerButton as Button } from './BecomeAVolunteer'
+import { useMatch } from '@reach/router'
+
+const useLocalizedMatch = (url) => (
+  useMatch(url) || useMatch(`/:locale${url}`)
+)
 
 const NavigationLink = (props) => {
-  const active = useMatch(props.to) !== null;
+  const active = useLocalizedMatch(props.to) !== null
 
   return (
     <li
@@ -21,12 +25,12 @@ const NavigationLink = (props) => {
         {...props}
       />
     </li>
-  );
-};
+  )
+}
 
 const ProjectsLink = styled.a.attrs(() => ({
   children: 'Projects',
-  href: '#',
+  href: '#'
 }))`
   &::after {
     font-family: "Font Awesome 5 Free";
@@ -35,16 +39,16 @@ const ProjectsLink = styled.a.attrs(() => ({
     float: right;
     margin-left: 7px;
   }
-`;
+`
 
 const ProjectsNavigationDropdown = () => {
-  const active = useMatch('/veterans')
-    || useMatch('/kids')
-    || useMatch('/animals')
-    || useMatch('/eco')
-    || useMatch('/diaspora')
-    || useMatch('/community')
-    || useMatch('/education');
+  const active = useLocalizedMatch('/veterans') ||
+    useLocalizedMatch('/kids') ||
+    useLocalizedMatch('/animals') ||
+    useLocalizedMatch('/eco') ||
+    useLocalizedMatch('/diaspora') ||
+    useLocalizedMatch('/community') ||
+    useLocalizedMatch('/education')
 
   return (
     <li className={classnames('sp-menu-item', 'sp-has-child', active && 'active')}>
@@ -63,27 +67,27 @@ const ProjectsNavigationDropdown = () => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}
 
 const ButtonContainer = styled('div')`
   display: flex;
   align-items: center;
-`;
+`
 
 export const NavigationHeader = ({ onMenuOpen }) => {
-  const [isSticky, setSticky] = useState(false);
+  const [isSticky, setSticky] = useState(false)
 
   useEffect(() => {
     const handler = () => {
-      setSticky(window.pageYOffset !== 0);
-    };
-    window.addEventListener('scroll', handler);
+      setSticky(window.pageYOffset !== 0)
+    }
+    window.addEventListener('scroll', handler)
 
     return () => {
-      window.removeEventListener('scroll', handler);
-    };
-  }, []);
+      window.removeEventListener('scroll', handler)
+    }
+  }, [])
 
   return (
     <header id="sp-header" className={classnames(isSticky && 'header-sticky')}>
@@ -126,5 +130,5 @@ export const NavigationHeader = ({ onMenuOpen }) => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}

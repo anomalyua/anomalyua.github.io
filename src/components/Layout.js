@@ -30,6 +30,7 @@ import { PhoneNumber } from './PhoneNumber';
 import logoImage from '../images/logo.png';
 import { BotUnderConstruction } from './BotUnderConstruction';
 import {useLocaleContext} from "./LocaleContext";
+import {LocalizedLink} from "./LocalizedLink";
 
 const OffCanvasMenu = ({ onClose }) => (
   <>
@@ -46,32 +47,34 @@ const OffCanvasMenu = ({ onClose }) => (
         <div className="sp-module ">
           <div className="sp-module-content">
             <ul className="menu">
-              <li className="item-294"><Link to="/">Home</Link></li>
+              <li className="item-294">
+                <LocalizedLink to="/">Home</LocalizedLink>
+              </li>
               <li className="item-297">
-                <Link to="/about">
+                <LocalizedLink to="/about">
                   About
-                </Link>
+                </LocalizedLink>
               </li>
               <li className="item-298 menu-divider menu-deeper menu-parent">
-                <Link to="/veterans">Veterans</Link>
+                <LocalizedLink to="/veterans">Veterans</LocalizedLink>
               </li>
               <li>
-                <Link to="/eco">Eco</Link>
+                <LocalizedLink to="/eco">Eco</LocalizedLink>
               </li>
               <li>
-                <Link to="/education">Education</Link>
+                <LocalizedLink to="/education">Education</LocalizedLink>
               </li>
               <li>
-                <Link to="/community">Community</Link>
+                <LocalizedLink to="/community">Community</LocalizedLink>
               </li>
               <li>
-                <Link to="/kids">Kids</Link>
+                <LocalizedLink to="/kids">Kids</LocalizedLink>
               </li>
               <li>
-                <Link to="/animals">Animals</Link>
+                <LocalizedLink to="/animals">Animals</LocalizedLink>
               </li>
               <li>
-                <Link to="/diaspora">Diaspora</Link>
+                <LocalizedLink to="/diaspora">Diaspora</LocalizedLink>
               </li>
             </ul>
           </div>

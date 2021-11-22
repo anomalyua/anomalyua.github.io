@@ -1,9 +1,10 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import styled from 'styled-components';
-import { Layout } from '../components/Layout';
-import { AchievementsColumn } from '../components/AchievementsColumn';
-import {BotsPlatformImageTile, LinkShadedImage} from "../components/EnglishNowCTA";
+import styled from 'styled-components'
+import { Layout } from '../components/Layout'
+import { AchievementsColumn } from '../components/AchievementsColumn'
+import { BotsPlatformImageTile, LinkShadedImage } from '../components/EnglishNowCTA'
+import { useLocales } from 'react-localized'
 
 const GalleryContainer = styled.ul`
   padding: 50px 0;
@@ -16,7 +17,7 @@ const GalleryContainer = styled.ul`
     width: 200px;
     height: 200px;
   }
-`;
+`
 
 const Gallery = () => (
   <GalleryContainer className="sppb-gallery clearfix gallery-item-">
@@ -46,18 +47,29 @@ const Gallery = () => (
       </a>
     </li>
   </GalleryContainer>
-);
+)
 
-export default () => (
-  <Layout>
+const CommunityContent = () => {
+  const { gettext } = useLocales()
 
+  return (
     <div>
-      <section id="sp-section-3"><div className="row"><div id="sp-title" className="col-lg-12 "><div className="sp-column "><div className="sp-page-title" style={{ backgroundImage: 'url(/images/IMG_0835.jpg)' }}><div className="container" /></div></div></div></div></section>
+      <section id="sp-section-3">
+        <div className="row">
+          <div id="sp-title" className="col-lg-12 ">
+            <div className="sp-column ">
+              <div className="sp-page-title" style={{ backgroundImage: 'url(/images/IMG_0835.jpg)' }}>
+                <div className="container"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="sp-main-body">
         <div className="row">
           <main id="sp-component" className="col-lg-12 " role="main">
             <div className="sp-column ">
-              <div id="system-message-container" />
+              <div id="system-message-container"/>
               <div id="sp-page-builder" className="sp-page-builder  page-47">
                 <div className="page-content">
                   <section id="section-id-1633000411922" className="sppb-section">
@@ -70,8 +82,13 @@ export default () => (
                                 <div id="sppb-addon-1633000411925" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i className="fas fa-praying-hands" aria-hidden="true" /></span></div>
-                                      <div className="sppb-media-content"><div className="sppb-addon-text">E-democracy</div></div>
+                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
+                                        className="fas fa-praying-hands" aria-hidden="true"/></span></div>
+                                      <div className="sppb-media-content">
+                                        <div className="sppb-addon-text">
+                                          {gettext('E - democracy')}
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -86,8 +103,13 @@ export default () => (
                                 <div id="sppb-addon-1633000411930" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i className="fab fa-facebook-messenger" aria-hidden="true" /></span></div>
-                                      <div className="sppb-media-content"><div className="sppb-addon-text">Social Support</div></div>
+                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
+                                        className="fab fa-facebook-messenger" aria-hidden="true"/></span></div>
+                                      <div className="sppb-media-content">
+                                        <div className="sppb-addon-text">
+                                          {gettext('Social Support')}
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -102,8 +124,13 @@ export default () => (
                                 <div id="sppb-addon-1633000411935" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i className="fas fa-house-damage" aria-hidden="true" /></span></div>
-                                      <div className="sppb-media-content"><div className="sppb-addon-text">Housing Authority</div></div>
+                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
+                                        className="fas fa-house-damage" aria-hidden="true"/></span></div>
+                                      <div className="sppb-media-content">
+                                        <div className="sppb-addon-text">
+                                          {gettext('Housing Authority')}
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -118,8 +145,13 @@ export default () => (
                                 <div id="sppb-addon-1633000411941" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i className="fab fa-connectdevelop" aria-hidden="true" /></span></div>
-                                      <div className="sppb-media-content"><div className="sppb-addon-text">Developing community activism</div></div>
+                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
+                                        className="fab fa-connectdevelop" aria-hidden="true"/></span></div>
+                                      <div className="sppb-media-content">
+                                        <div className="sppb-addon-text">
+                                          {gettext('Developing community activism')}
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -134,8 +166,12 @@ export default () => (
                                 <div id="sppb-addon-1633000411941" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <img src="/images/xXs0zBb.png" style={{ /*! width: '40px', */height: '36px' }} />
-                                      <div className="sppb-media-content"><div className="sppb-addon-text">Anti-Narc</div></div>
+                                      <img src="/images/xXs0zBb.png" style={{ /*! width: '40px', */height: '36px' }}/>
+                                      <div className="sppb-media-content">
+                                        <div className="sppb-addon-text">
+                                          {gettext('Anti - Narc')}
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -149,7 +185,23 @@ export default () => (
                   <section id="section-id-1633000411947" className="sppb-section">
                     <div className="sppb-row-container">
                       <div className="sppb-row">
-                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411933"><div id="column-id-1633000411933" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633000411936" className="sppb-addon-wrapper"><div id="sppb-addon-1633000411936" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/img_0912.jpg" alt="Image" title /></div></div></div></div></div></div></div></div>
+                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411933">
+                          <div id="column-id-1633000411933" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1633000411936" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1633000411936" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-single-image sppb-text-center ">
+                                    <div className="sppb-addon-content">
+                                      <div className="sppb-addon-single-image-container"><img
+                                        className="sppb-img-responsive" src="/images/img_0912.jpg" alt="Image" title/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <div className="sppb-col-md-7" id="column-wrap-id-1633000411935">
                           <div id="column-id-1633000411935" className="sppb-column">
                             <div className="sppb-column-addons">
@@ -157,20 +209,20 @@ export default () => (
                                 <div id="sppb-addon-1633000411934" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-text-block  ">
                                     <div className="sppb-addon-content">
-                                      <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;It seems everyday that there's a new narcotics telegram channel graffitied around the neighborhood. We totally get it! To combat this, Anomaly organised local teams to clean up their neighborhoods. Want to know how? Click the box below (can be a highlight of this bot's success compared to the MVS) we work together with our eco team while we are cleaning up the neighborhoods we show people how to reduce drug use in their communities; reference the \&quot;broken window theory\&quot; how cleaner neighborhoods can help to reduce drug use (focus is on the drug issues and community activism development then e democracy meaning showing the locations how to more easily communicate with local admin., city workers, police, and politicians &quot;}" data-sheets-userformat="{&quot;2&quot;:833,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:1,&quot;11&quot;:4,&quot;12&quot;:0}">
-                                        It
-                                        seems everyday that there's a new narcotics telegram channel graffitied
-                                        around the neighborhood. We totally get it! To combat this, Anomaly
-                                        organised local teams to clean up their neighborhoods. Want to know how?
-                                        Click the box below (can be a highlight of this bot's success compared
-                                        to the MVS) we work together with our eco team while we are cleaning up
-                                        the neighborhoods we show people how to reduce drug use in their
-                                        communities; reference the "broken window theory" how cleaner
-                                        neighborhoods can help to reduce drug use (focus is on the drug issues
-                                        and community activism development then e democracy meaning showing the
-                                        locations how to more easily communicate with local admin., city
-                                        workers, police, and politicians
-                                        {' '}
+                                      <span
+                                        data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;It seems everyday that there's a new narcotics telegram channel graffitied around the neighborhood. We totally get it! To combat this, Anomaly organised local teams to clean up their neighborhoods. Want to know how? Click the box below (can be a highlight of this bot's success compared to the MVS) we work together with our eco team while we are cleaning up the neighborhoods we show people how to reduce drug use in their communities; reference the \&quot;broken window theory\&quot; how cleaner neighborhoods can help to reduce drug use (focus is on the drug issues and community activism development then e democracy meaning showing the locations how to more easily communicate with local admin., city workers, police, and politicians &quot;}"
+                                        data-sheets-userformat="{&quot;2&quot;:833,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:1,&quot;11&quot;:4,&quot;12&quot;:0}">
+                                        {gettext('It seems everyday that there\'s a new narcotics telegram channel graffitied ' +
+                                          'around the neighborhood. We totally get it! To combat this, Anomaly ' +
+                                          'organised local teams to clean up their neighborhoods. Want to know how? ' +
+                                          'Click the box below (can be a highlight of this bot\'s success compared ' +
+                                          'to the MVS) we work together with our eco team while we are cleaning up ' +
+                                          'the neighborhoods we show people how to reduce drug use in their ' +
+                                          'communities; reference the "broken window theory" how cleaner ' +
+                                          'neighborhoods can help to reduce drug use (focus is on the drug issues ' +
+                                          'and community activism development then e democracy meaning showing the ' +
+                                          'locations how to more easily communicate with local admin., city ' +
+                                          'workers, police, and politicians')}
                                       </span>
                                     </div>
                                   </div>
@@ -185,7 +237,28 @@ export default () => (
                   <section className="sppb-section" id="section-id-1633000411947" style={{ backgroundColor: 'white' }}>
                     <div className="sppb-row-container">
                       <div className="sppb-row">
-                        <div className="sppb-col-md-7" id="column-wrap-id-1633000411935"><div id="column-id-1633000411935" className="sppb-column"><div className="sppb-column-addons" style={{ /*! display: 'flex', *//*! verticalAlign: 'middle', */marginTop: 'auto', marginBottom: 'auto' }}><div id="sppb-addon-wrapper-1633000411934" className="sppb-addon-wrapper" style={{ display: 'inline' }}><div id="sppb-addon-1633000411934" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;It seems everyday that there's a new narcotics telegram channel graffitied around the neighborhood. We totally get it! To combat this, Anomaly organised local teams to clean up their neighborhoods. Want to know how? Click the box below (can be a highlight of this bot's success compared to the MVS) we work together with our eco team while we are cleaning up the neighborhoods we show people how to reduce drug use in their communities; reference the \&quot;broken window theory\&quot; how cleaner neighborhoods can help to reduce drug use (focus is on the drug issues and community activism development then e democracy meaning showing the locations how to more easily communicate with local admin., city workers, police, and politicians &quot;}" data-sheets-userformat="{&quot;2&quot;:833,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:1,&quot;11&quot;:4,&quot;12&quot;:0}">We make it easy for Kyivans to improve their communities with just their thumbs and an internet connection!</span></div></div></div></div></div></div></div>
+                        <div className="sppb-col-md-7" id="column-wrap-id-1633000411935">
+                          <div id="column-id-1633000411935" className="sppb-column">
+                            <div className="sppb-column-addons" style={{ /*! display: 'flex', *//*! verticalAlign: 'middle', */
+                              marginTop: 'auto',
+                              marginBottom: 'auto'
+                            }}>
+                              <div id="sppb-addon-wrapper-1633000411934" className="sppb-addon-wrapper"
+                                   style={{ display: 'inline' }}>
+                                <div id="sppb-addon-1633000411934" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-text-block  ">
+                                    <div className="sppb-addon-content"><span
+                                      data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;It seems everyday that there's a new narcotics telegram channel graffitied around the neighborhood. We totally get it! To combat this, Anomaly organised local teams to clean up their neighborhoods. Want to know how? Click the box below (can be a highlight of this bot's success compared to the MVS) we work together with our eco team while we are cleaning up the neighborhoods we show people how to reduce drug use in their communities; reference the \&quot;broken window theory\&quot; how cleaner neighborhoods can help to reduce drug use (focus is on the drug issues and community activism development then e democracy meaning showing the locations how to more easily communicate with local admin., city workers, police, and politicians &quot;}"
+                                      data-sheets-userformat="{&quot;2&quot;:833,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:1,&quot;11&quot;:4,&quot;12&quot;:0}">
+                                      {gettext('We make it easy for Kyivans to improve their communities with just their thumbs and an internet connection!')}
+                                    </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <div className="sppb-col-md-5" id="column-wrap-id-1633000411933">
                           <div id="column-id-1633000411933" className="sppb-column">
                             <div className="sppb-column-addons">
@@ -195,7 +268,7 @@ export default () => (
                                     <div className="sppb-addon-content">
                                       <div className="sppb-addon-single-image-container">
                                         <LinkShadedImage href="https://bots.anomaly.org.ua">
-                                          <BotsPlatformImageTile />
+                                          <BotsPlatformImageTile/>
                                         </LinkShadedImage>
                                       </div>
                                     </div>
@@ -205,11 +278,12 @@ export default () => (
                             </div>
                           </div>
                         </div>
-                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411933" />
+                        <div className="sppb-col-md-5" id="column-wrap-id-1633000411933"/>
                       </div>
                     </div>
                   </section>
-                  <section id="section-id-1633000411953" className="sppb-section" style={{ backgroundColor: '#E3E6EC' }}>
+                  <section id="section-id-1633000411953" className="sppb-section"
+                           style={{ backgroundColor: '#E3E6EC' }}>
                     <div className="sppb-row-container">
                       <div className="sppb-row">
                         <div className="sppb-col-md-12" id="column-wrap-id-1633000411952">
@@ -219,7 +293,7 @@ export default () => (
                                 <div id="sppb-addon-1633000411956" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-gallery ">
                                     <div className="sppb-addon-content">
-                                      <Gallery />
+                                      <Gallery/>
                                     </div>
                                   </div>
                                 </div>
@@ -230,20 +304,35 @@ export default () => (
                       </div>
                     </div>
                   </section>
-                  <section id="section-id-1633812940770" className="sppb-section secondary-color sppb-section-content-center">
-                    <div className="sppb-row-overlay" />
+                  <section id="section-id-1633812940770"
+                           className="sppb-section secondary-color sppb-section-content-center">
+                    <div className="sppb-row-overlay"/>
                     <div className="sppb-row-container">
                       <div className="sppb-row sppb-align-center">
-                        <div className="sppb-col-md-7" id="column-wrap-id-1633812940790"><div id="column-id-1633812940790" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633812940791" className="sppb-addon-wrapper"><div id="sppb-addon-1633812940791" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-center"><h2 className="sppb-addon-title">Do you have an idea that would help to improve civil society in Ukraine? Let us know!</h2></div></div></div></div></div></div>
+                        <div className="sppb-col-md-7" id="column-wrap-id-1633812940790">
+                          <div id="column-id-1633812940790" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1633812940791" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1633812940791" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-header sppb-text-center"><h2
+                                    className="sppb-addon-title">
+                                    {gettext('Do you have an idea that would help to improve civil society in Ukraine? Let us know!')}
+                                  </h2></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <div className="sppb-col-md-5" id="column-wrap-id-1633812940792">
                           <div id="column-id-1633812940792" className="sppb-column">
                             <div className="sppb-column-addons">
                               <div id="sppb-addon-wrapper-1633812940793" className="sppb-addon-wrapper">
-                                <div id="sppb-addon-1633812940793" className="clearfix sppb-positioned-addon" data-rowid={1633812940770} data-colid={1633812940792}>
+                                <div id="sppb-addon-1633812940793" className="clearfix sppb-positioned-addon"
+                                     data-rowid={1633812940770} data-colid={1633812940792}>
                                   <div className="sppb-text-center">
                                     <a id="btn-1633812940793" className="sppb-btn  sppb-btn-default sppb-btn-rounded">
                                       Join
-                                      <i className="fas fa-arrow-right" aria-hidden="true" />
+                                      <i className="fas fa-arrow-right" aria-hidden="true"/>
                                     </a>
                                   </div>
                                 </div>
@@ -261,6 +350,13 @@ export default () => (
         </div>
       </section>
     </div>
+  )
+}
 
+const Community = () => (
+  <Layout>
+    <CommunityContent />
   </Layout>
-);
+)
+
+export default Community

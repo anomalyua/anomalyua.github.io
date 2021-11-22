@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import * as React from 'react'
 
 import { Layout } from '../components/Layout'
+import { useLocales } from 'react-localized'
 
 const PageTitle = styled.div`
   &::after {
@@ -31,6 +32,7 @@ const PageTitle = styled.div`
 `
 
 const Tabs = () => {
+  const {gettext} = useLocales()
   const locationHash = useLocation().hash
 
   const firstActive = (locationHash === '#sppb-tab1-1') || (locationHash === '')
@@ -43,19 +45,29 @@ const Tabs = () => {
     <>
       <ul className="sppb-nav sppb-nav-tabs" role="tablist">
         <li className={classnames(firstActive && 'active')}>
-          <a data-toggle="sppb-tab" id="#sppb-content1-1" className=" " href="#sppb-tab1-1" role="tab" aria-controls="#sppb-tab1-1" aria-selected="true">Children of ATO Veterans</a>
+          <a data-toggle="sppb-tab" id="#sppb-content1-1" className=" " href="#sppb-tab1-1" role="tab" aria-controls="#sppb-tab1-1" aria-selected="true">
+            {gettext('Children of ATO Veterans')}
+          </a>
         </li>
         <li className={secondActive && 'active'}>
-          <a data-toggle="sppb-tab" id="#sppb-content1-2" className=" " href="#sppb-tab1-2" role="tab" aria-controls="#sppb-tab1-2" aria-selected="false">Children of Crimea and Tatars</a>
+          <a data-toggle="sppb-tab" id="#sppb-content1-2" className=" " href="#sppb-tab1-2" role="tab" aria-controls="#sppb-tab1-2" aria-selected="false">
+            {gettext('Children of Crimea and Tatars')}
+          </a>
         </li>
         <li className={thirdActive && 'active'}>
-          <a data-toggle="sppb-tab" id="#sppb-content1-3" className=" " href="#sppb-tab1-3" role="tab" aria-controls="#sppb-tab1-3" aria-selected="false">Children of Donbas</a>
+          <a data-toggle="sppb-tab" id="#sppb-content1-3" className=" " href="#sppb-tab1-3" role="tab" aria-controls="#sppb-tab1-3" aria-selected="false">
+            {gettext('Children of Donbas')}
+          </a>
         </li>
         <li className={fourthActive && 'active'}>
-          <a data-toggle="sppb-tab" className=" " role="tab" aria-selected="false" id="#sppb-content1-4" aria-controls="#sppb-tab1-4" href="#sppb-tab1-4">Orphans</a>
+          <a data-toggle="sppb-tab" className=" " role="tab" aria-selected="false" id="#sppb-content1-4" aria-controls="#sppb-tab1-4" href="#sppb-tab1-4">
+            {gettext('Orphans')}
+          </a>
         </li>
         <li className={fifthActive && 'active'}>
-          <a data-toggle="sppb-tab" className=" " role="tab" aria-selected="false" id="#sppb-content1-5" href="#sppb-tab1-5" aria-controls="#sppb-tab1-5">Playgrounds</a>
+          <a data-toggle="sppb-tab" className=" " role="tab" aria-selected="false" id="#sppb-content1-5" href="#sppb-tab1-5" aria-controls="#sppb-tab1-5">
+            {gettext('Playgrounds')}
+          </a>
         </li>
       </ul>
 
@@ -80,10 +92,9 @@ const Tabs = () => {
                               <div className="sppb-addon sppb-addon-text-block  ">
                                 <div className="sppb-addon-content">
                                   <span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Every heard of the saying \&quot;it takes a village to raise a child\&quot;? It's true! Help kids who have family members in the military by joining our mentorship program.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
-                                    Every
-                                    heard of the saying "it takes a village to raise a child"? It's true!
-                                    Help kids who have family members in the military by joining our
-                                    mentorship program.
+                                    {gettext('Every heard of the saying "it takes a village to raise a child"? It\'s true! ' +
+                                      'Help kids who have family members in the military by joining our ' +
+                                      'mentorship program.')}
                                   </span>
                                 </div>
                               </div>
@@ -120,10 +131,9 @@ const Tabs = () => {
                               <div className="sppb-addon sppb-addon-text-block  ">
                                 <div className="sppb-addon-content">
                                   <span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Everyday Crimean Tartar families are being separated by Russian forces. Imagine losing your father at such a young age. It's all very confusing but mentoring can help!&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
-                                    Everyday
-                                    Crimean Tartar families are being separated by Russian forces. Imagine
-                                    losing your father at such a young age. It's all very confusing but
-                                    mentoring can help!
+                                    {gettext('Everyday Crimean Tartar families are being separated by Russian forces. Imagine ' +
+                                      'losing your father at such a young age. It\'s all very confusing but ' +
+                                      'mentoring can help!')}
                                   </span>
                                 </div>
                               </div>
@@ -158,8 +168,9 @@ const Tabs = () => {
                               <div className="sppb-addon sppb-addon-text-block  ">
                                 <div className="sppb-addon-content">
                                   <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes. &quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
-                                    <span style={{ fontSize: '16pt' }}>With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes.</span>
-                                    {' '}
+                                    <span style={{ fontSize: '16pt' }}>
+                                      {gettext('With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes.')}
+                                    </span>
                                   </span>
                                 </div>
                               </div>
@@ -196,8 +207,9 @@ const Tabs = () => {
                               <div className="sppb-addon sppb-addon-text-block  ">
                                 <div className="sppb-addon-content">
                                   <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Help advocate for better living situtations in orphanges. &quot;}" data-sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}">
-                                    <span style={{ fontSize: '16pt' }}>Help advocate for better living situtations in orphanges.</span>
-                                    {' '}
+                                    <span style={{ fontSize: '16pt' }}>
+                                      {gettext('Help advocate for better living situtations in orphanges.')}
+                                    </span>
                                   </span>
                                 </div>
                               </div>
@@ -238,54 +250,73 @@ const Tabs = () => {
   )
 }
 
-const Kids = () => (
-  <Layout
-    title="Kids"
-  >
-    <section id="sp-section-3">
-      <div className="row">
-        <div id="sp-title" className="col-lg-12 ">
-          <div className="sp-column " style={{}}>
-            <PageTitle>
-              <div>
-                <img
-                  src="/images/shooterscreenshot-1-30-09-21.png"
-                  style={{ /*! position: 'absolute', *//*! top: 0, */opacity: '0.6', /*! marginLeft: 'auto', */flex: 'auto', /*! height: '50%', *//*! flexShrink: '0.5', */objectFit: 'cover', width: '434px', height: '290px', objectPosition: '0 -25px' }}
-                />
-                <div />
-              </div>
-            </PageTitle>
+const KidsContent = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <>
+      <section id="sp-section-3">
+        <div className="row">
+          <div id="sp-title" className="col-lg-12 ">
+            <div className="sp-column " style={{}}>
+              <PageTitle>
+                <div>
+                  <img
+                    src="/images/shooterscreenshot-1-30-09-21.png"
+                    style={{ /*! position: 'absolute', *//*! top: 0, */
+                      opacity: '0.6', /*! marginLeft: 'auto', */
+                      flex: 'auto', /*! height: '50%', *//*! flexShrink: '0.5', */
+                      objectFit: 'cover',
+                      width: '434px',
+                      height: '290px',
+                      objectPosition: '0 -25px'
+                    }}
+                  />
+                  <div/>
+                </div>
+              </PageTitle>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="sp-main-body">
-      <div className="row">
-        <main id="sp-component" className="col-lg-12 " role="main">
-          <div className="sp-column ">
-            <div id="system-message-container" />
-            <div id="sp-page-builder" className="sp-page-builder  page-34">
-              <div className="page-content">
-                <section id="section-id-1626727883291" className="sppb-section">
-                  <div className="sppb-row-container">
-                    <div className="sppb-row">
-                      <div className="sppb-col-md-3" id="column-wrap-id-1626727883289"><div id="column-id-1626727883289" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883294" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883294" className="clearfix "><div className="sppb-addon sppb-addon-single-image sppb-text-center "><div className="sppb-addon-content"><div className="sppb-addon-single-image-container"><img className="sppb-img-responsive" src="/images/anomaly3.jpeg" alt="Image" /></div></div></div></div></div></div></div></div>
-                      <div className="sppb-col-md-9" id="column-wrap-id-1626727883290"><div id="column-id-1626727883290" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1626727883297" className="sppb-addon-wrapper"><div id="sppb-addon-1626727883297" className="clearfix "><div className="sppb-addon sppb-addon-text-block  "><div className="sppb-addon-content"><span style={{ fontSize: '16pt' }} data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.</span></div></div></div></div></div></div></div>
-                    </div>
-                  </div>
-                </section>
-                <section id="section-id-1633859758724" className="sppb-section" style={{ backgroundColor: '#E3E6EC', paddingTop: '50px', paddingBottom: '50px' }}>
-                  <div className="sppb-row-container">
-                    <div className="sppb-row">
-                      <div className="sppb-col-md-12" id="column-wrap-id-1633859758744">
-                        <div id="column-id-1633859758744" className="sppb-column">
-                          <div className="sppb-column-addons">
-                            <div id="sppb-addon-wrapper-1633859758731" className="sppb-addon-wrapper">
-                              <div id="sppb-addon-1633859758731" className="clearfix ">
-                                <div className="sppb-addon sppb-addon-tab ">
-                                  <div className="sppb-addon-content sppb-tab sppb-tabs-tab sppb-tab-nav-left">
-                                    <Tabs />
-
+      </section>
+      <section id="sp-main-body">
+        <div className="row">
+          <main id="sp-component" className="col-lg-12 " role="main">
+            <div className="sp-column ">
+              <div id="system-message-container"/>
+              <div id="sp-page-builder" className="sp-page-builder  page-34">
+                <div className="page-content">
+                  <section id="section-id-1626727883291" className="sppb-section">
+                    <div className="sppb-row-container">
+                      <div className="sppb-row">
+                        <div className="sppb-col-md-3" id="column-wrap-id-1626727883289">
+                          <div id="column-id-1626727883289" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1626727883294" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1626727883294" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-single-image sppb-text-center ">
+                                    <div className="sppb-addon-content">
+                                      <div className="sppb-addon-single-image-container"><img
+                                        className="sppb-img-responsive" src="/images/anomaly3.jpeg" alt="Image"/></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="sppb-col-md-9" id="column-wrap-id-1626727883290">
+                          <div id="column-id-1626727883290" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1626727883297" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1626727883297" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-text-block  ">
+                                    <div className="sppb-addon-content"><span style={{ fontSize: '16pt' }}
+                                                                              data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.&quot;}"
+                                                                              data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}">
+                                      {gettext('Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children.')}
+                                    </span>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -294,23 +325,22 @@ const Kids = () => (
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
-                <section id="section-id-1633809247498" className="sppb-section secondary-color sppb-section-content-center">
-                  <div className="sppb-row-overlay" />
-                  <div className="sppb-row-container">
-                    <div className="sppb-row sppb-align-center">
-                      <div className="sppb-col-md-7" id="column-wrap-id-1633809247519"><div id="column-id-1633809247519" className="sppb-column"><div className="sppb-column-addons"><div id="sppb-addon-wrapper-1633809247520" className="sppb-addon-wrapper"><div id="sppb-addon-1633809247520" className="clearfix "><div className="sppb-addon sppb-addon-header sppb-text-center"><h2 className="sppb-addon-title">Have experience working with kids? Come show us!</h2></div></div></div></div></div></div>
-                      <div className="sppb-col-md-5" id="column-wrap-id-1633809247521">
-                        <div id="column-id-1633809247521" className="sppb-column">
-                          <div className="sppb-column-addons">
-                            <div id="sppb-addon-wrapper-1633809247522" className="sppb-addon-wrapper">
-                              <div id="sppb-addon-1633809247522" className="clearfix sppb-positioned-addon" data-rowid={1633809247498} data-colid={1633809247521}>
-                                <div className="sppb-text-center">
-                                  <a id="btn-1633809247522" className="sppb-btn  sppb-btn-default sppb-btn-rounded">
-                                    Join
-<i className="fas fa-arrow-right" aria-hidden="true" />
-                                  </a>
+                  </section>
+                  <section id="section-id-1633859758724" className="sppb-section"
+                           style={{ backgroundColor: '#E3E6EC', paddingTop: '50px', paddingBottom: '50px' }}>
+                    <div className="sppb-row-container">
+                      <div className="sppb-row">
+                        <div className="sppb-col-md-12" id="column-wrap-id-1633859758744">
+                          <div id="column-id-1633859758744" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1633859758731" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1633859758731" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-tab ">
+                                    <div className="sppb-addon-content sppb-tab sppb-tabs-tab sppb-tab-nav-left">
+                                      <Tabs/>
+
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -318,14 +348,62 @@ const Kids = () => (
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
+                  </section>
+                  <section id="section-id-1633809247498"
+                           className="sppb-section secondary-color sppb-section-content-center">
+                    <div className="sppb-row-overlay"/>
+                    <div className="sppb-row-container">
+                      <div className="sppb-row sppb-align-center">
+                        <div className="sppb-col-md-7" id="column-wrap-id-1633809247519">
+                          <div id="column-id-1633809247519" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1633809247520" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1633809247520" className="clearfix ">
+                                  <div className="sppb-addon sppb-addon-header sppb-text-center"><h2
+                                    className="sppb-addon-title">
+                                    {gettext('Have experience working with kids? Come show us!')}
+                                  </h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="sppb-col-md-5" id="column-wrap-id-1633809247521">
+                          <div id="column-id-1633809247521" className="sppb-column">
+                            <div className="sppb-column-addons">
+                              <div id="sppb-addon-wrapper-1633809247522" className="sppb-addon-wrapper">
+                                <div id="sppb-addon-1633809247522" className="clearfix sppb-positioned-addon"
+                                     data-rowid={1633809247498} data-colid={1633809247521}>
+                                  <div className="sppb-text-center">
+                                    <a id="btn-1633809247522" className="sppb-btn  sppb-btn-default sppb-btn-rounded">
+                                      Join
+                                      <i className="fas fa-arrow-right" aria-hidden="true"/>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
             </div>
-          </div>
-        </main>
-      </div>
-    </section>
+          </main>
+        </div>
+      </section>
+    </>
+  )
+}
+
+const Kids = () => (
+  <Layout
+    title="Kids"
+  >
+    <KidsContent />
   </Layout>
 )
 

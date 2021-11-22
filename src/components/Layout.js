@@ -1,4 +1,4 @@
-import { LocalizedProvider } from 'react-localized';
+import {LocalizedProvider, useLocales} from 'react-localized';
 import styled from 'styled-components';
 
 import classnames from 'classnames';
@@ -22,7 +22,6 @@ import '../styles/preset1.css';
 import '../styles/template.css';
 
 import '../styles/global.css';
-import { Link } from 'gatsby';
 import { useLocation } from '@reach/router';
 import { TopPageHeader } from './TopPageHeader';
 import { PhoneNumber } from './PhoneNumber';
@@ -48,33 +47,33 @@ const OffCanvasMenu = ({ onClose }) => (
           <div className="sp-module-content">
             <ul className="menu">
               <li className="item-294">
-                <LocalizedLink to="/">Home</LocalizedLink>
+                <LocalizedLink to="/">{gettext('Home')}</LocalizedLink>
               </li>
               <li className="item-297">
                 <LocalizedLink to="/about">
-                  About
+                  {gettext('About')}
                 </LocalizedLink>
               </li>
               <li className="item-298 menu-divider menu-deeper menu-parent">
-                <LocalizedLink to="/veterans">Veterans</LocalizedLink>
+                <LocalizedLink to="/veterans">{gettext('Veterans')}</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/eco">Eco</LocalizedLink>
+                <LocalizedLink to="/eco">{gettext('Ecology')}</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/education">Education</LocalizedLink>
+                <LocalizedLink to="/education">{gettext('Education')}</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/community">Community</LocalizedLink>
+                <LocalizedLink to="/community">{gettext('Community')}</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/kids">Kids</LocalizedLink>
+                <LocalizedLink to="/kids">{gettext('Kids')}</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/animals">Animals</LocalizedLink>
+                <LocalizedLink to="/animals">{gettext('Animals')}</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/diaspora">Diaspora</LocalizedLink>
+                <LocalizedLink to="/diaspora">{gettext('Diaspora')}</LocalizedLink>
               </li>
             </ul>
           </div>
@@ -96,6 +95,7 @@ const LogoContainer = styled('div')`
 
 // markup
 const LayoutInternal = ({ title, children }) => {
+  const {gettext} = useLocales()
   const [offCanvasVisible, showOffCanvas] = useState(false);
 
   const { hostname } = useLocation();
@@ -156,11 +156,9 @@ const LayoutInternal = ({ title, children }) => {
                                             <div id="sppb-addon-wrapper-1542892443684" className="sppb-addon-wrapper">
                                               <div id="sppb-addon-1542892443684" className="clearfix ">
                                                 <div className="sppb-addon sppb-addon-text-block sppb-text-left ">
-                                                  <h2 className="sppb-addon-title">Address</h2>
+                                                  <h2 className="sppb-addon-title">{gettext('Address')}</h2>
                                                   <div className="sppb-addon-content">
-                                                    Velyka Vasylkivska st, 72, office 20,
-                                                    <br />
-                                                    Ukraine, 03150, Kyiv
+                                                    {gettext('Velyka Vasylkivska st, 72, office 20, Ukraine, 03150, Kyiv')}
                                                   </div>
                                                 </div>
                                                 <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: "Poppins"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: "Poppins"; }\n' }} />

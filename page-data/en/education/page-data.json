@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-education-js",
     "path": "/en/education/",
-    "result": {"pageContext":{"locale":"en","defaultLocale":"ua","locales":["en","ua"]}},
+    "result": {"pageContext":{"locale":"en","defaultLocale":"ua","locales":["en","ua","es"]}},
     "staticQueryHashes": []}

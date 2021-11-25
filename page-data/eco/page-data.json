@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-eco-js",
     "path": "/eco/",
-    "result": {"pageContext":{"locale":"ua","defaultLocale":"ua","locales":["en","ua"]}},
+    "result": {"pageContext":{"locale":"ua","defaultLocale":"ua","locales":["en","ua","es"]}},
     "staticQueryHashes": []}

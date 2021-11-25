@@ -31,57 +31,61 @@ import { BotUnderConstruction } from './BotUnderConstruction';
 import {useLocaleContext} from "./LocaleContext";
 import {LocalizedLink} from "./LocalizedLink";
 
-const OffCanvasMenu = ({ onClose }) => (
-  <>
-    <div className="offcanvas-overlay" />
-    <div className="offcanvas-menu">
-      <a
-        href="#"
-        className="close-offcanvas"
-        onClick={onClose}
-      >
-        <span className="fa fa-remove" />
-      </a>
-      <div className="offcanvas-inner">
-        <div className="sp-module ">
-          <div className="sp-module-content">
-            <ul className="menu">
-              <li className="item-294">
-                <LocalizedLink to="/">{gettext('Home')}</LocalizedLink>
-              </li>
-              <li className="item-297">
-                <LocalizedLink to="/about">
-                  {gettext('About')}
-                </LocalizedLink>
-              </li>
-              <li className="item-298 menu-divider menu-deeper menu-parent">
-                <LocalizedLink to="/veterans">{gettext('Veterans')}</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/eco">{gettext('Ecology')}</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/education">{gettext('Education')}</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/community">{gettext('Community')}</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/kids">{gettext('Kids')}</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/animals">{gettext('Animals')}</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/diaspora">{gettext('Diaspora')}</LocalizedLink>
-              </li>
-            </ul>
+const OffCanvasMenu = ({ onClose }) => {
+  const {gettext} = useLocales()
+
+  return (
+    <>
+      <div className="offcanvas-overlay"/>
+      <div className="offcanvas-menu">
+        <a
+          href="#"
+          className="close-offcanvas"
+          onClick={onClose}
+        >
+          <span className="fa fa-remove"/>
+        </a>
+        <div className="offcanvas-inner">
+          <div className="sp-module ">
+            <div className="sp-module-content">
+              <ul className="menu">
+                <li className="item-294">
+                  <LocalizedLink to="/">{gettext('Home')}</LocalizedLink>
+                </li>
+                <li className="item-297">
+                  <LocalizedLink to="/about">
+                    {gettext('About')}
+                  </LocalizedLink>
+                </li>
+                <li className="item-298 menu-divider menu-deeper menu-parent">
+                  <LocalizedLink to="/veterans">{gettext('Veterans')}</LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink to="/eco">{gettext('Ecology')}</LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink to="/education">{gettext('Education')}</LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink to="/community">{gettext('Community')}</LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink to="/kids">{gettext('Kids')}</LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink to="/animals">{gettext('Animals')}</LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink to="/diaspora">{gettext('Diaspora')}</LocalizedLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 const SocialIconsContainer = styled('div')`
   float: right;
@@ -196,7 +200,9 @@ const LayoutInternal = ({ title, children }) => {
                                             <div id="sppb-addon-wrapper-1542892443684" className="sppb-addon-wrapper">
                                               <div id="sppb-addon-1542892443684" className="clearfix ">
                                                 <div className="sppb-addon sppb-addon-text-block sppb-text-left ">
-                                                  <h2 className="sppb-addon-title">Contact us</h2>
+                                                  <h2 className="sppb-addon-title">
+                                                    {gettext('Contact us')}
+                                                  </h2>
                                                   <div className="sppb-addon-content">
                                                     <PhoneNumber />
                                                   </div>
@@ -255,8 +261,9 @@ const LayoutInternal = ({ title, children }) => {
 
 const en = () => import('../locales/en.js').then(data => data.default)
 const ua = () => import('../locales/uk.js').then(data => data.default)
+const es = () => import('../locales/es.js').then(data => data.default)
 
-const locales = { en, ua }
+const locales = { es, en, ua }
 
 export const Layout = (props) => {
   const { locale } = useLocaleContext()

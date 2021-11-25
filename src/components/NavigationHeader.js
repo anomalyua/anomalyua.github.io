@@ -7,6 +7,7 @@ import anomalyLogo from '../images/anomaly-logo-01.svg'
 
 import { BecomeAVolunteerButton as Button } from './BecomeAVolunteer'
 import { useMatch } from '@reach/router'
+import { useLocales } from 'react-localized'
 
 const useLocalizedMatch = (url) => (
   useMatch(url) || useMatch(`/:locale${url}`)
@@ -28,8 +29,14 @@ const NavigationLink = (props) => {
   )
 }
 
+const ProjectsLinkTitle = () => {
+  const { gettext } = useLocales()
+
+  return gettext('Projects')
+}
+
 const ProjectsLink = styled.a.attrs(() => ({
-  children: 'Projects',
+  children: <ProjectsLinkTitle />,
   href: '#'
 }))`
   &::after {
@@ -42,6 +49,7 @@ const ProjectsLink = styled.a.attrs(() => ({
 `
 
 const ProjectsNavigationDropdown = () => {
+  const { gettext } = useLocales()
   const active = useLocalizedMatch('/veterans') ||
     useLocalizedMatch('/kids') ||
     useLocalizedMatch('/animals') ||
@@ -56,13 +64,13 @@ const ProjectsNavigationDropdown = () => {
       <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{ width: '240px' }}>
         <div className="sp-dropdown-inner">
           <ul className="sp-dropdown-items">
-            <NavigationLink to="/veterans">Veterans</NavigationLink>
-            <NavigationLink to="/eco">Ecology</NavigationLink>
-            <NavigationLink to="/education">Education</NavigationLink>
-            <NavigationLink to="/community">Community</NavigationLink>
-            <NavigationLink to="/kids">Kids</NavigationLink>
-            <NavigationLink to="/animals">Animals</NavigationLink>
-            <NavigationLink to="/diaspora">Diaspora</NavigationLink>
+            <NavigationLink to="/veterans">{gettext('Veterans')}</NavigationLink>
+            <NavigationLink to="/eco">{gettext('Ecology')}</NavigationLink>
+            <NavigationLink to="/education">{gettext('Education')}</NavigationLink>
+            <NavigationLink to="/community">{gettext('Community')}</NavigationLink>
+            <NavigationLink to="/kids">{gettext('Kids')}</NavigationLink>
+            <NavigationLink to="/animals">{gettext('Animals')}</NavigationLink>
+            <NavigationLink to="/diaspora">{gettext('Diaspora')}</NavigationLink>
           </ul>
         </div>
       </div>
@@ -76,6 +84,7 @@ const ButtonContainer = styled('div')`
 `
 
 export const NavigationHeader = ({ onMenuOpen }) => {
+  const { gettext } = useLocales()
   const [isSticky, setSticky] = useState(false)
 
   useEffect(() => {
@@ -106,9 +115,9 @@ export const NavigationHeader = ({ onMenuOpen }) => {
                   </a>
                   <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
                     <li className="sp-menu-item">
-                      <Link to="/">Home</Link>
+                      <Link to="/">{gettext('Home')}</Link>
                     </li>
-                    <NavigationLink to="/about">About</NavigationLink>
+                    <NavigationLink to="/about">{gettext('About')}</NavigationLink>
                     <ProjectsNavigationDropdown />
                   </ul>
                 </nav>

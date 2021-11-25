@@ -24,7 +24,7 @@ const LanguageLink = ({active, ...props}) => (
 export const LanguageSwitcher = () => {
   const { locale } = useLocaleContext()
   const { pathname } = useLocation()
-  const barePath = pathname.match(/(?:\/en)?(.*)/)[1]
+  const barePath = pathname.match(/(?:\/en|\/es)?(.*)/)[1]
 
   return <div className="mod-languages">
     <ul className="lang-inline">
@@ -36,6 +36,11 @@ export const LanguageSwitcher = () => {
       <li>
         <LanguageLink to={`/en${barePath}`} active={locale === 'en'}>
           EN
+        </LanguageLink>
+      </li>
+      <li>
+        <LanguageLink to={`/es${barePath}`} active={locale === 'es'}>
+          ES
         </LanguageLink>
       </li>
     </ul>

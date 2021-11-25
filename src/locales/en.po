@@ -23,7 +23,8 @@ msgstr ""
 msgid "3500 + veterans in our community"
 msgstr ""
 
-#: src/components/Layout.js:54
+#: src/components/Layout.js:57
+#: src/components/NavigationHeader.js:120
 msgid "About"
 msgstr ""
 
@@ -31,12 +32,13 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
-#: src/components/Layout.js:159
+#: src/components/Layout.js:163
 #: src/pages/about.js:391
 msgid "Address"
 msgstr ""
 
-#: src/components/Layout.js:73
+#: src/components/Layout.js:76
+#: src/components/NavigationHeader.js:72
 #: src/pages/index.js:378
 msgid "Animals"
 msgstr ""
@@ -147,13 +149,18 @@ msgid ""
 "veterns like yourself."
 msgstr ""
 
-#: src/components/Layout.js:67
+#: src/components/Layout.js:70
+#: src/components/NavigationHeader.js:70
 #: src/pages/index.js:273
 msgid "Community"
 msgstr ""
 
 #: src/pages/about.js:526
 msgid "Competency"
+msgstr ""
+
+#: src/components/Layout.js:204
+msgid "Contact us"
 msgstr ""
 
 #: src/pages/about.js:497
@@ -200,7 +207,8 @@ msgstr ""
 msgid "Developing community activism"
 msgstr ""
 
-#: src/components/Layout.js:76
+#: src/components/Layout.js:79
+#: src/components/NavigationHeader.js:73
 #: src/pages/diaspora.js:20
 msgid "Diaspora"
 msgstr ""
@@ -237,13 +245,15 @@ msgstr ""
 msgid "E - democracy"
 msgstr ""
 
-#: src/components/Layout.js:61
+#: src/components/Layout.js:64
+#: src/components/NavigationHeader.js:68
 #: src/pages/eco.js:19
 #: src/pages/index.js:224
 msgid "Ecology"
 msgstr ""
 
-#: src/components/Layout.js:64
+#: src/components/Layout.js:67
+#: src/components/NavigationHeader.js:69
 #: src/pages/education.js:165
 msgid "Education"
 msgstr ""
@@ -304,7 +314,8 @@ msgid ""
 "a pup today!"
 msgstr ""
 
-#: src/components/Layout.js:50
+#: src/components/Layout.js:53
+#: src/components/NavigationHeader.js:118
 msgid "Home"
 msgstr ""
 
@@ -334,7 +345,8 @@ msgstr ""
 msgid "Join Anomaly Today!"
 msgstr ""
 
-#: src/components/Layout.js:70
+#: src/components/Layout.js:73
+#: src/components/NavigationHeader.js:71
 #: src/pages/index.js:324
 msgid "Kids"
 msgstr ""
@@ -390,6 +402,10 @@ msgstr ""
 
 #: src/pages/kids.js:69
 msgid "Playgrounds"
+msgstr ""
+
+#: src/components/NavigationHeader.js:35
+msgid "Projects"
 msgstr ""
 
 #: src/pages/about.js:458
@@ -452,11 +468,12 @@ msgid ""
 "Ukraine, 03150, Kyiv"
 msgstr ""
 
-#: src/components/Layout.js:161
+#: src/components/Layout.js:165
 msgid "Velyka Vasylkivska st, 72, office 20, Ukraine, 03150, Kyiv"
 msgstr ""
 
-#: src/components/Layout.js:58
+#: src/components/Layout.js:61
+#: src/components/NavigationHeader.js:67
 #: src/pages/index.js:165
 #: src/pages/veterans.js:19
 msgid "Veterans"

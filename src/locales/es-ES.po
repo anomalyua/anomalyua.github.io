@@ -10,7 +10,7 @@ msgstr ""
 "X-Crowdin-File-ID: 15\n"
 "Project-Id-Version: anomaly\n"
 "Language-Team: Spanish\n"
-"PO-Revision-Date: 2021-11-25 22:01\n"
+"PO-Revision-Date: 2021-12-08 21:09\n"
 
 #: src/pages/veterans.js:76
 msgid "1000 + veteran care specialists (psychological, medical, social services)"
@@ -24,7 +24,8 @@ msgstr "Más de 20.000 miembros de comunidades marginadas, incluyendo veteranos 
 msgid "3500 + veterans in our community"
 msgstr "3500 + veteranos en nuestra comunidad"
 
-#: src/components/Layout.js:54
+#: src/components/Layout.js:57
+#: src/components/NavigationHeader.js:120
 msgid "About"
 msgstr "Acerca de"
 
@@ -32,12 +33,13 @@ msgstr "Acerca de"
 msgid "About Us"
 msgstr "Acerca de nosotros"
 
-#: src/components/Layout.js:159
+#: src/components/Layout.js:163
 #: src/pages/about.js:391
 msgid "Address"
 msgstr "Dirección"
 
-#: src/components/Layout.js:73
+#: src/components/Layout.js:76
+#: src/components/NavigationHeader.js:72
 #: src/pages/index.js:378
 msgid "Animals"
 msgstr "Animales"
@@ -106,7 +108,8 @@ msgstr "Hijos de Donbas"
 msgid "Come grab a drink with us! We offer a cool environment to meet with other veterns like yourself."
 msgstr "¡Ven a tomar una copa con nosotros! Ofrecemos un ambiente agradable para reunirte con otros veteranos como tu."
 
-#: src/components/Layout.js:67
+#: src/components/Layout.js:70
+#: src/components/NavigationHeader.js:70
 #: src/pages/index.js:273
 msgid "Community"
 msgstr "Comunidad"
@@ -114,6 +117,10 @@ msgstr "Comunidad"
 #: src/pages/about.js:526
 msgid "Competency"
 msgstr "Competencia"
+
+#: src/components/Layout.js:204
+msgid "Contact us"
+msgstr "Contáctate con nosotros"
 
 #: src/pages/about.js:497
 msgid "Contacts"
@@ -147,7 +154,8 @@ msgstr "Cursos de liderazgo desarrollados para las mujeres donde normalmente est
 msgid "Developing community activism"
 msgstr "Desarrollo de activismo comunitario"
 
-#: src/components/Layout.js:76
+#: src/components/Layout.js:79
+#: src/components/NavigationHeader.js:73
 #: src/pages/diaspora.js:20
 msgid "Diaspora"
 msgstr "Diáspora"
@@ -176,13 +184,15 @@ msgstr "Drinkin' Bros es una organización internacional de veteranos y nosotros
 msgid "E - democracy"
 msgstr "E - democracia"
 
-#: src/components/Layout.js:61
+#: src/components/Layout.js:64
+#: src/components/NavigationHeader.js:68
 #: src/pages/eco.js:19
 #: src/pages/index.js:224
 msgid "Ecology"
 msgstr "Ecologia"
 
-#: src/components/Layout.js:64
+#: src/components/Layout.js:67
+#: src/components/NavigationHeader.js:69
 #: src/pages/education.js:165
 msgid "Education"
 msgstr "Educación"
@@ -235,7 +245,8 @@ msgstr "Ayudar a abogar por mejores situaciones de vida en los horfanatos."
 msgid "Help transform how society views stray dogs and help get them homes! Foster a pup today!"
 msgstr "¡Ayuda a transformar cómo la sociedad ve a los perros sin hogar y ayuda a llevarlos a casa! ¡Acoje un cachorro hoy!"
 
-#: src/components/Layout.js:50
+#: src/components/Layout.js:53
+#: src/components/NavigationHeader.js:118
 msgid "Home"
 msgstr "Inicio"
 
@@ -255,7 +266,8 @@ msgstr "Parece que cada día hay un nuevo canal de telegramas de narcóticos gra
 msgid "Join Anomaly Today!"
 msgstr "¡Únete a Anomaly hoy!"
 
-#: src/components/Layout.js:70
+#: src/components/Layout.js:73
+#: src/components/NavigationHeader.js:71
 #: src/pages/index.js:324
 msgid "Kids"
 msgstr "Niños"
@@ -308,6 +320,10 @@ msgstr "Teléfono"
 msgid "Playgrounds"
 msgstr "Zona de Juegos"
 
+#: src/components/NavigationHeader.js:35
+msgid "Projects"
+msgstr "Proyectos"
+
 #: src/pages/about.js:458
 msgid "Social"
 msgstr "Redes Sociales"
@@ -354,11 +370,12 @@ msgid "Velyka Vasylkivska st, 72, office 20,\n"
 msgstr "Velyka Vasylkivska st, 72, oficina 20,\n"
 "Ucrania, 03150, Kiev"
 
-#: src/components/Layout.js:161
+#: src/components/Layout.js:165
 msgid "Velyka Vasylkivska st, 72, office 20, Ukraine, 03150, Kyiv"
 msgstr "Velyka Vasylkivska st, 72, oficina 20, Ucrania, 03150, Kiev"
 
-#: src/components/Layout.js:58
+#: src/components/Layout.js:61
+#: src/components/NavigationHeader.js:67
 #: src/pages/index.js:165
 #: src/pages/veterans.js:19
 msgid "Veterans"

@@ -10,7 +10,7 @@ msgstr ""
 "X-Crowdin-File-ID: 15\n"
 "Project-Id-Version: anomaly\n"
 "Language-Team: Ukrainian\n"
-"PO-Revision-Date: 2021-12-08 21:09\n"
+"PO-Revision-Date: 2021-12-12 14:25\n"
 
 #: src/pages/veterans.js:76
 msgid "1000 + veteran care specialists (psychological, medical, social services)"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/pages/veterans.js:231
 msgid "Are you or a loved one a veteran who would like to help make Ukraine a better place? If so, join our volunteer team today!"
-msgstr ""
+msgstr "Ви чи ваша кохана людина ветеран і хочете допомогти змінити Україну на краще? Якщо так, приєднуйтесь до нашої волонтерської команди!"
 
 #: src/components/BecomeAVolunteer.js:19
 msgid "Become a Volunteer"
@@ -90,148 +90,148 @@ msgstr "Стати волонтером"
 
 #: src/pages/index.js:494
 msgid "Check out our accomplishments"
-msgstr ""
+msgstr "Наші досягнення"
 
 #: src/pages/kids.js:49
 msgid "Children of ATO Veterans"
-msgstr ""
+msgstr "Діти ветеранів"
 
 #: src/pages/kids.js:54
 msgid "Children of Crimea and Tatars"
-msgstr ""
+msgstr "Діти кримських татар"
 
 #: src/pages/kids.js:59
 msgid "Children of Donbas"
-msgstr ""
+msgstr "Діти Донбасу"
 
 #: src/pages/veterans.js:117
 msgid "Come grab a drink with us! We offer a cool environment to meet with other veterns like yourself."
-msgstr ""
+msgstr "Приходьте пропустити склянку з нами! Ми пропонуємо приємне оточення таких самих ветеранів, як ви."
 
 #: src/components/Layout.js:70
 #: src/components/NavigationHeader.js:70
 #: src/pages/index.js:273
 msgid "Community"
-msgstr ""
+msgstr "Спільнота"
 
 #: src/pages/about.js:526
 msgid "Competency"
-msgstr ""
+msgstr "Компетентність"
 
 #: src/components/Layout.js:204
 msgid "Contact us"
-msgstr ""
+msgstr "Зв'язатися з нами"
 
 #: src/pages/about.js:497
 msgid "Contacts"
-msgstr ""
+msgstr "Контакти"
 
 #: src/pages/about.js:538
 msgid "Creativity"
-msgstr ""
+msgstr "Креативність"
 
 #: src/pages/education.js:212
 msgid "Crimean Tatars and IDP Children"
-msgstr ""
+msgstr "Діти кримських татар та ВПО"
 
 #: src/pages/index.js:424
 msgid "Dare to do the impossible!"
-msgstr ""
+msgstr "Наважишся виконати неможливо!"
 
 #: src/pages/about.js:95
 msgid "David Plaster"
-msgstr ""
+msgstr "Девід Пластер"
 
 #: src/pages/about.js:139
 msgid "David's favorite way to describe himself is as a \"mere pensioner.\" After retiring from his career as a US Army medic, David came to Ukraine in 2011 and shortly thereafter decided to build a life here. He served with other volunteers as a combat medic both on the Maidan and at the front in Donbas, and he has been working to make Ukraine a better place in every way he can ever since. He founded Anomaly as an organizational vehicle for that vision on Maidan December 1st, 2013 and officially in 2016 as a Ukrainian NGO."
-msgstr ""
+msgstr "Улюблений спосіб Девіда описувати себе — «простий пенсіонер». Після завершення кар’єри медика армії США Девід приїхав в Україну в 2011 році і невдовзі вирішив побудувати тут життя. Він разом з іншими волонтерами служив бойовим медиком як на Майдані, так і на фронті на Донбасі, і відтоді працює над тим, щоб Україна стала кращою. Він заснував Anomaly як організаційну рушійну силу свого бачення під час Майдану 1 грудня 2013 року та офіційно у 2016 році зареєстрував як українську громадську організацію."
 
 #: src/pages/education.js:100
 msgid "Developed leadership courses for women where they are typically underrepresented; police, military, science (STEM), led by female professionals in the top of their fields to share expertise and train course attendees in state-of-the-science business methods and career progression skills."
-msgstr ""
+msgstr "Розроблені курси лідерства для жінок, у галузях, де вони зазвичай недостатньо представлені: поліція, війська, наука (STEM), очолювані найкращими в своїх областях професіоналками, щоб поділитися досвідом та навчати слухачок курсів найсучаснішим методам ведення бізнесу та навичкам кар’єрного зростання."
 
 #: src/pages/community.js:152
 msgid "Developing community activism"
-msgstr ""
+msgstr "Розвиток локального активізму"
 
 #: src/components/Layout.js:79
 #: src/components/NavigationHeader.js:73
 #: src/pages/diaspora.js:20
 msgid "Diaspora"
-msgstr ""
+msgstr "Діаспора"
 
 #: src/pages/community.js:319
 msgid "Do you have an idea that would help to improve civil society in Ukraine? Let us know!"
-msgstr ""
+msgstr "У вас є ідея, яка б допомогла покращити громадянське суспільство в Україні? Дайте нам знати!"
 
 #: src/pages/education.js:401
 msgid "Do you have something that you want to teach to others? Come join us!"
-msgstr ""
+msgstr "У вас є щось, чому ви хочете навчити інших? Приєднуйтесь до нас!"
 
 #: src/pages/eco.js:195
 msgid "Do you want to make Ukraine green again? Join our team and make our home a cleaner, greener place for generations to come!"
-msgstr ""
+msgstr "Хочете зробити Україну зеленою знову? Приєднуйтеся до нашої команди і зробіть нашу спільну домівку чистішою і зеленішою для майбутніх поколінь!"
 
 #: src/pages/veterans.js:120
 msgid "Don't drink? It's okay - have something non-alcoholic! :) The important thing that we don't drink alone!"
-msgstr ""
+msgstr "Не вживаєте алкоголь? Добре, тоді пийте безалкогольні напої! :) Важлива річ у тому, що ми не п'ємо наодинці!"
 
 #: src/pages/veterans.js:114
 msgid "Drinkin' Bros is an international veterans organization and we run the Ukrainian chapter."
-msgstr ""
+msgstr "Drinkin' bros - це міжнародна ветеранська організація, а ми керуємо її Українською філією."
 
 #: src/pages/community.js:89
 msgid "E - democracy"
-msgstr ""
+msgstr "Е-демократія"
 
 #: src/components/Layout.js:64
 #: src/components/NavigationHeader.js:68
 #: src/pages/eco.js:19
 #: src/pages/index.js:224
 msgid "Ecology"
-msgstr ""
+msgstr "Екологія"
 
 #: src/components/Layout.js:67
 #: src/components/NavigationHeader.js:69
 #: src/pages/education.js:165
 msgid "Education"
-msgstr ""
+msgstr "Освіта"
 
 #: src/pages/about.js:422
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: src/pages/education.js:192
 msgid "English"
-msgstr ""
+msgstr "Англійська"
 
 #: src/pages/kids.js:95
 msgid "Every heard of the saying \"it takes a village to raise a child\"? It's true! Help kids who have family members in the military by joining our mentorship program."
-msgstr ""
+msgstr "В англомовних країнах є прислів'я \"щоб виростити дитину, потрібне ціле село\". І це правда! Допоможіть дітям військових приєднатися до нашої менторської програми."
 
 #: src/pages/kids.js:134
 msgid "Everyday Crimean Tartar families are being separated by Russian forces. Imagine losing your father at such a young age. It's all very confusing but mentoring can help!"
-msgstr ""
+msgstr "Кожного дня родини кримських татар розділяютьс російською владою. Втрата одного з батьків у юному віці - страшна втрата, яку нічим неможна замінити!"
 
 #: src/pages/about.js:98
 msgid "Founder & Chairman"
-msgstr ""
+msgstr "Засновник і Голова"
 
 #: src/pages/index.js:484
 msgid "Gallery"
-msgstr ""
+msgstr "Галерея"
 
 #: src/pages/about.js:535
 msgid "Growth"
-msgstr ""
+msgstr "Зростання"
 
 #: src/pages/animals.js:173
 msgid "Have experience working with animals or animal rights? Come join us!"
-msgstr ""
+msgstr "Маєте досвід роботи з тваринами чи у зоозахисті? Приєднуйтесь!"
 
 #: src/pages/kids.js:364
 msgid "Have experience working with kids? Come show us!"
-msgstr ""
+msgstr "Маєте досвід роботи з дітьми? Приєднуйтесь до нас!"
 
 #: src/pages/animals.js:91
 msgid "Help advocate for animal rights and protect street animals."

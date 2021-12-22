@@ -10,7 +10,7 @@ msgstr ""
 "X-Crowdin-File-ID: 15\n"
 "Project-Id-Version: anomaly\n"
 "Language-Team: Ukrainian\n"
-"PO-Revision-Date: 2021-12-12 14:25\n"
+"PO-Revision-Date: 2021-12-22 20:29\n"
 
 #: src/pages/veterans.js:76
 msgid "1000 + veteran care specialists (psychological, medical, social services)"
@@ -42,7 +42,7 @@ msgstr "Адреса"
 #: src/components/NavigationHeader.js:72
 #: src/pages/index.js:378
 msgid "Animals"
-msgstr ""
+msgstr "Тварини"
 
 #: src/pages/index.js:338
 msgid "Anomaly connects foreign donors with an orphanage in Mariupol to help children find a new family and home."
@@ -58,7 +58,7 @@ msgstr "Anomaly допомагає захищати права дітей і з�
 
 #: src/pages/index.js:232
 msgid "Anomaly helps the Ukrainian environment with neigborhood clean-ups and environmental advocacy projects. Anomaly hosts up to 3 cleans-ups a month to help minimize public litter. By doing so, Anomaly helps its participants learn about the effects of waste on the environment (both local and worldwide) and learn how to create similar projects at home. To add on, Anomaly helps to lobby environmental issues occuring in multiple cities across Ukraine. We will pinpoint any companies that are at the core of enironvmental issues and combat them through advocacy and lobbying."
-msgstr ""
+msgstr "Anomaly допомагає захистити українське довкілля шляхом організації толок і адвокації екологічних проектів. Anomaly проводить до 3 толок на місяць, щоб мінімізувати засмічення суспільних просторів. Під час цих заходів наша команда допомагає їх учасникам дізнатися про вплив відходів на захист (як місцевих, так і в усьому світі) та навчитися створювати подібні проекти самостійно. До того ж, Anomaly допомагає лобіювати екологічні проблеми, що виникають у багатьох містах України. Ми визначаємо організації, що сприяють виникненню екологічних проблем, та боремося з ними через закони та лобіювання."
 
 #: src/pages/index.js:92
 msgid "Anomaly offers free english lessons and workshops on various topics. We offer these lessons to any adult in need to help promote personal sustainability and open their ability to work in future opportunities. If you are not a Veteran or Child, Anomaly can still help you with educational modules and workshops."
@@ -78,7 +78,7 @@ msgstr "Anomaly співпрацює з міською адміністраці�
 
 #: src/pages/community.js:172
 msgid "Anti - Narc"
-msgstr ""
+msgstr "Анти наркоманські"
 
 #: src/pages/veterans.js:231
 msgid "Are you or a loved one a veteran who would like to help make Ukraine a better place? If so, join our volunteer team today!"
@@ -235,216 +235,216 @@ msgstr "Маєте досвід роботи з дітьми? Приєднуйт
 
 #: src/pages/animals.js:91
 msgid "Help advocate for animal rights and protect street animals."
-msgstr ""
+msgstr "Допоможіть захистити права тварин і захистити вуличних тварин."
 
 #: src/pages/kids.js:211
 msgid "Help advocate for better living situtations in orphanges."
-msgstr ""
+msgstr "Допоможіть покращенню життя у дитячих будинках."
 
 #: src/pages/animals.js:149
 msgid "Help transform how society views stray dogs and help get them homes! Foster a pup today!"
-msgstr ""
+msgstr "Допоможіть змінити те, як суспільство ставиться до бездомних собак, і допоможіть отримати їм домівки! Виховуйте цуценя сьогодні!"
 
 #: src/components/Layout.js:53
 #: src/components/NavigationHeader.js:118
 msgid "Home"
-msgstr ""
+msgstr "Головна"
 
 #: src/pages/community.js:131
 msgid "Housing Authority"
-msgstr ""
+msgstr "Місцева влада"
 
 #: src/pages/about.js:529
 msgid "Integrity"
-msgstr ""
+msgstr "Цілісність"
 
 #: src/pages/community.js:215
 msgid "It seems everyday that there's a new narcotics telegram channel graffitied around the neighborhood. We totally get it! To combat this, Anomaly organised local teams to clean up their neighborhoods. Want to know how? Click the box below (can be a highlight of this bot's success compared to the MVS) we work together with our eco team while we are cleaning up the neighborhoods we show people how to reduce drug use in their communities; reference the \"broken window theory\" how cleaner neighborhoods can help to reduce drug use (focus is on the drug issues and community activism development then e democracy meaning showing the locations how to more easily communicate with local admin., city workers, police, and politicians"
-msgstr ""
+msgstr "Схоже, що щодня в мікрорайонах Києва з’являється новий телеграм-канал про наркотики. І ми знаємо про це! Щоб боротися з цим, Anomaly організувала групи з прибирання серед місцевих жителів. Хочете знати, як ми це зробили? Клацніть поле нижче (може бути яскравою ознакою успіху цього бота в порівнянні з MVS). Окрім прибирання, ми працюємо разом із нашими командами та спільнотами в напрямку навчання стратегії зменшення вживання наркотиків у громадах; Усе починається з дрібниць. Невеликі, впливові зміни, як-от прибирання та видалення графіті, з часом можуть мати величезну позитивну віддачу. Ми маємо на увазі, що демонстрація таких місць, полегшить спілкування з місцевою адміністрацією, міськими працівниками, поліцією та політиками"
 
 #: src/pages/index.js:646
 msgid "Join Anomaly Today!"
-msgstr ""
+msgstr "Приєднуйся до Anomaly сьогодні!"
 
 #: src/components/Layout.js:73
 #: src/components/NavigationHeader.js:71
 #: src/pages/index.js:324
 msgid "Kids"
-msgstr ""
+msgstr "Діти"
 
 #: src/pages/education.js:233
 msgid "Leadership"
-msgstr ""
+msgstr "Керівництво"
 
 #: src/pages/education.js:43
 msgid "Leadership courses"
-msgstr ""
+msgstr "Курси лідерства"
 
 #: src/pages/eco.js:159
 msgid "LoveUA is a Ukrainian ecology platform made of an association of ecology groups and activists to track and solve eco problems in Ukraine"
-msgstr ""
+msgstr "LoveUA - українська екологічна платформа, що створена з асоціації екологічних груп і активістів з метою моніторингу і вирішенню екологічних проблем в Україні"
 
 #: src/pages/education.js:254
 msgid "Military Medicine"
-msgstr ""
+msgstr "Військова медицина"
 
 #: src/pages/education.js:64
 msgid "Miltary medical training"
-msgstr ""
+msgstr "Військові медичні курси"
 
 #: src/pages/education.js:141
 msgid "Offered courses in SMM, videography, and PR communications to government departments, young business entrepenuers and veterans to help them get their work into the public conversation."
-msgstr ""
+msgstr "Проводили курси з SMM, відеозйомки та PR-комунікацій для державних відомств, молодих підприємців та ветеранів, щоб допомогти їм вивести свою роботу на публічну розмову."
 
 #: src/pages/kids.js:64
 msgid "Orphans"
-msgstr ""
+msgstr "Сироти"
 
 #: src/pages/about.js:123
 msgid "Our founder"
-msgstr ""
+msgstr "Наш засновник"
 
 #: src/pages/index.js:446
 msgid "Our projects"
-msgstr ""
+msgstr "Наші проекти"
 
 #: src/pages/about.js:273
 msgid "Our team"
-msgstr ""
+msgstr "Наша команда"
 
 #: src/pages/about.js:358
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 #: src/pages/kids.js:69
 msgid "Playgrounds"
-msgstr ""
+msgstr "Дитячі майданчики"
 
 #: src/components/NavigationHeader.js:35
 msgid "Projects"
-msgstr ""
+msgstr "Проекти"
 
 #: src/pages/about.js:458
 msgid "Social"
-msgstr ""
+msgstr "Соціальні мережі"
 
 #: src/pages/education.js:275
 msgid "Social Media Marketing"
-msgstr ""
+msgstr "Маркетинг в соціальних мережах"
 
 #: src/pages/education.js:85
 msgid "Social Media Marketing training"
-msgstr ""
+msgstr "Тренінги з СММ"
 
 #: src/pages/community.js:110
 msgid "Social Support"
-msgstr ""
+msgstr "Соціальна підтримка"
 
 #: src/pages/index.js:174
 msgid "Support for Ukrainian veterans: Every Sunday we offer free English courses and conversation clubs specifically for veterans, ATO volunteers, and their families in Kyiv."
-msgstr ""
+msgstr "Підтримка українських ветеранів: Щонеділі ми пропонуємо безкоштовні курси англійської мови та розмовні спеціально для ветеранів, волонтерів АТО та їх сімей у Києві."
 
 #: src/pages/veterans.js:86
 msgid "Supported by multiple nations"
-msgstr ""
+msgstr "Підтримується багатьма країнами"
 
 #: src/pages/about.js:532
 msgid "Sustainability"
-msgstr ""
+msgstr "Сталість"
 
 #: src/pages/about.js:264
 msgid "Today our team includes hundreds of volunteers from more than 12 countries and all over Ukraine. Like billions of drops make an ocean, each of our team members makes their contribution in making Ukraine better."
-msgstr ""
+msgstr "Сьогодні наша команда налічує сотні волонтерів з понад 12 країн та всієї України. Як мільярди крапель утворюють океан, кожен з членів нашої команди робить свій внесок у те, щоб зробити Україну кращою."
 
 #: src/pages/education.js:121
 msgid "Trained over 8000 military, volunteers, and national guardsmen in NATO miltary medical standards. In addition to individual training, Anomaly assisted the National Guard of Ukraine in programmatic development of a NATO-standard medic course, implemented on an organization-wide level."
-msgstr ""
+msgstr "Підготували понад 8000 військових, волонтерів та національних гвардійців згідно військово-медичним стандартам НАТО. Окрім індивідуального навчання, Аномалія допомагала Національній гвардії України у програмній розробці медичних курсів за стандартом НАТО, які впроваджувалися на рівні організації."
 
 #: src/pages/diaspora.js:71
 msgid "Ukraine has a large diaspora population which has made homes all over the world, especially in Canada, the United States, and Poland. Since the Revolution of Dignity in 2014, many diaspora have felt called to make a difference."
-msgstr ""
+msgstr "В України є велика діаспора, що облаштувалася по всьому світу, особливо в Канаді, США та Польщі. Після Революції гідності в 2014 році багато представників діаспори відчули покликання змінити ситуацію."
 
 #: src/pages/about.js:394
 msgid "Velyka Vasylkivska st, 72, office 20,\n"
 "Ukraine, 03150, Kyiv"
-msgstr ""
+msgstr "Україна, 03150, м. Київ, вул. Велика Васильківська 72, офіс 20"
 
 #: src/components/Layout.js:165
 msgid "Velyka Vasylkivska st, 72, office 20, Ukraine, 03150, Kyiv"
-msgstr ""
+msgstr "Україна, 03150, м. Київ, вул. Велика Васильківська 72, офіс 20"
 
 #: src/components/Layout.js:61
 #: src/components/NavigationHeader.js:67
 #: src/pages/index.js:165
 #: src/pages/veterans.js:19
 msgid "Veterans"
-msgstr ""
+msgstr "Ветерани"
 
 #: src/pages/about.js:304
 msgid "Volunteering opportunities"
-msgstr ""
+msgstr "Можливості волонтерства"
 
 #: src/pages/veterans.js:189
 msgid "We also help to connect vets with caretakers, social workers, and psychological support."
-msgstr ""
+msgstr "Ми також допомагаємо встановити зв'язки з доглядальниками, соціальними робітниками і психологами."
 
 #: src/pages/index.js:391
 msgid "We are always looking for volunteers to help us solve this problem. If you think that is you, then join us today!."
-msgstr ""
+msgstr "Ми завжди шукаємо волонтерів, які допоможуть нам вирішити цю проблему. Якщо ви думаєте, що це ви, то приєднуйтесь до нас сьогодні!."
 
 #: src/pages/eco.js:49
 msgid "We are the largest group of eco activitists in Ukraine"
-msgstr ""
+msgstr "Ми - найбільша група еко-активістів в Україні"
 
 #: src/pages/eco.js:60
 msgid "We conducted more than 55 clean ups in 2019-20"
-msgstr ""
+msgstr "Ми провели понад 55 толок у 2019-2020 роках"
 
 #: src/pages/veterans.js:192
 msgid "We have organized a network of 1000+ veteran care specialists from all over the country to help assist veterans with their transition to civilian life and recovery after returning from war."
-msgstr ""
+msgstr "Ми створили мережу з поняд 1000 спеціалістів, що піклуються про ветеранів, з усієї країни, для того, щоб допомогати ветеранам перелаштуватися на цивільне життя і відновитися після війни."
 
 #: src/pages/index.js:333
 msgid "We help children of veterans, returned Russian-held political prisoners, Crimean Tatar exiles, and IDPs to attend our free English lessons and speaking clubs."
-msgstr ""
+msgstr "Ми допомагаємо дітям ветеранів, політв’язнів, які повернулися в Росію, кримськотатарським вигнанцям та внутрішньо переміщеним особам відвідувати наші безкоштовні уроки англійської мови та розмовні клуби."
 
 #: src/pages/community.js:253
 msgid "We make it easy for Kyivans to improve their communities with just their thumbs and an internet connection!"
-msgstr ""
+msgstr "Ми допомагаємо киянам покращити свої райони просто через смартфон і інтернет!"
 
 #: src/pages/index.js:180
 msgid "We organize regular volunteer outings (our tolokas) and social events (Drinkin’ Bros Ukraine) to connect members of the veteran community with each other, their fellow citizens, as well as officials and visitors from local government and embassies."
-msgstr ""
+msgstr "Ми організовуємо регулярні волонтерські виїзди (наші толоки) та світські заходи (Drinkin ’Bros Ukraine), щоб зв’язати членів ветеранської громади між собою, їх співгромадянами, а також чиновниками та відвідувачами з органів місцевої влади та посольств."
 
 #: src/pages/education.js:354
 msgid "We organized English-language conversation and craft sessions for younger children of IDPs, ATO veterans, and Crimean Tatars in Kyiv, as well as English conversation clubs for teenaged children of those groups"
-msgstr ""
+msgstr "Ми організували англомовні клуби та заняття рукоділлям для молодших дітей переселенців, ветеранів АТО та кримських татар у Києві, а також гуртки англійської мови для підлітків цих груп"
 
 #: src/pages/index.js:287
 msgid "We support faster problem solving with local governance by providing reporting tools for the 100,000 residents of the most underserved areas of Kyiv, directly connecting them with local utility service providers."
-msgstr ""
+msgstr "Ми сприяємо швидшому вирішенню проблем з місцевим врядуванням, надаючи інструменти звітування для 100 000 жителів найменш забезпечених районів Києва, безпосередньо пов’язуючи їх з місцевими постачальниками комунальних послуг."
 
 #: src/pages/eco.js:70
 msgid "We won first prize in Ukraine and second prize in the world in the 2018 Enactus Award competition"
-msgstr ""
+msgstr "Ми отримали першу премію в Україні та другу премію у світі на конкурсі Enactus Award 2018"
 
 #: src/pages/index.js:342
 msgid "We work with the local community policing department to protect the rights of children in Kyiv."
-msgstr ""
+msgstr "Ми співпрацюємо з відділом поліції місцевої громади для захисту прав дітей у Києві."
 
 #: src/pages/about.js:115
 msgid "Welcome"
-msgstr ""
+msgstr "Ласкаво просимо"
 
 #: src/pages/diaspora.js:46
 msgid "What is the Ukrainian Diaspora?"
-msgstr ""
+msgstr "Що таке українська діаспора?"
 
 #: src/pages/index.js:186
 msgid "With our ‘Dbayemo Razom’ project, we connected 1,000+ mental health professionals, 10,000+ trained peer counselors and 3 physical rehabilitation centers. The network shares experience, expertise, and resources to better serve people in Ukraine."
-msgstr ""
+msgstr "За допомогою нашого проекту «Дбаємо разом» ми об'єднали понад 1000 фахівців з психологічного здоров'я, 10 000+ підготовлених радників та 3 центри фізичної реабілітації. Мережа ділиться досвідом, навичками та ресурсами для адміністрування людей в Україні."
 
 #: src/pages/kids.js:172
 msgid "With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes."
-msgstr ""
+msgstr "З початком війни на Сході України діти і їхні сім'ї були вимушені покинути свої домівки."
 

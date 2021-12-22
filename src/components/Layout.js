@@ -262,8 +262,9 @@ const LayoutInternal = ({ title, children }) => {
 const en = () => import('../locales/en.js').then(data => data.default)
 const ua = () => import('../locales/uk.js').then(data => data.default)
 const es = () => import('../locales/es.js').then(data => data.default)
+const fr = () => import('../locales/fr.js').then(data => data.default)
 
-const locales = { es, en, ua }
+const locales = { es, en, ua, fr }
 
 export const Layout = (props) => {
   const { locale } = useLocaleContext()

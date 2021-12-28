@@ -3,6 +3,13 @@ import * as React from 'react'
 import { Layout } from '../components/Layout'
 import { TopTitleText } from '../components/TopTitleText'
 import { useLocales } from 'react-localized'
+import { AchievementsColumn } from '../components/AchievementsColumn'
+import styled from 'styled-components'
+
+const OurValueImage = styled('img')`
+  padding-bottom: 4px;
+  height: 36px;
+`
 
 const EcologyContent = () => {
   const { gettext } = useLocales()
@@ -33,50 +40,25 @@ const EcologyContent = () => {
                 <div className="page-content">
                   <section id="section-id-1626723958894" className="sppb-section">
                     <div className="sppb-row-container">
-                      <div className="sppb-row">
-                        <div className="sppb-col-md-12" id="column-wrap-id-1626723958892">
-                          <div id="column-id-1626723958892" className="sppb-column">
-                            <div className="sppb-column-addons">
-                              <div id="sppb-addon-wrapper-1626723958909" className="sppb-addon-wrapper">
-                                <div id="sppb-addon-1626723958909" className="clearfix ">
-                                  <div className="sppb-addon sppb-addon-text-block  ">
-                                    <div className="sppb-addon-content">
-                                      <p>
-                                        <img src="/images/04.png" width={55} height={55}/>
-                                        &nbsp; &nbsp;
-                                        <span style={{ fontSize: '18pt' }}><strong><span
-                                          className="sppb-addon-title">
-                                          {gettext('We are the largest group of eco activitists in Ukraine')}
-                                        </span></strong></span>
-                                      </p>
-                                      <br/>
-                                      {' '}
-                                      <br/>
-                                      <p>
-                                        <img src="/images/01.png" width={55} height={55}/>
-                                        &nbsp; &nbsp;
-                                        <span style={{ fontSize: '18pt' }}><strong><span
-                                          className="sppb-addon-title">
-                                          {gettext('We conducted more than 55 clean ups in 2019-20')}
-                                        </span></strong></span>
-                                      </p>
-                                      <br/>
-                                      {' '}
-                                      <br/>
-                                      <p>
-                                        <img src="/images/05.png" width={55} height={55}/>
-                                        &nbsp; &nbsp;
-                                        <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title">
-                                          {gettext('We won first prize in Ukraine and second prize in the world in the 2018 Enactus Award competition')}
-                                        </span></strong></span>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                      <div className="sppb-row" style={{ justifyContent: 'space-evenly' }}>
+                        <AchievementsColumn>
+                          <OurValueImage src="/images/04.png" />
+                          <div>
+                            {gettext('We are the largest group of eco activitists in Ukraine')}
                           </div>
-                        </div>
+                        </AchievementsColumn>
+                        <AchievementsColumn>
+                          <OurValueImage src="/images/01.png" />
+                          <div>
+                            {gettext('We conducted more than 55 clean ups in 2019-20')}
+                          </div>
+                        </AchievementsColumn>
+                        <AchievementsColumn>
+                          <OurValueImage src="/images/05.png" />
+                          <div>
+                            {gettext('We won first prize in Ukraine and second prize in the world in the 2018 Enactus Award competition')}
+                          </div>
+                        </AchievementsColumn>
                       </div>
                     </div>
                   </section>

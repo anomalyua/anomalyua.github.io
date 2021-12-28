@@ -8,6 +8,10 @@ import { EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCT
 import styled from 'styled-components'
 import { useLocales } from 'react-localized'
 
+import crimeanTatarImage from '../images/Crimean-Tartar_1.svg'
+import militaryImage from '../images/Military-Medicine_1.svg'
+import leadershipImage from '../images/Leadership.svg'
+
 const EnglishNowContainer = styled('div')`
   min-height: 210px;
 `
@@ -151,6 +155,11 @@ const Tabs = () => {
   )
 }
 
+const OurValueImage = styled('img')`
+  padding-bottom: 4px;
+  height: 36px;
+`
+
 const EducationContent = () => {
   const { gettext } = useLocales()
 
@@ -205,8 +214,9 @@ const EducationContent = () => {
                                 <div id="sppb-addon-1633000411930" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
-                                        className="fas fa-child" aria-hidden="true"/></span></div>
+                                      <div>
+                                        <OurValueImage src={crimeanTatarImage} />
+                                      </div>
                                       <div className="sppb-media-content">
                                         <div className="sppb-addon-text">
                                           {gettext('Crimean Tatars and IDP Children')}
@@ -226,8 +236,9 @@ const EducationContent = () => {
                                 <div id="sppb-addon-1633000411935" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
-                                        className="fas fa-dove" aria-hidden="true"/></span></div>
+                                      <div>
+                                        <OurValueImage src={leadershipImage} />
+                                      </div>
                                       <div className="sppb-media-content">
                                         <div className="sppb-addon-text">
                                           {gettext('Leadership')}
@@ -247,8 +258,9 @@ const EducationContent = () => {
                                 <div id="sppb-addon-1633000411941" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-feature  ">
                                     <div className="sppb-addon-content sppb-text-center">
-                                      <div className="sppb-icon"><span className="sppb-icon-container" aria-label><i
-                                        className="fas fa-file-medical-alt" aria-hidden="true"/></span></div>
+                                      <div>
+                                        <OurValueImage src={militaryImage} />
+                                      </div>
                                       <div className="sppb-media-content">
                                         <div className="sppb-addon-text">
                                           {gettext('Military Medicine')}

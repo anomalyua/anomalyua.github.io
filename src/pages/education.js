@@ -187,7 +187,7 @@ const EducationContent = () => {
                 <div className="page-content">
                   <section id="section-id-1633000411922" className="sppb-section">
                     <div className="sppb-row-container">
-                      <div className="sppb-row">
+                      <div className="sppb-row" style={{ justifyContent: 'space-between' }}>
                         <div className="sppb-col-md-2" id="column-wrap-id-1633000411918">
                           <div id="column-id-1633000411918" className="sppb-column">
                             <div className="sppb-column-addons">
@@ -292,11 +292,6 @@ const EducationContent = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div className="sppb-col-md-2" id="column-wrap-id-1633849194915">
-                          <div id="column-id-1633849194915" className="sppb-column">
-                            <div className="sppb-column-addons"/>
                           </div>
                         </div>
                       </div>

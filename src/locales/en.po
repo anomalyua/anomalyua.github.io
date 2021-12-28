@@ -5,7 +5,7 @@ msgstr ""
 "Language: en\n"
 
 #: src/pages/veterans.js:76
-msgid "1000 + veteran care specialists (psychological, medical, social services)"
+msgid "1000+ veteran care specialists (psychological, medical, social services)"
 msgstr ""
 
 #: src/pages/education.js:303
@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 
 #: src/pages/veterans.js:66
-msgid "3500 + veterans in our community"
+msgid "3500+ veterans in our community"
 msgstr ""
 
 #: src/components/Layout.js:57

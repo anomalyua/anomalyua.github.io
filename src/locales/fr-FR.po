@@ -13,7 +13,7 @@ msgstr ""
 "PO-Revision-Date: 2021-12-22 20:29\n"
 
 #: src/pages/veterans.js:76
-msgid "1000 + veteran care specialists (psychological, medical, social services)"
+msgid "1000+ veteran care specialists (psychological, medical, social services)"
 msgstr "Plus de 1000 spécialistes en soins vétérans (psychologiques, médicaux, services sociaux)"
 
 #: src/pages/education.js:303
@@ -21,7 +21,7 @@ msgid "20,000+ members of underserved communities taught, including Ukrainian ve
 msgstr "Plus de 20 000 membres de communautés défavorisées ont bénéficié d'un enseignement, notamment des anciens combattants ukrainiens et leurs enfants, des personnes déplacées et des Tatars de Crimée. Pour les enfants et les adolescents, Anomaly fournit des clubs de conversation et des opportunités de participation civique en plus des leçons. Grâce à un bénévolat socialement engagé, les jeunes apprennent qu'ils peuvent avoir un impact réel sur leurs quartiers, leurs villes et leur pays. ( ajouter des informations plus générales) ; Lien vers l'anglais MAINTENANT (plus d'informations sur cette page)."
 
 #: src/pages/veterans.js:66
-msgid "3500 + veterans in our community"
+msgid "3500+ veterans in our community"
 msgstr "Plus de 3500 vétérans dans notre communauté"
 
 #: src/components/Layout.js:57

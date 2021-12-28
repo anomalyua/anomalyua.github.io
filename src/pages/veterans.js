@@ -3,6 +3,13 @@ import * as React from 'react'
 import { Layout } from '../components/Layout'
 import { TopTitleText } from '../components/TopTitleText'
 import { useLocales } from 'react-localized'
+import { AchievementsColumn } from '../components/AchievementsColumn'
+import styled from 'styled-components'
+
+const OurValueImage = styled('img')`
+  padding-bottom: 4px;
+  height: 36px;
+`
 
 const VeteransContent = () => {
   const { gettext } = useLocales()
@@ -33,59 +40,37 @@ const VeteransContent = () => {
                 <div className="page-content">
                   <section id="section-id-1626723958894" className="sppb-section">
                     <div className="sppb-row-container">
-                      <div className="sppb-row">
-                        <div className="sppb-col-md-5" id="column-wrap-id-1626723958892">
+                      <div className="sppb-row" style={{ justifyContent: 'space-evenly' }}>
+                        <AchievementsColumn>
+                          <OurValueImage src={'/images/03.png'} />
+                          <div>
+                            {gettext('3500+ veterans in our community')}
+                          </div>
+                        </AchievementsColumn>
+                        <AchievementsColumn>
+                          <OurValueImage src={'/images/02.png'} />
+                          <div>
+                            {gettext('1000+ veteran care specialists (psychological, medical, social services)')}
+                          </div>
+                        </AchievementsColumn>
+                        <AchievementsColumn>
+                          <OurValueImage src={'/images/06.png'} />
+                          <div>
+                            {gettext('Supported by multiple nations')}
+                          </div>
+                        </AchievementsColumn>
+                        <div className="sppb-col-md-5" style={{ paddingTop: '20px' }}>
                           <div id="column-id-1626723958892" className="sppb-column">
                             <div className="sppb-column-addons">
                               <div id="sppb-addon-wrapper-1626723958897" className="sppb-addon-wrapper">
                                 <div id="sppb-addon-1626723958897" className="clearfix ">
                                   <div className="sppb-addon sppb-addon-single-image sppb-text-center ">
                                     <div className="sppb-addon-content">
-                                      <div className="sppb-addon-single-image-container"><img
+                                      <div className="sppb-addon-single-image-container">
+                                        <img
                                         className="sppb-img-responsive" src="/images/photo_2021-10-19_00-35-14.jpg"
-                                        alt="Image"/></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="sppb-col-md-7" id="column-wrap-id-1626723958893">
-                          <div id="column-id-1626723958893" className="sppb-column">
-                            <div className="sppb-column-addons">
-                              <div id="sppb-addon-wrapper-1626723958909" className="sppb-addon-wrapper">
-                                <div id="sppb-addon-1626723958909" className="clearfix ">
-                                  <div className="sppb-addon sppb-addon-text-block  ">
-                                    <div className="sppb-addon-content">
-                                      <p>
-                                        <img src="/images/03.png" width={55} height={55}/>
-                                        &nbsp; &nbsp;
-                                        <span style={{ fontSize: '18pt' }}><strong>
-                                          <span className="sppb-addon-title">
-                                            {gettext('3500 + veterans in our community')}
-                                          </span></strong></span>
-                                      </p>
-                                      <br/>
-                                      {' '}
-                                      <br/>
-                                      <p>
-                                        <img src="/images/02.png" width={55} height={55}/>
-                                        &nbsp; &nbsp;
-                                        <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title">
-                                          {gettext('1000 + veteran care specialists (psychological, medical, social services)')}
-                                        </span></strong></span>
-                                      </p>
-                                      <br/>
-                                      {' '}
-                                      <br/>
-                                      <p>
-                                        <img src="/images/06.png" width={55} height={55}/>
-                                        &nbsp; &nbsp;
-                                        <span style={{ fontSize: '18pt' }}><strong><span className="sppb-addon-title">
-                                          {gettext('Supported by multiple nations')}
-                                        </span></strong></span>
-                                      </p>
+                                        alt="Image"/>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>

@@ -10,6 +10,12 @@ import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer'
 import { PhoneNumber } from '../components/PhoneNumber'
 import { useLocales } from 'react-localized'
 
+import competenceImage from '../images/Compitence.svg'
+import integrityImage from '../images/Integrity_1.svg'
+import sustainabilityImage from '../images/Sustainability.svg'
+import creativityImage from '../images/Creativity.svg'
+import growthImage from '../images/Growth_1.svg'
+
 const AchievementsBlock = styled('section')`
   display: flex;
   justify-content: center;
@@ -503,6 +509,11 @@ const Contacts = () => {
   )
 }
 
+const OurValueImage = styled('img')`
+  padding-bottom: 4px;
+  height: 36px;
+`
+
 const AboutContent = () => {
   const { gettext } = useLocales()
 
@@ -523,19 +534,34 @@ const AboutContent = () => {
       </section>
       <AchievementsBlock>
         <AchievementsColumn>
-          {gettext('Competency')}
+          <OurValueImage src={competenceImage} />
+          <div>
+            {gettext('Competency')}
+          </div>
         </AchievementsColumn>
         <AchievementsColumn>
-          {gettext('Integrity')}
+          <OurValueImage src={integrityImage} />
+          <div>
+            {gettext('Integrity')}
+          </div>
         </AchievementsColumn>
         <AchievementsColumn>
-          {gettext('Sustainability')}
+          <OurValueImage src={sustainabilityImage} />
+          <div>
+            {gettext('Sustainability')}
+          </div>
         </AchievementsColumn>
         <AchievementsColumn>
-          {gettext('Growth')}
+          <OurValueImage src={growthImage} />
+          <div>
+            {gettext('Growth')}
+          </div>
         </AchievementsColumn>
         <AchievementsColumn>
-          {gettext('Creativity')}
+          <OurValueImage src={creativityImage} />
+          <div>
+            {gettext('Creativity')}
+          </div>
         </AchievementsColumn>
       </AchievementsBlock>
       <OurFounder/>

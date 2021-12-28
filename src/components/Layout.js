@@ -30,6 +30,7 @@ import logoImage from '../images/logo.png';
 import { BotUnderConstruction } from './BotUnderConstruction';
 import {useLocaleContext} from "./LocaleContext";
 import {LocalizedLink} from "./LocalizedLink";
+import {EnglishUnderConstruction} from "./EnglishUnderConstruction";
 
 const OffCanvasMenu = ({ onClose }) => {
   const {gettext} = useLocales()
@@ -108,6 +109,8 @@ const LayoutInternal = ({ title, children }) => {
 
   if (hostname === 'bots.anomaly.org.ua') {
     return <BotUnderConstruction />;
+  } else if (hostname === 'englishnow.dav.school') {
+    return <EnglishUnderConstruction />
   }
 
   return (

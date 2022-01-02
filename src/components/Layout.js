@@ -266,8 +266,9 @@ const en = () => import('../locales/en.js').then(data => data.default)
 const ua = () => import('../locales/uk.js').then(data => data.default)
 const es = () => import('../locales/es.js').then(data => data.default)
 const fr = () => import('../locales/fr.js').then(data => data.default)
+const de = () => import('../locales/de.js').then(data => data.default)
 
-const locales = { es, en, ua, fr }
+const locales = { es, en, ua, fr, de }
 
 export const Layout = (props) => {
   const { locale } = useLocaleContext()

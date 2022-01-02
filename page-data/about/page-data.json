@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-about-js",
     "path": "/about/",
-    "result": {"pageContext":{"locale":"ua","defaultLocale":"ua","locales":["en","ua","es","fr"]}},
+    "result": {"pageContext":{"locale":"ua","defaultLocale":"ua","locales":["en","ua","es","fr","de"]}},
     "staticQueryHashes": []}

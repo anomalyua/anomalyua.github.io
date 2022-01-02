@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-animals-js",
     "path": "/es/animals/",
-    "result": {"pageContext":{"locale":"es","defaultLocale":"ua","locales":["en","ua","es","fr"]}},
+    "result": {"pageContext":{"locale":"es","defaultLocale":"ua","locales":["en","ua","es","fr","de"]}},
     "staticQueryHashes": []}

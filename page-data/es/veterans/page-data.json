@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-veterans-js",
     "path": "/es/veterans/",
-    "result": {"pageContext":{"locale":"es","defaultLocale":"ua","locales":["en","ua","es","fr"]}},
+    "result": {"pageContext":{"locale":"es","defaultLocale":"ua","locales":["en","ua","es","fr","de"]}},
     "staticQueryHashes": []}

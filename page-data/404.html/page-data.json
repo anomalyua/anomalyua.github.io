@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-404-js",
     "path": "/404.html",
-    "result": {"pageContext":{"locale":"ua","defaultLocale":"ua","locales":["en","ua","es","fr"]}},
+    "result": {"pageContext":{"locale":"ua","defaultLocale":"ua","locales":["en","ua","es","fr","de"]}},
     "staticQueryHashes": []}

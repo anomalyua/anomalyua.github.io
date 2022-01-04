@@ -10,7 +10,7 @@ msgstr ""
 "X-Crowdin-File-ID: 15\n"
 "Project-Id-Version: anomaly\n"
 "Language-Team: Spanish\n"
-"PO-Revision-Date: 2021-12-08 21:09\n"
+"PO-Revision-Date: 2022-01-02 22:06\n"
 
 #: src/pages/veterans.js:76
 msgid "1000+ veteran care specialists (psychological, medical, social services)"

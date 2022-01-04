@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-internationalization',
       options: {
-        locales: ['en', 'ua', 'es', 'fr', 'de'],
+        locales: ['en', 'ua', 'es', 'fr', 'de', 'sv'],
         defaultLocale: 'ua'
       }
     }

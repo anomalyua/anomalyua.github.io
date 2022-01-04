@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-kids-js",
     "path": "/fr/kids/",
-    "result": {"pageContext":{"locale":"fr","defaultLocale":"ua","locales":["en","ua","es","fr","de"]}},
+    "result": {"pageContext":{"locale":"fr","defaultLocale":"ua","locales":["en","ua","es","fr","de","sv"]}},
     "staticQueryHashes": []}

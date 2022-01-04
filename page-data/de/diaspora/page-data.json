@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-diaspora-js",
     "path": "/de/diaspora/",
-    "result": {"pageContext":{"locale":"de","defaultLocale":"ua","locales":["en","ua","es","fr","de"]}},
+    "result": {"pageContext":{"locale":"de","defaultLocale":"ua","locales":["en","ua","es","fr","de","sv"]}},
     "staticQueryHashes": []}

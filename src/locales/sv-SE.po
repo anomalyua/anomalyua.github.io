@@ -10,19 +10,19 @@ msgstr ""
 "X-Crowdin-File-ID: 15\n"
 "Project-Id-Version: anomaly\n"
 "Language-Team: Swedish\n"
-"PO-Revision-Date: 2022-01-04 20:43\n"
+"PO-Revision-Date: 2022-01-05 20:38\n"
 
 #: src/pages/veterans.js:76
 msgid "1000+ veteran care specialists (psychological, medical, social services)"
-msgstr "1000+ erfarna specialister som ger stöd-och vägledning till veteraner (psykologiska, medicinska, socialtjänster)"
+msgstr "1000+ erfarna veteranstöd specialister (psykologiska, medicinska, socialtjänster)"
 
 #: src/pages/education.js:303
 msgid "20,000+ members of underserved communities taught, including Ukrainian veterans and their children, IDPs, and Crimean Tatars. For children and teens, Anomaly provides and conversation clubs and civic engagement opportunities in addition to lessons. Through socially-engaged volunteering, young people learn that they can have a real impact on their neighbourhoods, cities, and country. ( add more general info); Link to English NOW (more detailed info on this page)."
-msgstr "20.000+ medlemmar från underserverade samhällen har undervisats, vilket inkluderar ukrainska veteraner och deras barn, internflyktingar och krimtatarer. För barn och tonåringar erbjuder Anomaly, utöver lektioner, konversations-klubbar och möjligheter för samhällsengagemang. Genom socialt engagerade volontärer lär sig ungdomarna att de kan ha en verklig inverkan på sina grannar, städer och länder."
+msgstr "Undervisat 20.000+ medlemmar från underserverade samhällen, vilket inkluderar ukrainska veteraner och deras barn, internflyktingar, och krimtatarer. För barn och tonåringar erbjuder Anomaly, utöver lektioner, konversations-klubbar och möjligheter för samhällsengagemang. Genom socialt engagerade volontärer lär sig ungdomarna att de kan ha en reell påverkan på sina grannar, städer och länder."
 
 #: src/pages/veterans.js:66
 msgid "3500+ veterans in our community"
-msgstr "3500+ veteraner ingår i vår organisation"
+msgstr "3500+ veteraner ingår i vår gemenskap"
 
 #: src/components/Layout.js:57
 #: src/components/NavigationHeader.js:120
@@ -46,36 +46,36 @@ msgstr "Djur"
 
 #: src/pages/index.js:338
 msgid "Anomaly connects foreign donors with an orphanage in Mariupol to help children find a new family and home."
-msgstr "Anomaly kopplar ihop utländska donatorer med barnhem i Mariupol för att hjälpa barn hitta en ny familj och hem."
+msgstr "För att hjälpa barn hitta en ny familj och hem kopplar Anomaly ihop utländska donatorer med ett barnhem i Mariupol "
 
 #: src/pages/eco.js:97
 msgid "Anomaly has helped to organize 40 waste clean ups in neighborhoods all around Kyiv and 15 more around Ukraine. If you would like to host a local clean up- Anomaly can show you how!"
-msgstr "Anomaly har hjälpt till att organisera 40 städtillfällen i stadsdelarna runt Kiev och 15 mer i Ukraina. Anomaly kan visa dig hur du kan gå tillväga om du vill vara värd för en lokal städning!"
+msgstr "Anomaly har hjälpt till att organisera 40 städtillfällen i stadsdelarna runt Kiev och 15 mer i Ukraina. Anomaly kan visa dig hur du kan gå tillväga om du vill vara arrangera ett lokalt städtillfälle!"
 
 #: src/pages/kids.js:317
 msgid "Anomaly helps adovcate the rights of children and promote better living quality for vulnerable children."
-msgstr "Anomaly hjälper till att företräda barns rättigheter samt främja bättre levnadskvalitet för utsatta barn."
+msgstr "Anomaly hjälper till att förespråka barns rättigheter samt främja en bättre levnadsstandard för utsatta barn."
 
 #: src/pages/index.js:232
 msgid "Anomaly helps the Ukrainian environment with neigborhood clean-ups and environmental advocacy projects. Anomaly hosts up to 3 cleans-ups a month to help minimize public litter. By doing so, Anomaly helps its participants learn about the effects of waste on the environment (both local and worldwide) and learn how to create similar projects at home. To add on, Anomaly helps to lobby environmental issues occuring in multiple cities across Ukraine. We will pinpoint any companies that are at the core of enironvmental issues and combat them through advocacy and lobbying."
-msgstr "Anomaly hjälper den ukrainska miljön med städ-dagar samt miljöpåverkan projekt. För att minimera offentlig nedskräpning arrangerar Anomaly upp till tre städ-dagar i månaden. Genom detta hjälper Anomaly deltagarna att lära sig om nedskräpningens effekter på miljön (både lokalt och över hela världen) och lära sig att skapa liknande projekt hemma. Därtill hjälper Anomaly lobbygrupper i miljöfrågor som uppstår i flera städer över hela Ukraina. Vi kommer att identifiera alla företag som är centrala i miljöfrågor och bekämpa dem genom opinionsbildning samt lobbying."
+msgstr "Anomaly hjälper den ukrainska miljön med städ-dagar och projekt som berör miljöpåverkan. För att minimera offentlig nedskräpning arrangerar Anomaly upp till tre städ-dagar i månaden. På så vis hjälper Anomaly deltagarna att lära sig om hur miljön påverkas av nedskräpning (både lokalt och över hela världen) samt lära sig att skapa liknande projekt hemma. Därtill lobbar Anomaly i miljöfrågor som uppstår i flera städer över hela Ukraina. Vi kommer att identifiera alla företag som är centrala i miljöfrågor och motarbeta dem genom opinionsbildning samt lobbying."
 
 #: src/pages/index.js:92
 msgid "Anomaly offers free english lessons and workshops on various topics. We offer these lessons to any adult in need to help promote personal sustainability and open their ability to work in future opportunities. If you are not a Veteran or Child, Anomaly can still help you with educational modules and workshops."
-msgstr "Anomaly erbjuder gratis undervisning i engelska samt workshops i olika ämnen. Vi erbjuder dessa lektioner till alla vuxna i behov av personlig hållbarhet samt öppna deras förmåga att arbeta i framtida möjligheter. Om du inte är veteran eller minderårig kan Anomaly fortfarande hjälpa dig med utbildningsmoduler och workshops."
+msgstr "Anomaly erbjuder gratis undervisning i engelska samt workshops i olika ämnen. Dessa lektioner erbjuder vi till alla vuxna i behov av personlig hållbarhet, vilket kan framhäva deras förmåga att arbeta i framtida möjligheter. Om du inte är veteran eller minderårig kan Anomaly fortfarande hjälpa dig genom utbildningsmoduler och workshops."
 
 #: src/pages/about.js:310
 msgid "Anomaly provides a wide range of volunteering opportunities in Ukraine. We have divisions in Kyiv, Lviv, Odessa and other Ukrainian cities. The main areas for volunteering are education, ecology, kids assistance, veterans programs, local communities, and animals protection. If you have skills in English teaching, IT, content creation, design, professional training, project management, you are the person we are looking for. If not, but you want to join us, feel free to apply and we will find volunteering opportunities within our team in accordance with your skills and desires. Do you have some ideas of how to improve Ukraine? Bring them to life together with us! Do you need immigration support for living in Ukraine? We provide it for all of our foreign volunteers. Still have questions? Don't hesitate, and fill out our appllication form. Let's talk about your future volunteering journey as a part of the Anomaly team!"
-msgstr "Anomaly erbjuder ett brett utbud av volontärmöjligheter i Ukraina. Vi har sektioner i Kyiv, Lviv, Odessa samt i andra ukrainska städer. Huvudsakliga områdena för volontärarbete berör utbildning, ekologi, barnhjälp, veteranprogram, lokala samhällen och djurskydd. Om du har kunskaper i att undervisa i engelska, IT, digitalt skapande, design, yrkesutbildning, projektledning, är du den vi söker. \n"
-"Om inte, och om du fortfarande ansluta dig till oss, tveka inte att söka. Vi kommer att hitta volontärmöjligheter inom vårt team i enlighet med dina kunskaper och önskemål. Har du några idéer om hur man kan förbättra Ukraina? För dem till liv tillsammans med oss! Behöver du bosättningsstöd för att bo i Ukraina? Vi tillhandahåller det för alla våra utländska volontärer. Har du fortfarande frågor? Tveka inte och fyll i vårt applikationsformulär. Låt oss tala om din framtida volontärresa som en del i Anomaly-teamet!"
+msgstr "Anomaly erbjuder ett brett utbud av volontärmöjligheter i Ukraina. Vi har sektioner i Kyiv, Lviv, Odessa samt i andra ukrainska städer. Huvudsakliga områdena för volontärarbete berör utbildning, ekologi, barnhjälp, veteranprogram, lokala samhällen och djurskydd. Om du har kunskaper i att undervisa i engelska, IT, digitalt skapande, design, yrkesutbildning, eller projektledning, är du den vi söker. \n"
+"Om inte, och om du fortfarande vill ansluta dig till oss, tveka inte att söka. Vi kommer att hitta volontärmöjligheter inom vårt team i enlighet med dina kunskaper och önskemål. Har du några idéer om hur man kan förbättra Ukraina? För dem till liv tillsammans med oss! Behöver du bosättningsstöd för att bo i Ukraina? Vi tillhandahåller det för alla våra utländska volontärer. Har du fortfarande frågor? Tveka inte och fyll i vårt applikationsformulär. Låt oss tala om din framtida volontärresa som en del i Anomaly-teamet!"
 
 #: src/pages/index.js:387
 msgid "Anomaly supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers to solve the problem of stray animal overpopulation."
-msgstr "Anomali stöder djurhem i Kyiv, Lviv och Dnipro. Vi hjälper volontärer att lösa det problemet med herrelösa djur."
+msgstr "Anomaly stöder djurhem i Kyiv, Lviv och Dnipro. Vi hjälper volontärer att lösa problemet med herrelösa djur."
 
 #: src/pages/index.js:282
 msgid "Anomaly works with Kyiv City Administration and local community leaders to help solve everyday problems of Kyiv residents, such as utility outages, road potholes, and piling rubbish."
-msgstr "Anomaly arbetar med Kyivs stadsförvaltning och lokala samhällsledare för att lösa vardagliga problem för Kyivs invånare, såsom strömavbrott, väggropar, och avfallshögar."
+msgstr "Anomaly arbetar med stadsförvaltningen i Kyiv och lokala samhällsledare för att lösa vardagliga problem för Kyivs invånare: strömavbrott, väggropar, och avfallshögar."
 
 #: src/pages/community.js:172
 msgid "Anti - Narc"
@@ -83,7 +83,7 @@ msgstr "Anti - Nark"
 
 #: src/pages/veterans.js:231
 msgid "Are you or a loved one a veteran who would like to help make Ukraine a better place? If so, join our volunteer team today!"
-msgstr "Är du eller en anhörig en veteran som vill hjälpa göra Ukraina till en bättre plats? Om så är fallet, gå med i vårt volontärteam idag!"
+msgstr "Är du eller en anhörig en veteran som skulle vilja hjälpa göra Ukraina till en bättre plats? Om så är fallet, gå med i vårt volontärteam idag!"
 
 #: src/components/BecomeAVolunteer.js:19
 msgid "Become a Volunteer"
@@ -99,7 +99,7 @@ msgstr "Barn till ATO Veteraner"
 
 #: src/pages/kids.js:54
 msgid "Children of Crimea and Tatars"
-msgstr "Barn från Krim och Tatarer."
+msgstr "Barn från Krimhalvön och Tatarer."
 
 #: src/pages/kids.js:59
 msgid "Children of Donbas"
@@ -133,7 +133,7 @@ msgstr "Kreativitet"
 
 #: src/pages/education.js:212
 msgid "Crimean Tatars and IDP Children"
-msgstr "Krimtatarer och barn som internflyktingar"
+msgstr "Krimtatarer och minderåriga internflyktingar"
 
 #: src/pages/index.js:424
 msgid "Dare to do the impossible!"
@@ -145,11 +145,11 @@ msgstr "David Plaster"
 
 #: src/pages/about.js:139
 msgid "David's favorite way to describe himself is as a \"mere pensioner.\" After retiring from his career as a US Army medic, David came to Ukraine in 2011 and shortly thereafter decided to build a life here. He served with other volunteers as a combat medic both on the Maidan and at the front in Donbas, and he has been working to make Ukraine a better place in every way he can ever since. He founded Anomaly as an organizational vehicle for that vision on Maidan December 1st, 2013 and officially in 2016 as a Ukrainian NGO."
-msgstr "Davids favoritsätt att beskriva sig själv är som en \"pensionär. Efter att ha gått i pension från sin karriär som amerikansk armésjuksköterska anlände David till Ukraina 2011.  Kort därefter bestämde sig han för att bygga ett liv här. Han tjänstgjorde tillsammans med andra volontärer som armésjuksköterska, både på Maidan och vid fronten i Donbas. Sedan dess har han arbetat för att göra Ukraina till en bättre plats på alla sätt. Han grundade Anomaly som ett organisatoriskt hjälpmedel för den visionen på Maidan den 1 december 2013 och officiellt 2016 som en ukrainsk NGO."
+msgstr "David föredrar bäst att beskriva sig själv som en \"vanlig pensionär\". Efter att ha gått i pension från sin karriär som amerikansk armésjuksköterska anlände David till Ukraina under 2011.  Kort därefter bestämde sig han för att bygga ett liv här. Han tjänstgjorde tillsammans med andra volontärer som armésjuksköterska, både på Maidan och vid fronten i Donbas. Sedan dess har han arbetat för att göra Ukraina till en bättre plats på alla sätt. Han grundade Anomaly som ett organisatoriskt hjälpmedel för den visionen på Maidan den 1 december 2013, och officiellt 2016 som en ukrainsk NGO."
 
 #: src/pages/education.js:100
 msgid "Developed leadership courses for women where they are typically underrepresented; police, military, science (STEM), led by female professionals in the top of their fields to share expertise and train course attendees in state-of-the-science business methods and career progression skills."
-msgstr "Utvecklade ledarskapskurser för kvinnor där de vanligtvis är underrepresenterade; polis, militär, vetenskap (STEM), ledda av yrkesverksamma kvinnor inom toppen av sina respektive områden för att dela kompetens och utbilda kursdeltagare i vetenskapliga affärsmetoder och karriärutveckling."
+msgstr "Tagit fram ledarskapskurser för kvinnor där de vanligtvis är underrepresenterade; polis, militär, vetenskap (STEM), ledda av yrkesverksamma kvinnor inom toppen av sina respektive områden, för att dela kompetens och utbilda kursdeltagare i vetenskapliga affärsmetoder och karriärutveckling."
 
 #: src/pages/community.js:152
 msgid "Developing community activism"
@@ -244,7 +244,7 @@ msgstr "Hjälp till att förespråka för bättre levnadssituationer i barnhem."
 
 #: src/pages/animals.js:149
 msgid "Help transform how society views stray dogs and help get them homes! Foster a pup today!"
-msgstr "Hjälp till att förändra hur samhället ser på herrelösa hundar och hjälpa dem att få ett hem! Fostra en valp idag!"
+msgstr "Hjälp till att förändra hur samhället ser på herrelösa hundar och hjälp dem få ett hem! Fostra en valp idag!"
 
 #: src/components/Layout.js:53
 #: src/components/NavigationHeader.js:118
@@ -261,11 +261,11 @@ msgstr "Integritet"
 
 #: src/pages/community.js:215
 msgid "It seems everyday that there's a new narcotics telegram channel graffitied around the neighborhood. We totally get it! To combat this, Anomaly organised local teams to clean up their neighborhoods. Want to know how? Click the box below (can be a highlight of this bot's success compared to the MVS) we work together with our eco team while we are cleaning up the neighborhoods we show people how to reduce drug use in their communities; reference the \"broken window theory\" how cleaner neighborhoods can help to reduce drug use (focus is on the drug issues and community activism development then e democracy meaning showing the locations how to more easily communicate with local admin., city workers, police, and politicians"
-msgstr "Varje dag verkar det som att en ny narkotika-kanal på telegram dyker upp graffititäckt i kvarteret. För att bekämpa detta organiserade Anomaly lokala team för att städa upp i sina kvarter. Vill du veta hur? Klicka på rutan nedan (kan vara en höjdpunkt på denna bots framgång jämfört med MVS) Vi arbetar tillsammans med vårt miljöteam medan vi städar upp stadsdelarna. Vi visar människor hur man kan minska droganvändningen i sina samhällen och samtidigt refererar vi till teorin om \"brutna fönster\", där renare stadsdelar kan bidra till att minska narkotikamissbruk (fokuset ligger på drogfrågor och samhällsaktivism, utveckling; demokrati, vilket innebär att visa hur man lättare kommunicerar med lokala administratörer, stadsarbetare, poliser och politiker."
+msgstr "Varje dag verkar det som att en ny narkotika-kanal på telegram dyker upp klottrat runt i kvarteret. Vi förstår! För att bekämpa detta organiserade Anomaly lokala team för att städa upp i sina kvarter. Vill du veta hur? Klicka på rutan nedan (kan vara en höjdpunkt på denna bots framgång jämfört med MVS)  Medan vi städar upp stadsdelarna arbetar vi tillsammans med vårt miljöteam. Vi visar människor hur man kan minska droganvändningen i sina samhällen och samtidigt refererar vi till teorin om \"brutna fönster\", där renare stadsdelar kan bidra till att minska narkotikamissbruk (fokuset ligger på drogfrågor och samhällsaktivism, utveckling; demokrati, vilket innebär att visa hur man lättare kommunicerar med lokala administratörer, stadsarbetare, poliser och politiker."
 
 #: src/pages/index.js:646
 msgid "Join Anomaly Today!"
-msgstr "Gå med i Anomaly idag!"
+msgstr "Gå med Anomaly idag!"
 
 #: src/components/Layout.js:73
 #: src/components/NavigationHeader.js:71
@@ -295,7 +295,7 @@ msgstr "Träning i militärmedicin"
 
 #: src/pages/education.js:141
 msgid "Offered courses in SMM, videography, and PR communications to government departments, young business entrepenuers and veterans to help them get their work into the public conversation."
-msgstr "Erbjudna kurser i SMM, videografi, kommunikation och PR till statliga institutioner, unga företagare och veteraner för att hjälpa dem få sitt arbete i det offentliga rummet."
+msgstr "Erbjudna kurser i SMM, videografi, kommunikation och PR till statliga institutioner, unga företagare och veteraner för att hjälpa dem få sitt arbete in i det offentliga rummet."
 
 #: src/pages/kids.js:64
 msgid "Orphans"
@@ -331,7 +331,7 @@ msgstr "Social"
 
 #: src/pages/education.js:275
 msgid "Social Media Marketing"
-msgstr "Marknadsföring av sociala medier"
+msgstr "Marknadsföring i sociala medier"
 
 #: src/pages/education.js:85
 msgid "Social Media Marketing training"
@@ -343,7 +343,7 @@ msgstr "Socialt stöd"
 
 #: src/pages/index.js:174
 msgid "Support for Ukrainian veterans: Every Sunday we offer free English courses and conversation clubs specifically for veterans, ATO volunteers, and their families in Kyiv."
-msgstr "Stöd för ukrainska veteraner: Varje söndag erbjuder vi gratislektioner i engelska och konversationsklubbar speciellt för veteraner, ATO volontärer och deras familjer i Kyiv."
+msgstr "Stöd för ukrainska veteraner: Varje söndag erbjuder vi gratislektioner i engelska samt konversationsklubbar specifikt för veteraner, ATO volontärer och deras familjer i Kyiv."
 
 #: src/pages/veterans.js:86
 msgid "Supported by multiple nations"
@@ -363,7 +363,7 @@ msgstr "Tränat över 8000 militärer, volontärer, och nationalgardet i Natos m
 
 #: src/pages/diaspora.js:71
 msgid "Ukraine has a large diaspora population which has made homes all over the world, especially in Canada, the United States, and Poland. Since the Revolution of Dignity in 2014, many diaspora have felt called to make a difference."
-msgstr "Ukraina har en stor diasporabefolkning, med hem över hela världen, särskilt i Kanada, USA och Polen. Många i diasporan har känt sig kallade att göra skillnad sedan värdighetsrevolutionen 2014."
+msgstr "Ukraina har en stor diasporabefolkning, med hem över hela världen- särskilt i Kanada, USA och Polen. Många i diasporan har känt sig kallade att göra skillnad sedan värdighetsrevolutionen 2014."
 
 #: src/pages/about.js:394
 msgid "Velyka Vasylkivska st, 72, office 20,\n"
@@ -403,11 +403,11 @@ msgstr "Vi genomförde mer än 55 städningar under 2019-20"
 
 #: src/pages/veterans.js:192
 msgid "We have organized a network of 1000+ veteran care specialists from all over the country to help assist veterans with their transition to civilian life and recovery after returning from war."
-msgstr "För att hjälpa veteraner med deras övergång till ett civilt liv och återhämtning, efter att ha återvänt från kriget, har vi organiserat ett nätverk bestående av 1000+ erfarna vård-och-omsorgspecialister för veteraner från över hela landet "
+msgstr "Vi har organiserat ett nätverk av 1000+ veteranvårdsspecialister från över hela landet för att hjälpa veteraner med deras övergång till civilt liv och återhämtning efter att ha återvänt från krig."
 
 #: src/pages/index.js:333
 msgid "We help children of veterans, returned Russian-held political prisoners, Crimean Tatar exiles, and IDPs to attend our free English lessons and speaking clubs."
-msgstr "Vi hjälper barn till veteraner, nysläppta politiska fångar dömda i Ryssland, Krimtatarer i exil, och internflyktingar att delta i våra gratis lektioner i engelska och konversationsklubbar."
+msgstr "Vi hjälper barn till veteraner, nysläppta politiska fångar dömda i Ryssland, Krimtatarer i exil, och internflyktingar att delta i våra gratis lektioner i engelska samt konversationsklubbar."
 
 #: src/pages/community.js:253
 msgid "We make it easy for Kyivans to improve their communities with just their thumbs and an internet connection!"
@@ -419,15 +419,15 @@ msgstr "Vi organiserar regelbundna volontärutflykter (våra tolokas) samt socia
 
 #: src/pages/education.js:354
 msgid "We organized English-language conversation and craft sessions for younger children of IDPs, ATO veterans, and Crimean Tatars in Kyiv, as well as English conversation clubs for teenaged children of those groups"
-msgstr "Vi organiserade engelskspråkiga samtal-och pysselsessioner för yngre barn till internflyktingar, ATO veteraner, och Krimtatarer i Kiev samt även konversationsklubbar i engelska för tonåringar från dessa grupper."
+msgstr "Vi har organiserat engelskspråkiga samtal-och pysselsessioner för yngre barn till internflyktingar, ATO veteraner, och Krimtatarer i Kiev samt även konversationsklubbar i engelska för tonåringar från dessa grupper."
 
 #: src/pages/index.js:287
 msgid "We support faster problem solving with local governance by providing reporting tools for the 100,000 residents of the most underserved areas of Kyiv, directly connecting them with local utility service providers."
-msgstr "Vi stöder snabbare problemlösning med den lokala stadsförvaltningen genom att tillhandahålla rapporteringsverktyg för de 100,00 invånare från de mest underservade områdena i Kiev. Detta genom att direkt föra ihop dem med lokala leverantörer av allmännyttiga tjänster."
+msgstr "Vi stöder snabbare problemlösning med den lokala stadsförvaltningen genom att tillhandahålla rapporteringsverktyg för 100,00 invånare från de mest underservade områdena i Kiev. Detta genom att direkt föra ihop dem med lokala leverantörer av allmännyttiga tjänster."
 
 #: src/pages/eco.js:70
 msgid "We won first prize in Ukraine and second prize in the world in the 2018 Enactus Award competition"
-msgstr "I Enactus Award 2018 vann vi första pris avseende Ukraina och tilldelades andraplats i världen"
+msgstr "Vi vann första pris avseende Ukraina och tilldelades andraplats i världen i Enactus Award 2018"
 
 #: src/pages/index.js:342
 msgid "We work with the local community policing department to protect the rights of children in Kyiv."
@@ -443,9 +443,9 @@ msgstr "Vad är den ukrainska diasporan?"
 
 #: src/pages/index.js:186
 msgid "With our ‘Dbayemo Razom’ project, we connected 1,000+ mental health professionals, 10,000+ trained peer counselors and 3 physical rehabilitation centers. The network shares experience, expertise, and resources to better serve people in Ukraine."
-msgstr "Med vårt projekt “Dbayemo Razom” har vi kopplat ihop 1000+ personal i psykiskt välbefinnande, 10.000 + utbildade rådgivare och 3 fysiska rehabiliteringscenter. Nätverket delar erfarenhet, expertis och resurser för att bättre tjäna individer i Ukraina."
+msgstr "Med vårt projekt “Dbayemo Razom” har vi kopplat ihop 1000+ vårdpersonal i psykiskt välbefinnande, 10.000 + rådgivare och 3 fysiska rehabiliteringscenter. Nätverket delar erfarenhet, expertis och resurser för att bättre tjäna individer i Ukraina."
 
 #: src/pages/kids.js:172
 msgid "With the war in Eastern Ukraine continuing on, children and families are being separated and forced to leave their homes."
-msgstr "I och med att kriget i östra Ukraina fortsätter förblir barn och familjer åtskilda och tvingas lämna sina hem."
+msgstr "I och med att kriget i östra Ukraina fortsätter förblir barn och familjer åtskilda samt tvingas lämna sina hem."
 

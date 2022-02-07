@@ -10,7 +10,7 @@ msgstr ""
 "X-Crowdin-File-ID: 15\n"
 "Project-Id-Version: anomaly\n"
 "Language-Team: Ukrainian\n"
-"PO-Revision-Date: 2022-01-02 22:06\n"
+"PO-Revision-Date: 2022-02-07 07:40\n"
 
 #: src/pages/veterans.js:76
 msgid "1000+ veteran care specialists (psychological, medical, social services)"
@@ -140,11 +140,11 @@ msgstr "Наважся зробити неможливе!"
 
 #: src/pages/about.js:95
 msgid "David Plaster"
-msgstr "Девід Пластер"
+msgstr "Давід Пластер"
 
 #: src/pages/about.js:139
 msgid "David's favorite way to describe himself is as a \"mere pensioner.\" After retiring from his career as a US Army medic, David came to Ukraine in 2011 and shortly thereafter decided to build a life here. He served with other volunteers as a combat medic both on the Maidan and at the front in Donbas, and he has been working to make Ukraine a better place in every way he can ever since. He founded Anomaly as an organizational vehicle for that vision on Maidan December 1st, 2013 and officially in 2016 as a Ukrainian NGO."
-msgstr "Улюблений спосіб Девіда описувати себе — «простий пенсіонер». Після завершення кар’єри медика армії США Девід приїхав в Україну в 2011 році і невдовзі вирішив побудувати тут життя. Він разом з іншими волонтерами служив бойовим медиком як на Майдані, так і на фронті на Донбасі, і відтоді працює над тим, щоб Україна стала кращою. Він заснував Аномалію як організаційну центр своїх прагнень під час Майдану 1 грудня 2013 року та офіційно у 2016 році зареєстрував як українську громадську організацію."
+msgstr "Улюблений спосіб Давіда описувати себе — «простий пенсіонер». Після завершення кар’єри медика армії США Давід приїхав в Україну в 2011 році і невдовзі вирішив побудувати тут життя. Він разом з іншими волонтерами служив бойовим медиком як на Майдані, так і на фронті на Донбасі, і відтоді працює над тим, щоб Україна стала кращою. Він заснував Аномалію як організаційну центр своїх прагнень під час Майдану 1 грудня 2013 року та офіційно у 2016 році зареєстрував як українську громадську організацію."
 
 #: src/pages/education.js:100
 msgid "Developed leadership courses for women where they are typically underrepresented; police, military, science (STEM), led by female professionals in the top of their fields to share expertise and train course attendees in state-of-the-science business methods and career progression skills."

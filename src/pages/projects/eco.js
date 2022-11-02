@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-import { Layout } from '../components/Layout'
-import { TopTitleText } from '../components/TopTitleText'
+import { Layout } from '../../components/Layout'
+import { TopTitleText } from '../../components/TopTitleText'
 import { useLocales } from 'react-localized'
-import { AchievementsColumn } from '../components/AchievementsColumn'
+import { AchievementsColumn } from '../../components/AchievementsColumn'
 import styled from 'styled-components'
 
 const OurValueImage = styled('img')`

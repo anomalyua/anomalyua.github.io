@@ -2,15 +2,15 @@ import * as React from 'react'
 
 import classnames from 'classnames'
 import { useLocation } from '@reach/router'
-import { Layout } from '../components/Layout'
-import { TopTitleText } from '../components/TopTitleText'
-import { EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCTA'
+import { Layout } from '../../components/Layout'
+import { TopTitleText } from '../../components/TopTitleText'
+import { EnglishNowImageTile, LinkShadedImage } from '../../components/EnglishNowCTA'
 import styled from 'styled-components'
 import { useLocales } from 'react-localized'
 
-import crimeanTatarImage from '../images/Crimean-Tartar_1.svg'
-import militaryImage from '../images/Military-Medicine_1.svg'
-import leadershipImage from '../images/Leadership.svg'
+import crimeanTatarImage from '../../images/Crimean-Tartar_1.svg'
+import militaryImage from '../../images/Military-Medicine_1.svg'
+import leadershipImage from '../../images/Leadership.svg'
 
 const EnglishNowContainer = styled('div')`
   min-height: 210px;

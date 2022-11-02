@@ -3,7 +3,7 @@ import { useLocation } from '@reach/router'
 import styled from 'styled-components'
 import * as React from 'react'
 
-import { Layout } from '../components/Layout'
+import { Layout } from '../../components/Layout'
 import { useLocales } from 'react-localized'
 
 const PageTitle = styled.div`

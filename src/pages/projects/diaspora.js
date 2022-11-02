@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { Layout } from '../components/Layout'
-import { TopTitleText } from '../components/TopTitleText'
+import { Layout } from '../../components/Layout'
+import { TopTitleText } from '../../components/TopTitleText'
 import { useLocales } from 'react-localized'
 
 const DiasporaContent = () => {

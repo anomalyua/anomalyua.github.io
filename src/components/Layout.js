@@ -59,25 +59,25 @@ const OffCanvasMenu = ({ onClose }) => {
                   </LocalizedLink>
                 </li>
                 <li className="item-298 menu-divider menu-deeper menu-parent">
-                  <LocalizedLink to="/veterans">{gettext('Veterans')}</LocalizedLink>
+                  <LocalizedLink to="/projects/veterans">{gettext('Veterans')}</LocalizedLink>
                 </li>
                 <li>
-                  <LocalizedLink to="/eco">{gettext('Ecology')}</LocalizedLink>
+                  <LocalizedLink to="/projects/eco">{gettext('Ecology')}</LocalizedLink>
                 </li>
                 <li>
-                  <LocalizedLink to="/education">{gettext('Education')}</LocalizedLink>
+                  <LocalizedLink to="/projects/education">{gettext('Education')}</LocalizedLink>
                 </li>
                 <li>
-                  <LocalizedLink to="/community">{gettext('Community')}</LocalizedLink>
+                  <LocalizedLink to="/projects/community">{gettext('Community')}</LocalizedLink>
                 </li>
                 <li>
-                  <LocalizedLink to="/kids">{gettext('Kids')}</LocalizedLink>
+                  <LocalizedLink to="/projects/kids">{gettext('Kids')}</LocalizedLink>
                 </li>
                 <li>
-                  <LocalizedLink to="/animals">{gettext('Animals')}</LocalizedLink>
+                  <LocalizedLink to="/projects/animals">{gettext('Animals')}</LocalizedLink>
                 </li>
                 <li>
-                  <LocalizedLink to="/diaspora">{gettext('Diaspora')}</LocalizedLink>
+                  <LocalizedLink to="/projects/diaspora">{gettext('Diaspora')}</LocalizedLink>
                 </li>
               </ul>
             </div>

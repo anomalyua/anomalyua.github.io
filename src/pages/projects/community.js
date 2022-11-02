@@ -1,12 +1,12 @@
 import * as React from 'react'
 
 import styled from 'styled-components'
-import { Layout } from '../components/Layout'
-import { AchievementsColumn } from '../components/AchievementsColumn'
-import { BotsPlatformImageTile, LinkShadedImage } from '../components/EnglishNowCTA'
+import { Layout } from '../../components/Layout'
+import { AchievementsColumn } from '../../components/AchievementsColumn'
+import { BotsPlatformImageTile, LinkShadedImage } from '../../components/EnglishNowCTA'
 import { useLocales } from 'react-localized'
 
-import communityActivismImage from '../images/Community-Activism.svg'
+import communityActivismImage from '../../images/Community-Activism.svg'
 
 const OurValueImage = styled('img')`
   padding-bottom: 4px;

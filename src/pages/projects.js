@@ -1,0 +1,485 @@
+import * as React from 'react'
+
+import styled from 'styled-components'
+import { Layout } from '../components/Layout'
+import { TopTitleText } from '../components/TopTitleText'
+import { BotsPlatformImageTile, EnglishNowImageTile, LinkShadedImage } from '../components/EnglishNowCTA'
+import { LocalizedLink } from '../components/LocalizedLink'
+import { useLocales } from 'react-localized'
+
+const HeroSection = styled.section.attrs({
+  id: 'section-id-1542709301800'
+})`
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 680px;
+    background-image: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(18 19 48 / 50%) 99%);
+  }
+`
+
+const EducationContainer = styled.div`
+  border-right: 1px solid rgb(166 124 0/30%);
+`
+
+const EducationTileContainer = styled('div')`
+  border: 0;
+`
+
+const TileTitleContainer = styled('div')`
+  display: flex;
+
+  padding-bottom: 16px;
+
+  transition: all 0.3s ease-in-out;
+  color: rgb(19 19 19 / 95%);
+
+  &:hover {
+    color: #a67c00;
+
+    img {
+      transition: all 0.3s ease-in-out;
+      filter: drop-shadow(1px 1px 1px #ccc);
+    }
+  }
+`
+
+const TileTitleText = styled('h3')`
+  padding-left: 30px;
+`
+
+const TileTitleWithImage = ({ imgSrc, title }) => (
+  <TileTitleContainer>
+    <img className="sppb-img-responsive" src={imgSrc} alt="" />
+    <TileTitleText className="sppb-addon-title sppb-feature-box-title">
+      {title}
+    </TileTitleText>
+  </TileTitleContainer>
+)
+
+const Education = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <EducationContainer className="sppb-col-md-6">
+      <div id="column-id-1620541326164" className="sppb-column">
+        <div className="sppb-column-addons">
+          <div id="sppb-addon-wrapper-1620541326159" className="sppb-addon-wrapper">
+            <div
+              id="sppb-addon-1620541326159"
+            >
+              <EducationTileContainer className="sppb-addon sppb-addon-feature  service-item item1">
+                <div className="sppb-addon-content sppb-text-left">
+                  <div className="sppb-media">
+                    <div className="pull-sppb-text-left">
+                      <span className="sppb-img-container">
+                        <LocalizedLink to="/projects/education">
+                          <TileTitleWithImage
+                            imgSrc="/images/education.png"
+                            title="Education"
+                          />
+                        </LocalizedLink>
+                      </span>
+                    </div>
+                    <div className="sppb-media-body">
+                      <div className="sppb-media-content">
+                        <div className="sppb-addon-text">
+                          {
+                            gettext(
+                              'Anomaly offers free english lessons and workshops on various topics. We offer ' +
+                              'these lessons to any adult in need to help promote personal ' +
+                              'sustainability and open their ability to work in future opportunities. ' +
+                              'If you are not a Veteran or Child, Anomaly can still help you with ' +
+                              'educational modules and workshops.'
+                            ) }
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </EducationTileContainer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </EducationContainer>
+  )
+}
+
+const LinkEnglishNowCTA = styled(LinkShadedImage)`
+  flex: 0 0 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const EnglishNowTile = () => (
+  <LinkEnglishNowCTA href="https://englishnow.dav.school/">
+    <EnglishNowImageTile />
+  </LinkEnglishNowCTA>
+)
+
+const BotsPlatformContainer = styled('div')`
+  margin-top: 30px;
+`
+
+const BotsPlatformTile = () => (
+  <div className="sppb-col-md-6" id="column-wrap-id-1633010662536">
+    <div id="column-id-1633010662536" className="sppb-column">
+      <div className="sppb-column-addons">
+        <BotsPlatformContainer>
+          <LinkShadedImage href="https://bots.anomaly.org.ua">
+            <BotsPlatformImageTile />
+          </LinkShadedImage>
+        </BotsPlatformContainer>
+      </div>
+    </div>
+  </div>
+)
+
+const VeteransTile = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <div className="sppb-col-md-6" id="column-wrap-id-1620541326160">
+      <div id="column-id-1620541326160" className="sppb-column">
+        <div className="sppb-column-addons">
+          <div id="sppb-addon-wrapper-1620541326161" className="sppb-addon-wrapper">
+            <div
+              id="sppb-addon-1620541326161"
+              className=" sppb-wow clearfix  sppb-animated sppb-animated sppb-animated"
+            >
+              <div className="sppb-addon sppb-addon-feature  service-item item1">
+                <div className="sppb-addon-content sppb-text-left">
+                  <div className="sppb-media">
+                    <div className="pull-sppb-text-left">
+                      <span className="sppb-img-container">
+                        <LocalizedLink to="/projects/veterans">
+                          <TileTitleWithImage
+                            imgSrc="/images/veterans.svg"
+                            title={gettext('Veterans')}
+                          />
+                        </LocalizedLink>
+                      </span>
+                    </div>
+                    <div className="sppb-media-body">
+                      <div className="sppb-media-content">
+                        <div className="sppb-addon-text">
+                          <p>
+                          {gettext('Support ' +
+                            'for Ukrainian veterans: Every Sunday we offer free English courses and ' +
+                            'conversation clubs specifically for veterans, ATO volunteers, and their ' +
+                            'families in Kyiv.')}
+                          </p>
+                          <p>
+                          {gettext('We organize regular volunteer outings (our tolokas) ' +
+                            'and social events (Drinkin’ Bros Ukraine) to connect members of the ' +
+                            'veteran community with each other, their fellow citizens, as well as ' +
+                            'officials and visitors from local government and embassies.')}
+                          </p>
+                          <p>
+                            {gettext('With our ‘Dbayemo Razom’ project, we connected 1,000+ mental health ' +
+                              'professionals, 10,000+ trained peer counselors and 3 physical ' +
+                              'rehabilitation centers. The network shares experience, expertise, and ' +
+                              'resources to better serve people in Ukraine.')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const EcologyTile = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <div className="sppb-col-md-6" id="column-wrap-id-1620541326162">
+      <div id="column-id-1620541326162" className="sppb-column">
+        <div className="sppb-column-addons">
+          <div id="sppb-addon-wrapper-1633616058151" className="sppb-addon-wrapper">
+            <div
+              id="sppb-addon-1633616058151"
+            >
+              <div className="sppb-addon sppb-addon-feature  service-item item2">
+                <div className="sppb-addon-content sppb-text-left">
+                  <div className="sppb-media">
+                    <div className="pull-sppb-text-left">
+                      <span className="sppb-img-container">
+                        <LocalizedLink to="/projects/eco">
+                          <TileTitleWithImage
+                            imgSrc="/images/ecology.svg"
+                            title={gettext("Ecology")}
+                          />
+                        </LocalizedLink>
+                      </span>
+                    </div>
+                    <div className="sppb-media-body">
+                      <div className="sppb-media-content">
+                        <div className="sppb-addon-text">
+                          {gettext('Anomaly helps the Ukrainian environment with neigborhood clean-ups and ' +
+                            'environmental advocacy projects. Anomaly hosts up to 3 cleans-ups a ' +
+                            'month to help minimize public litter. By doing so, Anomaly helps its ' +
+                            'participants learn about the effects of waste on the environment (both ' +
+                            'local and worldwide) and learn how to create similar projects at home. ' +
+                            'To add on, Anomaly helps to lobby environmental issues occuring in ' +
+                            'multiple cities across Ukraine. We will pinpoint any companies that are ' +
+                            'at the core of enironvmental issues and combat them through advocacy and ' +
+                            'lobbying.')}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const CommunityTile = () => {
+  const { gettext } = useLocales()
+  return (
+    <div className="sppb-col-md-6" id="column-wrap-id-1633010662537">
+      <div id="column-id-1633010662537" className="sppb-column">
+        <div className="sppb-column-addons">
+          <div id="sppb-addon-wrapper-1633616058146" className="sppb-addon-wrapper">
+            <div
+              id="sppb-addon-1633616058146"
+            >
+              <div className="sppb-addon sppb-addon-feature  service-item2">
+                <div className="sppb-addon-content sppb-text-left">
+                  <div className="sppb-media">
+                    <div className="pull-sppb-text-left">
+                      <span className="sppb-img-container">
+                        <LocalizedLink to="/projects/community">
+                          <TileTitleWithImage
+                            imgSrc="/images/community.png"
+                            title={gettext("Community")}
+                          />
+                        </LocalizedLink>
+                      </span>
+                    </div>
+                    <div className="sppb-media-body">
+                      <div className="sppb-media-content">
+                        <div className="sppb-addon-text">
+                          <p>
+                            {gettext('Anomaly works with Kyiv City Administration and local community leaders to help ' +
+                              'solve everyday problems of Kyiv residents, such as utility outages, ' +
+                              'road potholes, and piling rubbish.')}
+                          </p>
+                          <p>
+                            {gettext('We support faster problem solving with local governance by providing ' +
+                              'reporting tools for the 100,000 residents of the most underserved areas ' +
+                              'of Kyiv, directly connecting them with local utility service providers.')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const KidsTile = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <div className="sppb-col-md-6" id="column-wrap-id-1633616058147">
+      <div id="column-id-1633616058147" className="sppb-column">
+        <div className="sppb-column-addons">
+          <div id="sppb-addon-wrapper-1620541326165" className="sppb-addon-wrapper">
+            <div
+              id="sppb-addon-1620541326165"
+            >
+              <div className="sppb-addon sppb-addon-feature  service-item item3">
+                <div className="sppb-addon-content sppb-text-left">
+                  <div className="sppb-media">
+                    <div className="pull-sppb-text-left">
+                      <span className="sppb-img-container">
+                        <LocalizedLink to="/projects/kids">
+                          <TileTitleWithImage
+                            imgSrc="/images/kids.svg"
+                            title={gettext("Kids")}
+                          />
+                        </LocalizedLink>
+                      </span>
+                    </div>
+                    <div className="sppb-media-body">
+                      <div className="sppb-media-content">
+                        <div className="sppb-addon-text">
+                          <p>
+                            {gettext('We help children of veterans, returned Russian-held political prisoners, ' +
+                              'Crimean Tatar exiles, and IDPs to attend our free English lessons and ' +
+                              'speaking clubs.')}
+                          </p>
+                          <p>
+                            {gettext('Anomaly connects foreign donors with an orphanage in Mariupol to help children ' +
+                              'find a new family and home.')}
+                          </p>
+                          <p>
+                            {gettext('We work with the local community policing department to protect the rights of ' +
+                              'children in Kyiv.')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const AnimalsTile = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <div className="sppb-col-md-6" id="column-wrap-id-1633616058148">
+      <div id="column-id-1633616058148" className="sppb-column">
+        <div className="sppb-column-addons">
+          <div id="sppb-addon-wrapper-1620541326163" className="sppb-addon-wrapper">
+            <div
+              id="sppb-addon-1620541326163"
+            >
+              <div className="sppb-addon sppb-addon-feature  service-item item4">
+                <div className="sppb-addon-content sppb-text-left">
+                  <div className="sppb-media">
+                    <div className="pull-sppb-text-left">
+                      <span className="sppb-img-container">
+                        <LocalizedLink to="/projects/animals">
+                          <TileTitleWithImage
+                            imgSrc="/images/animals.svg"
+                            title={gettext("Animals")}
+                          />
+                        </LocalizedLink>
+                      </span>
+                    </div>
+                    <div className="sppb-media-body">
+                      <div className="sppb-media-content">
+                        <div className="sppb-addon-text">
+                          <p>
+                            {gettext('Anomaly supports animal shelters in Kyiv, Lviv, and Dnipro. We help volunteers ' +
+                              'to solve the problem of stray animal overpopulation.')}
+                          </p>
+                          <p>
+                            {gettext('We are always looking for volunteers to help us solve this problem. If you ' +
+                              'think that is you, then join us today!.')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const ProjectsContent = () => {
+  const { gettext } = useLocales()
+
+  return (
+    <>
+      <HeroSection className="sppb-section hero-section sppb-section-content-center">
+        <div className="sppb-row-overlay"/>
+        <div className="sppb-row-container">
+          <div className="sppb-row sppb-align-center">
+            <div className="sppb-col-md-12" id="column-wrap-id-1542709301799">
+              <div id="column-id-1542709301799" className="sppb-column">
+                <div className="sppb-column-addons">
+                  <div id="sppb-addon-wrapper-1542709861050" className="sppb-addon-wrapper">
+                    <div id="sppb-addon-1542709861050" className="clearfix ">
+                      <div className="sppb-addon sppb-addon-header sppb-text-left">
+                        <TopTitleText>
+                          {gettext('Dare to do the impossible!')}
+                        </TopTitleText>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </HeroSection>
+      <section id="section-id-1620541326094" className="sppb-section">
+        <div className="sppb-row-overlay"/>
+        <div className="sppb-row-container">
+          <div className="sppb-row sppb-no-gutter">
+            <div className="sppb-col-md-12" id="column-wrap-id-1620541326154">
+              <div id="column-id-1620541326154" className="sppb-column">
+                <div className="sppb-column-addons">
+                  <div id="sppb-addon-wrapper-1620541326156" className="sppb-addon-wrapper">
+                    <div id="sppb-addon-1620541326156" className="clearfix ">
+                      <div className="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center">
+                        <h3 className="sppb-addon-title">
+                          {gettext('Our projects')}
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="sppb-addon-wrapper-1620541326157" className="sppb-addon-wrapper">
+                    <div id="sppb-addon-1620541326157" className="clearfix ">
+                      <div className="sppb-addon-divider-wrap divider-position">
+                        <div className="sppb-divider sppb-divider-border link-color-opt3"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <VeteransTile/>
+            <EcologyTile/>
+            <Education/>
+            <EnglishNowTile/>
+            <BotsPlatformTile/>
+            <CommunityTile/>
+            <KidsTile/>
+            <AnimalsTile/>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+const ProjectsPage = () => {
+  return (
+    <Layout
+      title="Projects"
+    >
+      <ProjectsContent />
+    </Layout>
+  )
+}
+
+export default ProjectsPage

@@ -1,9 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { Layout } from '../components/Layout'
+import { Layout } from '../../components/Layout'
 import { useLocales } from 'react-localized'
 
-import backgroundImage from '../images/photo_2021-10-19_22-45-59.jpg'
+import backgroundImage from '../../images/photo_2021-10-19_22-45-59.jpg'
 
 const SpTitle = styled.div`
   padding-top: 121px;

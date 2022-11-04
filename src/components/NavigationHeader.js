@@ -102,6 +102,9 @@ export const NavigationHeader = ({ onMenuOpen }) => {
                     <NavigationLink to="/">{gettext('Home')}</NavigationLink>
                     <ProjectsNavigationDropdown />
                     <NavigationLink to="/about">{gettext('About')}</NavigationLink>
+                    <li className="sp-menu-item">
+                      <Link to="#">{gettext('Archive')}</Link>
+                    </li>
                   </ul>
                 </nav>
               </div>

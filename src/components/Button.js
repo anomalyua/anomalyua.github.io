@@ -1,13 +1,11 @@
 import classnames from "classnames";
 import * as React from "react";
 import styled from 'styled-components';
-import { useLocales } from 'react-localized'
 
-const BecomeAVolunteerButtonBase = ({className, ...props}) => {
-  const {gettext} = useLocales()
+const ButtonBase = ({className, ...props}) => {
   return (
     <a
-      href="https://docs.google.com/forms/d/1ej1Xvk976p8y73Ns_IOBsAfH-jS5w_sBvDXjexYIYTA"
+      href={props.href}
       className={
         classnames(
           "sppb-btn", "sppb-btn-default", "sppb-btn-rounded",
@@ -16,12 +14,12 @@ const BecomeAVolunteerButtonBase = ({className, ...props}) => {
       }
       {...props}
     >
-      {gettext('Become a Volunteer')}
+      {props.text}
     </a>
   )
 };
 
-export const BecomeAVolunteerButton = styled(BecomeAVolunteerButtonBase)`
+export const Button = styled(ButtonBase)`
   max-height: 38px;
   padding: 10px 14px !important;
 `

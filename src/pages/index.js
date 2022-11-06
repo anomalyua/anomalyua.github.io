@@ -3,7 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { Layout } from '../components/Layout'
 import { TopTitleText } from '../components/TopTitleText'
-import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer'
+import { Button } from '../components/Button'
 import { useLocales } from 'react-localized'
 
 const HeroSection = styled.section.attrs({
@@ -367,7 +367,10 @@ const IndexContent = () => {
                     <div id="sppb-addon-1633802035300" className="clearfix sppb-positioned-addon"
                          data-rowid={1542973816360} data-colid={1542973816391}>
                       <div className="sppb-text-center">
-                        <BecomeAVolunteerButton/>
+                        <Button
+                          href={'https://docs.google.com/forms/d/1ej1Xvk976p8y73Ns_IOBsAfH-jS5w_sBvDXjexYIYTA'}
+                          text={gettext('Become a Volunteer')}
+                        />
                       </div>
                     </div>
                   </div>

@@ -5,7 +5,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import anomalyLogo from '../images/anomaly-logo-01.svg'
 
-import { BecomeAVolunteerButton as Button } from './BecomeAVolunteer'
+import { Button } from './Button'
 import { useLocation, useMatch } from '@reach/router'
 import { useLocales } from 'react-localized'
 
@@ -119,7 +119,18 @@ export const NavigationHeader = ({ onMenuOpen }) => {
               </div>
             </div>
             <ButtonContainer>
-              <Button />
+              <Button
+                href={'#'}
+                text={gettext('Subscribe')}
+              />
+              <Button
+                href={'https://docs.google.com/forms/d/1ej1Xvk976p8y73Ns_IOBsAfH-jS5w_sBvDXjexYIYTA'}
+                text={gettext('Become a Volunteer')}
+              />
+              <Button
+                href={'#'}
+                text={gettext('Donate')}
+              />
             </ButtonContainer>
           </div>
         </div>

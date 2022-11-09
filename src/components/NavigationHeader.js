@@ -103,7 +103,7 @@ export const NavigationHeader = ({ onMenuOpen }) => {
                     <ProjectsNavigationDropdown />
                     <NavigationLink to="/about">{gettext('About')}</NavigationLink>
                     <li className="sp-menu-item">
-                      <a href="https://notion.site" target="_blank" rel="noopener norefferer">{gettext('Archive')}</a>
+                      <a href="https://periwinkle-guavaberry-93b.notion.site/Chronicles-of-the-war-in-Ukraine-08e23f6ebab24d829aa625443b587452" target="_blank" rel="noopener norefferer">{gettext('Archive')}</a>
                     </li>
                   </ul>
                 </nav>

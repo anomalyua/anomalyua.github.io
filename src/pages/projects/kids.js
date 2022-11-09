@@ -32,7 +32,7 @@ const PageTitle = styled.div`
 `
 
 const Tabs = () => {
-  const {gettext} = useLocales()
+  const { gettext } = useLocales()
   const locationHash = useLocation().hash
 
   const firstActive = (locationHash === '#sppb-tab1-1') || (locationHash === '')

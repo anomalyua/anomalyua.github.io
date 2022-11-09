@@ -220,7 +220,7 @@ const EcologyTile = () => {
                         <LocalizedLink to="/projects/eco">
                           <TileTitleWithImage
                             imgSrc="/images/ecology.svg"
-                            title={gettext("Ecology")}
+                            title={gettext('Ecology')}
                           />
                         </LocalizedLink>
                       </span>
@@ -269,7 +269,7 @@ const CommunityTile = () => {
                         <LocalizedLink to="/projects/community">
                           <TileTitleWithImage
                             imgSrc="/images/community.png"
-                            title={gettext("Community")}
+                            title={gettext('Community')}
                           />
                         </LocalizedLink>
                       </span>
@@ -320,7 +320,7 @@ const KidsTile = () => {
                         <LocalizedLink to="/projects/kids">
                           <TileTitleWithImage
                             imgSrc="/images/kids.svg"
-                            title={gettext("Kids")}
+                            title={gettext('Kids')}
                           />
                         </LocalizedLink>
                       </span>
@@ -374,7 +374,7 @@ const AnimalsTile = () => {
                         <LocalizedLink to="/projects/animals">
                           <TileTitleWithImage
                             imgSrc="/images/animals.svg"
-                            title={gettext("Animals")}
+                            title={gettext('Animals')}
                           />
                         </LocalizedLink>
                       </span>

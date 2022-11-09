@@ -100,7 +100,7 @@ const IndexContent = () => {
                       <div className="sppb-addon sppb-addon-text-block  ">
                         <div className="sppb-addon-content">
                           <span>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            {gettext('We help people all around Ukraine by delivering humanitarian aid. Our current focus is liberated villages in Kyiv Oblast. At the same time we are working on scaling aid all over Ukraine.')}
                           </span>
                         </div>
                       </div>
@@ -148,7 +148,7 @@ const IndexContent = () => {
                       <div className="sppb-addon sppb-addon-text-block  ">
                         <div className="sppb-addon-content">
                           <span>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            {gettext('We have trained over 30,000 Ukrainian defenders in military medicine to help save lives on and off the battlefield. We have delivered over $100,000 in non-lethal aid to the frontline soldiers.')}
                           </span>
                         </div>
                       </div>

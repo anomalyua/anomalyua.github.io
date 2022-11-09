@@ -103,7 +103,7 @@ export const NavigationHeader = ({ onMenuOpen }) => {
                     <ProjectsNavigationDropdown />
                     <NavigationLink to="/about">{gettext('About')}</NavigationLink>
                     <li className="sp-menu-item">
-                      <Link to="#">{gettext('Archive')}</Link>
+                      <a href="https://notion.site" target="_blank" rel="noopener norefferer">{gettext('Archive')}</a>
                     </li>
                   </ul>
                 </nav>

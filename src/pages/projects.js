@@ -418,7 +418,7 @@ const ProjectsContent = () => {
                 <div className="sppb-column-addons">
                   <div id="sppb-addon-wrapper-1542709861050" className="sppb-addon-wrapper">
                     <div id="sppb-addon-1542709861050" className="clearfix ">
-                      <div className="sppb-addon sppb-addon-header sppb-text-left">
+                      <div className="sppb-addon sppb-addon-header sppb-text-center">
                         <TopTitleText>
                           {gettext('Dare to do the impossible!')}
                         </TopTitleText>

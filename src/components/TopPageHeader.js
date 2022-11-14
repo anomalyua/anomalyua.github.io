@@ -13,7 +13,7 @@ export const TopPageHeader = ({ onMenuOpen }) => (
           <div className="container">
             <div className="container-inner">
               <div className="row">
-                <div id="sp-top1" className="col-sm-6 col-md-6 col-lg-6 ">
+                <div id="sp-top1" className="col-sm-7 col-md-7 col-lg-7">
                   <div className="sp-column ">
                     <ul className="sp-contact-info">
                       <li>
@@ -25,7 +25,7 @@ export const TopPageHeader = ({ onMenuOpen }) => (
                     </ul>
                   </div>
                 </div>
-                <div id="sp-top2" className="col-sm-6 col-md-6 col-lg-6 ">
+                <div id="sp-top2" className="col-sm-5 col-md-5 col-lg-5 ">
                   <div className="sp-column ">
                     <div className="sp-module ">
                       <div className="sp-module-content">

@@ -34,7 +34,7 @@ const IndexContent = () => {
                 <div className="sppb-column-addons">
                   <div id="sppb-addon-wrapper-1542709861050" className="sppb-addon-wrapper">
                     <div id="sppb-addon-1542709861050" className="clearfix ">
-                      <div className="sppb-addon sppb-addon-header sppb-text-left">
+                      <div className="sppb-addon sppb-addon-header sppb-text-center">
                         <TopTitleText>
                           {gettext('Dare to do the impossible!')}
                         </TopTitleText>
@@ -345,12 +345,12 @@ const IndexContent = () => {
         <div className="sppb-row-overlay"/>
         <div className="sppb-row-container">
           <div className="sppb-row sppb-align-center">
-            <div className="sppb-col-md-7" id="column-wrap-id-1542973816359">
+            <div className="sppb-col-xs-12" id="column-wrap-id-1542973816359">
               <div id="column-id-1542973816359" className="sppb-column">
                 <div className="sppb-column-addons">
                   <div id="sppb-addon-wrapper-1542973816366" className="sppb-addon-wrapper">
                     <div id="sppb-addon-1542973816366" className="clearfix ">
-                      <div className="sppb-addon sppb-addon-header sppb-text-right">
+                      <div className="sppb-addon sppb-addon-header sppb-text-center">
                         <h3 className="sppb-addon-title">
                           {gettext('Join Anomaly Today!')}
                         </h3>
@@ -360,7 +360,7 @@ const IndexContent = () => {
                 </div>
               </div>
             </div>
-            <div className="sppb-col-md-5" id="column-wrap-id-1542973816391">
+            <div className="sppb-col-xs-12" id="column-wrap-id-1542973816391">
               <div id="column-id-1542973816391" className="sppb-column">
                 <div className="sppb-column-addons">
                   <div id="sppb-addon-wrapper-1633802035300" className="sppb-addon-wrapper">

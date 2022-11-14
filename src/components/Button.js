@@ -20,6 +20,6 @@ const ButtonBase = ({className, ...props}) => {
 };
 
 export const Button = styled(ButtonBase)`
-  max-height: 38px;
-  padding: 10px 14px !important;
+//   max-height: 38px;
+//   padding: 10px 14px !important;
 `

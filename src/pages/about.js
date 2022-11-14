@@ -59,12 +59,12 @@ const GraySection = styled('section')`
 const TitleLevel3 = styled('div')`
   text-align: center;
   font-size: 32px;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
 `
 
 const DescriptionBlock = styled('div')`
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 26px;
 

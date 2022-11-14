@@ -1,8 +1,9 @@
+**/.DS_Store
 node_modules/
 .cache/
-public
 .idea
-**/.DS_Store
+public
 package-lock.json
 yarn.lock
 .vscode/settings.json
+crowdin.yml

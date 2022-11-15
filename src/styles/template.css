@@ -24,3 +24,7 @@ div.mod-languages img {
 div.mod-languages a {
   text-decoration: none;
 }
+
+li.drawer-sub-category {
+  padding-left: 15px!important;
+}

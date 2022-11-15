@@ -58,25 +58,30 @@ const OffCanvasMenu = ({ onClose }) => {
                     {gettext('About')}
                   </LocalizedLink>
                 </li>
-                <li className="item-298 menu-divider menu-deeper menu-parent">
+                <li>
+                  <LocalizedLink to="/projects">
+                    {gettext('Projects')}
+                  </LocalizedLink>
+                </li>
+                <li className="item-298 menu-divider menu-deeper menu-parent drawer-sub-category">
                   <LocalizedLink to="/projects/veterans">{gettext('Veterans')}</LocalizedLink>
                 </li>
-                <li>
+                <li className="drawer-sub-category">
                   <LocalizedLink to="/projects/eco">{gettext('Ecology')}</LocalizedLink>
                 </li>
-                <li>
+                <li className="drawer-sub-category">
                   <LocalizedLink to="/projects/education">{gettext('Education')}</LocalizedLink>
                 </li>
-                <li>
+                <li className="drawer-sub-category">
                   <LocalizedLink to="/projects/community">{gettext('Community')}</LocalizedLink>
                 </li>
-                <li>
+                <li className="drawer-sub-category">
                   <LocalizedLink to="/projects/kids">{gettext('Kids')}</LocalizedLink>
                 </li>
-                <li>
+                <li className="drawer-sub-category">
                   <LocalizedLink to="/projects/animals">{gettext('Animals')}</LocalizedLink>
                 </li>
-                <li>
+                <li className="drawer-sub-category">
                   <LocalizedLink to="/projects/diaspora">{gettext('Diaspora')}</LocalizedLink>
                 </li>
               </ul>

@@ -8,6 +8,7 @@ import anomalyLogo from '../images/anomaly-logo-01.svg'
 import { Button } from './Button'
 import { useLocation, useMatch } from '@reach/router'
 import { useLocales } from 'react-localized'
+import SubscribeWidget from './SubscribeWidget';
 
 const useLocalizedMatch = (url) => (
   useMatch(url) || useMatch(`/:locale${url}`)
@@ -71,6 +72,15 @@ const ButtonContainer = styled('div')`
 export const NavigationHeader = ({ onMenuOpen }) => {
   const { gettext } = useLocales()
   const [isSticky, setSticky] = useState(false)
+  // subscribe widget block
+  const [showSubscribeWidget, toggleSubscribeWidget] = useState(false);
+  const openSubscribeModal = () => {
+    toggleSubscribeWidget(true);
+  }
+  const closeSubscribeModal = () => {
+    toggleSubscribeWidget(false);
+  }
+  // end subscribe widget block
 
   useEffect(() => {
     const handler = () => {
@@ -120,7 +130,8 @@ export const NavigationHeader = ({ onMenuOpen }) => {
             </div>
             <ButtonContainer>
               <Button
-                href={'#'}
+                onClick={openSubscribeModal}
+                href={'javascript:void(0)'}
                 text={gettext('Subscribe')}
               />
               <Button
@@ -133,6 +144,10 @@ export const NavigationHeader = ({ onMenuOpen }) => {
               />
             </ButtonContainer>
           </div>
+          <SubscribeWidget
+            show={showSubscribeWidget}
+            closeCallback={closeSubscribeModal}
+          />
         </div>
       </div>
     </header>

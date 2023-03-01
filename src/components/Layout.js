@@ -58,26 +58,31 @@ const OffCanvasMenu = ({ onClose }) => {
                     {gettext('About')}
                   </LocalizedLink>
                 </li>
-                <li className="item-298 menu-divider menu-deeper menu-parent">
-                  <LocalizedLink to="/veterans">{gettext('Veterans')}</LocalizedLink>
-                </li>
                 <li>
-                  <LocalizedLink to="/eco">{gettext('Ecology')}</LocalizedLink>
+                  <LocalizedLink to="/projects">
+                    {gettext('Projects')}
+                  </LocalizedLink>
                 </li>
-                <li>
-                  <LocalizedLink to="/education">{gettext('Education')}</LocalizedLink>
+                <li className="item-298 menu-divider menu-deeper menu-parent drawer-sub-category">
+                  <LocalizedLink to="/projects/veterans">{gettext('Veterans')}</LocalizedLink>
                 </li>
-                <li>
-                  <LocalizedLink to="/community">{gettext('Community')}</LocalizedLink>
+                <li className="drawer-sub-category">
+                  <LocalizedLink to="/projects/eco">{gettext('Ecology')}</LocalizedLink>
                 </li>
-                <li>
-                  <LocalizedLink to="/kids">{gettext('Kids')}</LocalizedLink>
+                <li className="drawer-sub-category">
+                  <LocalizedLink to="/projects/education">{gettext('Education')}</LocalizedLink>
                 </li>
-                <li>
-                  <LocalizedLink to="/animals">{gettext('Animals')}</LocalizedLink>
+                <li className="drawer-sub-category">
+                  <LocalizedLink to="/projects/community">{gettext('Community')}</LocalizedLink>
                 </li>
-                <li>
-                  <LocalizedLink to="/diaspora">{gettext('Diaspora')}</LocalizedLink>
+                <li className="drawer-sub-category">
+                  <LocalizedLink to="/projects/kids">{gettext('Kids')}</LocalizedLink>
+                </li>
+                <li className="drawer-sub-category">
+                  <LocalizedLink to="/projects/animals">{gettext('Animals')}</LocalizedLink>
+                </li>
+                <li className="drawer-sub-category">
+                  <LocalizedLink to="/projects/diaspora">{gettext('Diaspora')}</LocalizedLink>
                 </li>
               </ul>
             </div>
@@ -94,7 +99,7 @@ const SocialIconsContainer = styled('div')`
 `;
 
 const LogoContainer = styled('div')`
-  padding: 32px;
+  padding: 0px 15px 40px;
   padding-right: 96px;
 `;
 
@@ -144,10 +149,10 @@ const LayoutInternal = ({ title, children }) => {
                       <img
                         className="sppb-img-responsive"
                         src={logoImage}
-                        style={{ height: '40px' }}
+                        style={{ height: '50px' }}
                       />
                     </LogoContainer>
-                    <div id="sp-bottom1" className="col-sm-col-sm-6 col-lg-4 ">
+                    <div id="sp-bottom1" className="col-sm-col-sm-6 col-lg-5 ">
                       <div className="sp-column ">
                         <div className="sp-module ">
                           <div className="sp-module-content">
@@ -168,7 +173,7 @@ const LayoutInternal = ({ title, children }) => {
                                                     {gettext('Velyka Vasylkivska st, 72, office 20, Ukraine, 03150, Kyiv')}
                                                   </div>
                                                 </div>
-                                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: "Poppins"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: "Poppins"; }\n' }} />
+                                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: "Poppins", sans-serif; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: "Poppins", sans-serif; }\n' }} />
                                                 <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-1542892443684{ font-size: 14px;font-weight: 300;line-height: 23px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}' }} />
                                               </div>
                                             </div>
@@ -187,7 +192,7 @@ const LayoutInternal = ({ title, children }) => {
                         </div>
                       </div>
                     </div>
-                    <div id="sp-bottom2" className="col-sm-col-sm-6 col-lg-3 ">
+                    <div id="sp-bottom2" className="col-sm-6 col-lg-3 ">
                       <div className="sp-column ">
                         <div className="sp-module ">
                           <div className="sp-module-content">
@@ -210,7 +215,7 @@ const LayoutInternal = ({ title, children }) => {
                                                     <PhoneNumber />
                                                   </div>
                                                 </div>
-                                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: "Poppins"; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: "Poppins"; }\n' }} />
+                                                <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-wrapper-1542892443684 {\nmargin:0 0 30px 0;}\n#sppb-addon-1542892443684 {\n\tcolor: #545561;\n\tbox-shadow: 0 0 0 0 #ffffff;\n}\n#sppb-addon-1542892443684 .sppb-addon-title {\nmargin-bottom:15px;color:rgba(255, 255, 255, 0.6);font-size:16px;line-height:26px;font-weight: 600;}\n@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 20px;margin-left: 0;}}@media (max-width: 767px) {#sppb-addon-1542892443684 {}#sppb-addon-wrapper-1542892443684 {margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;}}#sppb-addon-1542892443684 .sppb-addon-title { font-family: "Poppins", sans-serif; }\n#sppb-addon-1542892443684 .sppb-addon-content { font-family: "Poppins", sans-serif; }\n' }} />
                                                 <style type="text/css" dangerouslySetInnerHTML={{ __html: '#sppb-addon-1542892443684{ font-size: 14px;font-weight: 300;line-height: 23px; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}' }} />
                                               </div>
                                             </div>
@@ -229,7 +234,7 @@ const LayoutInternal = ({ title, children }) => {
                         </div>
                       </div>
                     </div>
-                    <SocialIconsContainer id="sp-bottom-top3" className="col-lg-2 ">
+                    <SocialIconsContainer id="sp-bottom-top3" className="col-sm-6 col-lg-1 ">
                       <div className="sp-column ">
                         <ul className="social-icons">
                           <li className="social-icon-facebook">

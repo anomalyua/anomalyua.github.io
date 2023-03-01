@@ -106,7 +106,8 @@ ul.social-icons > li {
 }
 
 .sp-module-content .mod-languages ul.lang-inline li a {
-  padding: 0 !important;
+  padding: 5px !important;
+  font-size: 15px;
 }
 
 .sp-module-content .mod-languages ul.lang-inline li > a::before {
@@ -1224,7 +1225,7 @@ select:not(.form-control):focus {
 }
 
 .hero-section > .sppb-row-container {
-  margin-top: -115px;
+  /* margin-top: -115px; */
 }
 
 .hero-section::before {
@@ -2446,7 +2447,7 @@ form.sppb-optin-form.submit-button-inside .email-wrap .sp-input-wrap.active span
 }
 
 #sp-top-bar #sp-top1 .sp-contact-info a {
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(255 255 255 / 60%);
 }
 
@@ -2634,10 +2635,11 @@ body.has-page-title.view-article #sp-right {
 /* **************************************************** */
 .sppb-btn {
   font-size: 14px;
-  padding: 17px 35px;
-  border: none;
-  border-radius: 3px;
   position: relative;
+  padding: 10px 14px;
+  margin: 12px 10px 10px 10px;
+  border-radius: 19px;
+  border: none;
   z-index: 3;
   overflow: hidden;
 }
@@ -5713,7 +5715,7 @@ html.coming-soon .social-icons li a:hover {
   display: inline-block;
   padding: 0 15px;
   line-height: 80px;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
 }
 

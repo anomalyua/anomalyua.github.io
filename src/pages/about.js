@@ -6,7 +6,7 @@ import { TopTitleText } from '../components/TopTitleText'
 import { AchievementsColumn } from '../components/AchievementsColumn'
 
 import davidPhoto from '../images/photo_2021-11-04_22-41-53.jpg'
-import { BecomeAVolunteerButton } from '../components/BecomeAVolunteer'
+import { Button } from '../components/Button'
 import { PhoneNumber } from '../components/PhoneNumber'
 import { useLocales } from 'react-localized'
 
@@ -59,12 +59,12 @@ const GraySection = styled('section')`
 const TitleLevel3 = styled('div')`
   text-align: center;
   font-size: 32px;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
 `
 
 const DescriptionBlock = styled('div')`
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 26px;
 
@@ -326,7 +326,10 @@ const VolunteeringOpportunities = () => {
                 'and fill out our appllication form. Let\'s talk about your future volunteering journey ' +
                 'as a part of the Anomaly team!')}
               <ButtonContainer>
-                <BecomeAVolunteerButton/>
+                <Button
+                  href={'https://docs.google.com/forms/d/1ej1Xvk976p8y73Ns_IOBsAfH-jS5w_sBvDXjexYIYTA'}
+                  text={gettext('Become a Volunteer')}
+                />
               </ButtonContainer>
             </DescriptionText>
           </PageColumn8>

@@ -5,16 +5,20 @@ import * as React from 'react'
 import styled from 'styled-components'
 import anomalyLogo from '../images/anomaly-logo-01.svg'
 
-import { BecomeAVolunteerButton as Button } from './BecomeAVolunteer'
-import { useMatch } from '@reach/router'
+import { Button } from './Button'
+import { useLocation, useMatch } from '@reach/router'
 import { useLocales } from 'react-localized'
+import SubscribeWidget from './SubscribeWidget';
 
 const useLocalizedMatch = (url) => (
   useMatch(url) || useMatch(`/:locale${url}`)
 )
 
 const NavigationLink = (props) => {
-  const active = useLocalizedMatch(props.to) !== null
+  const url = props.to
+  const match = useLocalizedMatch(url) !== null
+  const { pathname } = useLocation()
+  const active = url === '/' && pathname !== '/' ? false : match
 
   return (
     <li
@@ -29,48 +33,30 @@ const NavigationLink = (props) => {
   )
 }
 
-const ProjectsLinkTitle = () => {
-  const { gettext } = useLocales()
-
-  return gettext('Projects')
-}
-
-const ProjectsLink = styled.a.attrs(() => ({
-  children: <ProjectsLinkTitle />,
-  href: '#'
-}))`
-  &::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\\f107";
-    float: right;
-    margin-left: 7px;
-  }
-`
-
 const ProjectsNavigationDropdown = () => {
   const { gettext } = useLocales()
-  const active = useLocalizedMatch('/veterans') ||
-    useLocalizedMatch('/kids') ||
-    useLocalizedMatch('/animals') ||
-    useLocalizedMatch('/eco') ||
-    useLocalizedMatch('/diaspora') ||
-    useLocalizedMatch('/community') ||
-    useLocalizedMatch('/education')
+  const active = useLocalizedMatch('/projects') ||
+    useLocalizedMatch('/projects/veterans') ||
+    useLocalizedMatch('/projects/kids') ||
+    useLocalizedMatch('/projects/animals') ||
+    useLocalizedMatch('/projects/eco') ||
+    useLocalizedMatch('/projects/diaspora') ||
+    useLocalizedMatch('/projects/community') ||
+    useLocalizedMatch('/projects/education')
 
   return (
     <li className={classnames('sp-menu-item', 'sp-has-child', active && 'active')}>
-      <ProjectsLink />
+      <Link to="/projects" >{gettext('Projects')}</Link>
       <div className="sp-dropdown sp-dropdown-main sp-menu-right" style={{ width: '240px' }}>
         <div className="sp-dropdown-inner">
           <ul className="sp-dropdown-items">
-            <NavigationLink to="/veterans">{gettext('Veterans')}</NavigationLink>
-            <NavigationLink to="/eco">{gettext('Ecology')}</NavigationLink>
-            <NavigationLink to="/education">{gettext('Education')}</NavigationLink>
-            <NavigationLink to="/community">{gettext('Community')}</NavigationLink>
-            <NavigationLink to="/kids">{gettext('Kids')}</NavigationLink>
-            <NavigationLink to="/animals">{gettext('Animals')}</NavigationLink>
-            <NavigationLink to="/diaspora">{gettext('Diaspora')}</NavigationLink>
+            <NavigationLink to="/projects/veterans">{gettext('Veterans')}</NavigationLink>
+            <NavigationLink to="/projects/eco">{gettext('Ecology')}</NavigationLink>
+            <NavigationLink to="/projects/education">{gettext('Education')}</NavigationLink>
+            <NavigationLink to="/projects/community">{gettext('Community')}</NavigationLink>
+            <NavigationLink to="/projects/kids">{gettext('Kids')}</NavigationLink>
+            <NavigationLink to="/projects/animals">{gettext('Animals')}</NavigationLink>
+            <NavigationLink to="/projects/diaspora">{gettext('Diaspora')}</NavigationLink>
           </ul>
         </div>
       </div>
@@ -86,6 +72,15 @@ const ButtonContainer = styled('div')`
 export const NavigationHeader = ({ onMenuOpen }) => {
   const { gettext } = useLocales()
   const [isSticky, setSticky] = useState(false)
+  // subscribe widget block
+  const [showSubscribeWidget, toggleSubscribeWidget] = useState(false);
+  const openSubscribeModal = () => {
+    toggleSubscribeWidget(true);
+  }
+  const closeSubscribeModal = () => {
+    toggleSubscribeWidget(false);
+  }
+  // end subscribe widget block
 
   useEffect(() => {
     const handler = () => {
@@ -114,11 +109,12 @@ export const NavigationHeader = ({ onMenuOpen }) => {
                     </div>
                   </a>
                   <ul className="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
-                    <li className="sp-menu-item">
-                      <Link to="/">{gettext('Home')}</Link>
-                    </li>
-                    <NavigationLink to="/about">{gettext('About')}</NavigationLink>
+                    <NavigationLink to="/">{gettext('Home')}</NavigationLink>
                     <ProjectsNavigationDropdown />
+                    <NavigationLink to="/about">{gettext('About')}</NavigationLink>
+                    <li className="sp-menu-item">
+                      <a href="https://periwinkle-guavaberry-93b.notion.site/Chronicles-of-the-war-in-Ukraine-08e23f6ebab24d829aa625443b587452" target="_blank" rel="noopener norefferer">{gettext('Archive')}</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -133,9 +129,25 @@ export const NavigationHeader = ({ onMenuOpen }) => {
               </div>
             </div>
             <ButtonContainer>
-              <Button />
+              <Button
+                onClick={openSubscribeModal}
+                href={'javascript:void(0)'}
+                text={gettext('Subscribe')}
+              />
+              <Button
+                href={'https://docs.google.com/forms/d/1ej1Xvk976p8y73Ns_IOBsAfH-jS5w_sBvDXjexYIYTA'}
+                text={gettext('Become a Volunteer')}
+              />
+              <Button
+                href={'#'}
+                text={gettext('Donate')}
+              />
             </ButtonContainer>
           </div>
+          <SubscribeWidget
+            show={showSubscribeWidget}
+            closeCallback={closeSubscribeModal}
+          />
         </div>
       </div>
     </header>
